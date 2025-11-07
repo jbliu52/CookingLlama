@@ -1,29 +1,5 @@
-import framework
+from framework import Actor
 from framework_old import OldMistake
-
-
-class Actor:
-    """ Default Actor class, neutral behavior"""
-    def __init__(self, name):
-        self.name = name
-        self.init = f'{self.name} is having a normal day.\n'
-
-    def pos_reaction(self):
-        return ''
-
-    def neg_reaction(self, mistake: OldMistake):
-        return '', mistake.get_best_remedy()
-
-    def final_reaction(self, severity: int):
-        if severity > 0:
-            return f'{self.name} is disappointed with the result.\n'
-        return f'{self.name} is happy with the result.\n'
-
-    def react(self, tag: str):
-        return ''
-
-    # def step(self, ingredients: list[framework.Ingredient], actions: list[framework.Transformation]):
-    #     return actions[0]
 
 
 class HappyActor(Actor):

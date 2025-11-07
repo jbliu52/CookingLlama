@@ -1,4 +1,4 @@
-from actors import Actor
+import random
 
 
 class Ingredient:
@@ -23,6 +23,8 @@ class Ingredient:
         else:
             return None
 
+    def __repr__(self):
+        return self.name
 
 class Mistake:
     def __init__(self, name: str, ingredient: Ingredient, amt: float, ext_tags: list[str]=None):
@@ -59,6 +61,9 @@ class Transformation:
             tags.extend(mistake.ext_tags)
 
         return Ingredient(self.output, total_amt, tags)
+
+    def __repr__(self):
+        return f'{self.type}:\t {self.ingredients} -> {self.output}'
 
 
 class Node:
@@ -102,8 +107,24 @@ class Recipe:
                             break
                     if prereqs_done and child not in self.executed:
                         self.active_nodes.append(child)
-                break
-        return self.active_nodes
+                return node
+        return None
+
+
+class Actor:
+    """ Default Actor class, neutral behavior"""
+
+    def __init__(self, name):
+        self.name = name
+        self.init = f'{self.name} is having a normal day.\n'
+
+    def react(self, tag: str):
+        return ''
+
+    # def step(self, ingredients: list[framework.Ingredient], actions: list[framework.Transformation]):
+    #     return actions[0]
+    def choose_action(self, recipe: Recipe):
+        return random.choice(recipe.active_nodes).transformation
 
 
 class RecipeTask:
@@ -113,4 +134,11 @@ class RecipeTask:
         self.ingredients = ingredients
         self.tr_specs = tr_specs
         self.actor = actor
+
+    def execute(self):
+        next_action = self.actor.choose_action(self.recipe)
+        print(next_action)
+        node = self.recipe.execute(next_action)
+        if node:
+            print(node.step)
 

@@ -31,17 +31,21 @@ s4 = Node("Stir in vanilla and cereal; mix well.", t4)
 s4.add_parent(s3)
 s5 = Node("Using 2 teaspoons, drop and shape into 30 clusters on wax paper. Let stand until firm, about 30 minutes.", t5)
 s5.add_parent(s4)
-s6 = Node("Decorate top with cream.", t5)
+s6 = Node("Decorate top with cream.", t6)
 s6.add_parent(s5)
 s6.add_parent(s1a)
 
 
 recipe = Recipe([s1, s1a, s2, s3, s4, s5, s6])
 
-task = RecipeTask(recipe, ingredients, {}, Actor("alice"))
+actor = Actor("Alice")
+task = RecipeTask(recipe, ingredients, ['mix', 'stir', 'boil', 'chill'], {}, actor, 4)
 
-while task.recipe.active_nodes:
+while not task.done_executing():
     task.execute()
+
+if task.max_steps >= 0:
+    print(f'What will {actor.name} do next?')
 
 # actor has an idea of where in the recipe they are, choose an edge to go down, attempt to perform step, keep going
 # actor may believe that they have done a step successfully if they havent

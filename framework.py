@@ -121,24 +121,41 @@ class Actor:
     def react(self, tag: str):
         return ''
 
-    # def step(self, ingredients: list[framework.Ingredient], actions: list[framework.Transformation]):
-    #     return actions[0]
-    def choose_action(self, recipe: Recipe):
-        return random.choice(recipe.active_nodes).transformation
+    def choose_action(self, recipe: Recipe, tr_types: list[str], curr_ingredients: list[Ingredient]):
+        ings = random.choices(curr_ingredients, k=2)
+        type = random.choice(tr_types)
+        return Transformation(type, ings)
+        # return random.choice(recipe.active_nodes).transformation
 
 
 class RecipeTask:
     def __init__(self, recipe: Recipe, ingredients: list[Ingredient],
-                 tr_specs: dict[Ingredient, list[Transformation]], actor: Actor):
+                tr_types: list[str], tr_specs: dict[Ingredient, list[Transformation]], actor: Actor, max_steps: int=-1):
         self.recipe = recipe
         self.ingredients = ingredients
+        self.tr_types = tr_types
         self.tr_specs = tr_specs
         self.actor = actor
+        self.steps = 0
+        self.max_steps = max_steps
 
     def execute(self):
-        next_action = self.actor.choose_action(self.recipe)
-        print(next_action)
+        next_action = self.actor.choose_action(self.recipe, self.tr_types, self.ingredients)
+        for ingredient in next_action.ingredients:
+            for curr_ingredient in self.ingredients:
+                if ingredient.name == curr_ingredient.name:
+                    self.ingredients.remove(curr_ingredient)
+        output = next_action.execute()
+        self.ingredients.append(output)
+        # print(next_action)
+        print(f'{self.actor.name} performs [{next_action.type}] on the following ingredients: {next_action.ingredients}')
+        print(f'{self.actor.name} produces {output.amt}g of {output.name}')
+        # print(self.ingredients)
         node = self.recipe.execute(next_action)
-        if node:
-            print(node.step)
+        # if node:
+        #     print(node.step)
+        self.steps += 1
+
+    def done_executing(self):
+        return not self.recipe.active_nodes or (-1 < self.max_steps <= self.steps)
 

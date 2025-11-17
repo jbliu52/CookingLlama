@@ -2,9 +2,10 @@ import random
 
 
 class Ingredient:
-    def __init__(self, name: str, amt: float, tags: list[str]=None, over: str=None, under: str=None):
+    def __init__(self, name: str, amt: float, base_ing=None, tags: list[str]=None, over: str=None, under: str=None):
         self.name = name
         self.amt = amt
+        self.base_ing = base_ing
 
         if tags: self.tags = tags
         else: self.tags = []
@@ -60,7 +61,7 @@ class Transformation:
         if mistake and mistake.ext_tags:
             tags.extend(mistake.ext_tags)
 
-        return Ingredient(self.output, total_amt, tags)
+        return Ingredient(self.output, total_amt, self.ingredients, tags)
 
     def __repr__(self):
         return f'{self.type}:\t {self.ingredients} -> {self.output}'
@@ -127,6 +128,9 @@ class Actor:
         return Transformation(type, ings)
         # return random.choice(recipe.active_nodes).transformation
 
+    def choose_mistake(self, transformation: Transformation):
+        return Mistake("temp", random.choice(transformation.ingredients), 1.5)
+
 
 class RecipeTask:
     def __init__(self, recipe: Recipe, ingredients: list[Ingredient],
@@ -140,16 +144,23 @@ class RecipeTask:
         self.max_steps = max_steps
 
     def execute(self):
+        if self.done_executing(): return
         next_action = self.actor.choose_action(self.recipe, self.tr_types, self.ingredients)
+        print(f'{self.actor.name} performs [{next_action.type}] on the following ingredients: {next_action.ingredients}')
+
         for ingredient in next_action.ingredients:
             for curr_ingredient in self.ingredients:
                 if ingredient.name == curr_ingredient.name:
                     self.ingredients.remove(curr_ingredient)
-        output = next_action.execute()
-        self.ingredients.append(output)
-        # print(next_action)
-        print(f'{self.actor.name} performs [{next_action.type}] on the following ingredients: {next_action.ingredients}')
-        print(f'{self.actor.name} produces {output.amt}g of {output.name}')
+        if next_action.type == 'separate':
+            outputs = next_action.execute()
+            self.ingredients.extend(outputs)
+            print(f'{self.actor.name} separates {next_action.ingredients[0]} into {outputs}')
+        else:
+            output = next_action.execute()
+            self.ingredients.append(output)
+            # print(next_action)
+            print(f'{self.actor.name} produces {output.amt}g of {output.name}')
         # print(self.ingredients)
         node = self.recipe.execute(next_action)
         # if node:

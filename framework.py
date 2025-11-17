@@ -34,6 +34,9 @@ class Mistake:
         self.amt = amt
         self.ext_tags = ext_tags
 
+    def __repr__(self):
+        return f'{self.ingredient} by {self.amt}'
+
 
 class Transformation:
     def __init__(self, type: str, ingredients: list[Ingredient], output: str=None):
@@ -117,12 +120,18 @@ class Actor:
 
     def __init__(self, name):
         self.name = name
-        self.init = f'{self.name} is having a normal day.\n'
+        self.threshold = 5
 
-    def react(self, tag: str):
-        return ''
+    def react(self, curr_ingredients: list[Ingredient]):
+        # TODO: reaction to individual ing types
+        tags = []
+        for ingredient in curr_ingredients:
+            tags.extend(ingredient.tags)
+        return tags
 
     def choose_action(self, recipe: Recipe, tr_types: list[str], curr_ingredients: list[Ingredient]):
+        if random.random() < 0.5:
+            return Transformation('examine', curr_ingredients)
         ings = random.choices(curr_ingredients, k=2)
         type = random.choice(tr_types)
         return Transformation(type, ings)
@@ -148,6 +157,12 @@ class RecipeTask:
         next_action = self.actor.choose_action(self.recipe, self.tr_types, self.ingredients)
         print(f'{self.actor.name} performs [{next_action.type}] on the following ingredients: {next_action.ingredients}')
 
+        # TODO: make mistake selection more actor based
+        mistake = None
+        if next_action.type != 'examine' and random.random() < 0.5:
+            mistake = self.actor.choose_mistake(next_action)
+            print(f'{self.actor.name} makes the following mistake: {mistake} (may remove this print in the future)')
+
         for ingredient in next_action.ingredients:
             for curr_ingredient in self.ingredients:
                 if ingredient.name == curr_ingredient.name:
@@ -156,8 +171,11 @@ class RecipeTask:
             outputs = next_action.execute()
             self.ingredients.extend(outputs)
             print(f'{self.actor.name} separates {next_action.ingredients[0]} into {outputs}')
+        elif next_action.type == 'examine':
+            print(f'{self.actor.name} examines the current ingredients')
+            print(f'{self.actor.name} notices the following: {self.actor.react(self.ingredients)}')
         else:
-            output = next_action.execute()
+            output = next_action.execute(mistake)
             self.ingredients.append(output)
             # print(next_action)
             print(f'{self.actor.name} produces {output.amt}g of {output.name}')

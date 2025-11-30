@@ -39,7 +39,7 @@ s6.add_parent(s1a)
 recipe = Recipe([s1, s1a, s2, s3, s4, s5, s6])
 
 actor = Actor("Alice")
-task = RecipeTask(recipe, ingredients, ['mix', 'stir', 'boil', 'chill'], {}, actor, 4)
+task = RecipeTask(recipe, ingredients, ['mix', 'stir', 'boil', 'chill'], {}, actor)
 
 while not task.done_executing():
     task.execute()

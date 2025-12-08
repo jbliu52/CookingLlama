@@ -51,7 +51,11 @@ class Transformation:
             self.output = self.output[:-1] + ' ' + self.type
 
     def execute(self, mistake: Mistake=None):
-        if self.type == 'separate': return self.ingredients[0].base_ing
+        # print(f'transform:{self.type} ing: {self.ingredients} sub: {self.ingredients[0].base_ing}')
+        if self.type == 'separate':
+            if len(self.ingredients) == 0:
+                return self.ingredients
+            return self.ingredients[0].base_ing
         total_amt = 0
         tags = []
         for ingredient in self.ingredients:
@@ -132,7 +136,9 @@ class Actor:
 
     def choose_action(self, recipe: Recipe, tr_types: list[str], tr_specs: dict[Ingredient, list[Transformation]],
                       curr_ingredients: list[Ingredient]):
-        if random.random() < 0.2:
+        print(curr_ingredients)
+        # if len(curr_ingredients) == 1: return Transformation('separate', ingredients=curr_ingredients, output=str(curr_ingredients[0].base_ing))
+        if random.random() < 0.5:
             next_step = random.choice(recipe.active_nodes).transformation
             for ingredient in next_step.ingredients:
                 if ingredient not in curr_ingredients and ingredient.name not in tr_specs.keys()\
@@ -141,7 +147,8 @@ class Actor:
             return next_step
         elif random.random() < 0.5:
             return Transformation('examine', curr_ingredients)
-        ings = random.choices(curr_ingredients, k=min(len(curr_ingredients), 2))
+
+        ings = random.choices(curr_ingredients, k=2)
         type = random.choice(tr_types)
         return Transformation(type, ings)
         # return random.choice(recipe.active_nodes).transformation
@@ -184,7 +191,7 @@ class RecipeTask:
         if next_action.type == 'separate':
             # print(next_action)
             outputs = next_action.execute()
-            print(outputs)
+            # print(outputs)
             self.ingredients.extend(outputs)
             print(f'{self.actor.name} separates {next_action.ingredients[0]} into {outputs}')
         elif next_action.type == 'examine':
@@ -195,8 +202,8 @@ class RecipeTask:
             self.ingredients.append(output)
             # print(next_action)
             print(f'{self.actor.name} produces {output.amt}g of {output.name}')
+            node = self.recipe.execute(next_action)
         # print(self.ingredients)
-        node = self.recipe.execute(next_action)
         # if node:
         #     print(node.step)
         self.steps += 1

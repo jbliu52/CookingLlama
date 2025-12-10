@@ -2,7 +2,8 @@ import random
 
 
 class Ingredient:
-    def __init__(self, name: str, amt: float, base_ing=None, tags: list[str]=None, over: str=None, under: str=None):
+    def __init__(self, id: str, name: str, amt: float, base_ing=None, tags: list[str]=None, over: str=None, under: str=None):
+        self.id = id
         self.name = name
         self.amt = amt
         self.base_ing = base_ing
@@ -39,6 +40,7 @@ class Mistake:
 
 
 class Transformation:
+    # TODO: verb form of transformation
     def __init__(self, type: str, ingredients: list[Ingredient], output: str=None):
         self.type = type
         self.ingredients = ingredients
@@ -47,7 +49,7 @@ class Transformation:
         else:
             self.output = ""
             for ingredient in ingredients:
-                self.output += ingredient.name + '-'
+                self.output += ingredient.id[2:4] + '-'
             self.output = self.output[:-1] + ' ' + self.type
 
     def execute(self, mistake: Mistake=None):
@@ -69,7 +71,7 @@ class Transformation:
         if mistake and mistake.ext_tags:
             tags.extend(mistake.ext_tags)
 
-        return Ingredient(self.output, total_amt, self.ingredients, tags)
+        return Ingredient(str(hash(self.output)), self.output, total_amt, self.ingredients, tags)
 
     def __repr__(self):
         return f'{self.type}:\t {self.ingredients} -> {self.output}'
@@ -134,19 +136,23 @@ class Actor:
             tags.extend(ingredient.tags)
         return tags
 
-    def choose_action(self, recipe: Recipe, tr_types: list[str], tr_specs: dict[Ingredient, list[Transformation]],
+    def choose_action(self, recipe: Recipe, tr_types: list[str], tr_specs: dict[str, list[Transformation]],
                       curr_ingredients: list[Ingredient]):
-        print(curr_ingredients)
-        # if len(curr_ingredients) == 1: return Transformation('separate', ingredients=curr_ingredients, output=str(curr_ingredients[0].base_ing))
-        if random.random() < 0.5:
+        if random.random() < 0.7:
+            # attempt to perform a proper step from the recipe
             next_step = random.choice(recipe.active_nodes).transformation
-            for ingredient in next_step.ingredients:
-                if ingredient not in curr_ingredients and ingredient.name not in tr_specs.keys()\
-                        and ingredient.base_ing and len(ingredient.base_ing) > 1:
-                    return Transformation('separate', [ingredient], output=str(ingredient.base_ing))
-            return next_step
-        elif random.random() < 0.5:
-            return Transformation('examine', curr_ingredients)
+            curr_ids = [curr_ingredient.id for curr_ingredient in curr_ingredients]
+            ingredients_present = [ing.id in curr_ids for ing in next_step.ingredients]
+            if False not in ingredients_present:
+                return next_step
+
+            # if we are missing an ingredient, split up a different ingredient
+            # TODO: get compound ing and seperate
+            for curr_ingredient in curr_ingredients:
+                if curr_ingredient not in next_step.ingredients and curr_ingredient.base_ing and len(curr_ingredient.base_ing) > 1:
+                    return Transformation('separate', [curr_ingredient], output=str(curr_ingredient.base_ing))
+        # elif random.random() < 0.5:
+        #     return Transformation('examine', [random.choice(curr_ingredients)])
 
         ings = random.choices(curr_ingredients, k=2)
         type = random.choice(tr_types)
@@ -158,6 +164,12 @@ class Actor:
 
 
 class RecipeTask:
+    # TODO: random prefixes/pronouns (She, afterwards, then, etc.), combine ingredients/output
+    # TODO: weight only known on examine
+    # TODO: collective/distributive actions, certain actions do not create a mixture
+    # goal is to produce a record of what an observer may see when the actor attempts to step through the recipe
+    # ingredient gathering step?
+    # track proportions over weight
     def __init__(self, recipe: Recipe, ingredients: list[Ingredient],
                 tr_types: list[str], tr_specs: dict[str, list[Transformation]], actor: Actor, max_steps: int=-1):
         self.recipe = recipe
@@ -175,23 +187,20 @@ class RecipeTask:
 
     def execute(self):
         if self.done_executing(): return
+        print(f'current ingredients: {self.ingredients}')
         next_action = self.actor.choose_action(self.recipe, self.tr_types, self.tr_specs, self.ingredients)
         print(f'{self.actor.name} performs [{next_action.type}] on the following ingredients: {next_action.ingredients}')
 
-        # TODO: make mistake selection more actor based
         mistake = None
         if next_action.type != 'examine' and random.random() < 0.5:
             mistake = self.actor.choose_mistake(next_action)
             # print(f'{self.actor.name} makes the following mistake: {mistake} (may remove this print in the future)')
 
-        for ingredient in next_action.ingredients:
-            for curr_ingredient in self.ingredients:
-                if ingredient.name == curr_ingredient.name:
-                    self.ingredients.remove(curr_ingredient)
         if next_action.type == 'separate':
             # print(next_action)
             outputs = next_action.execute()
             # print(outputs)
+            self.ingredients.remove(next_action.ingredients[0])
             self.ingredients.extend(outputs)
             print(f'{self.actor.name} separates {next_action.ingredients[0]} into {outputs}')
         elif next_action.type == 'examine':
@@ -202,7 +211,11 @@ class RecipeTask:
             self.ingredients.append(output)
             # print(next_action)
             print(f'{self.actor.name} produces {output.amt}g of {output.name}')
-            node = self.recipe.execute(next_action)
+            for ingredient in next_action.ingredients:
+                for curr_ingredient in self.ingredients:
+                    if ingredient.name == curr_ingredient.name:
+                        self.ingredients.remove(curr_ingredient)
+        node = self.recipe.execute(next_action)
         # print(self.ingredients)
         # if node:
         #     print(node.step)

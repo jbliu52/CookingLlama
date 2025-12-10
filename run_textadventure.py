@@ -2,13 +2,13 @@ import random
 
 from framework import *
 
-sugar = Ingredient("brown sugar", 220, over="too sweet", under="not sweet enough")
-ev_milk = Ingredient("evaporated milk", 125,  over="too thick", under="too thin")
-vanilla = Ingredient("vanilla extract", 2.5)
-nuts = Ingredient("pecans (broken)", 220,  over="too crunchy", under="too smooth")
-butter = Ingredient("butter", 45,  over="too oily", under="too dense")
-cereal = Ingredient("cereal", 45)
-cream = Ingredient("cream", 50)
+sugar = Ingredient('bs', "brown sugar", 220, over="too sweet", under="not sweet enough")
+ev_milk = Ingredient('em', "evaporated milk", 125,  over="too thick", under="too thin")
+vanilla = Ingredient('ve', "vanilla extract", 2.5)
+nuts = Ingredient('p', "pecans (broken)", 220,  over="too crunchy", under="too smooth")
+butter = Ingredient('b', "butter", 45,  over="too oily", under="too dense")
+cereal = Ingredient('c', "cereal", 45)
+cream = Ingredient('cr', "cream", 50)
 
 ingredients=[sugar, ev_milk, vanilla, nuts, butter, cereal, cream]
 
@@ -38,8 +38,12 @@ s6.add_parent(s1a)
 
 recipe = Recipe([s1, s1a, s2, s3, s4, s5, s6])
 
+tr_specs = {}
+for ing in ingredients:
+    tr_specs[ing.id] = None
+
 actor = Actor("Alice")
-task = RecipeTask(recipe, ingredients, ['mix', 'stir', 'boil', 'chill'], {}, actor)
+task = RecipeTask(recipe, ingredients, ['mix', 'stir', 'boil', 'chill'], tr_specs, actor, 30)
 
 while not task.done_executing():
     task.execute()

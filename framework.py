@@ -12,7 +12,7 @@ class Ingredient:
         else: self.tags = []
 
         if over: self.over = over
-        else: self.over = "too much/many " + name
+        else: self.over = "too much " + name
 
         if under: self.under = under
         else: self.under = "too little " + name
@@ -137,6 +137,9 @@ class Actor:
             tags.extend(ingredient.tags)
         return tags
 
+    def react(self, ingredient: Ingredient):
+        return ingredient.tags
+
     def choose_action(self, recipe: Recipe, tr_types: list[str], tr_specs: dict[str, list[Transformation]],
                       curr_ingredients: list[Ingredient]):
         if random.random() < 0.7:
@@ -152,10 +155,10 @@ class Actor:
             for curr_ingredient in curr_ingredients:
                 if curr_ingredient not in next_step.ingredients and curr_ingredient.base_ing and len(curr_ingredient.base_ing) > 1:
                     return Transformation('separate', [curr_ingredient], output=str(curr_ingredient.base_ing))
-        # elif random.random() < 0.5:
-        #     return Transformation('examine', [random.choice(curr_ingredients)])
+        elif random.random() < 0.5:
+            return Transformation('examine', [random.choice(curr_ingredients)])
 
-        ings = random.choices(curr_ingredients, k=2)
+        ings = random.sample(curr_ingredients, k=2)
         type = random.choice(tr_types)
         return Transformation(type, ings)
         # return random.choice(recipe.active_nodes).transformation
@@ -165,7 +168,6 @@ class Actor:
 
 
 class RecipeTask:
-    # TODO: weight only known on examine
     # TODO: collective/distributive actions, certain actions do not create a mixture
     # goal is to produce a record of what an observer may see when the actor attempts to step through the recipe
     # ingredient gathering step?
@@ -202,20 +204,25 @@ class RecipeTask:
             # print(outputs)
             self.ingredients.remove(next_action.ingredients[0])
             self.ingredients.extend(outputs)
-            print(f'{self.actor.name} separates the {next_action.ingredients[0]} into {self.ing_display_str(outputs)}')
+            print(f'{self.actor.name} separates the {next_action.ingredients[0]} into {self.ing_display_str(outputs)}.')
         elif next_action.type == 'examine':
-            print(f'{self.actor.name} examines the current ingredients')
-            print(f'{self.actor.pronoun} notices the following: {self.actor.react(self.ingredients)}')
+            chosen_ingredient = random.choice(self.ingredients)
+            tags = list(set(self.actor.react(chosen_ingredient)))
+            if len(tags) == 0:
+                print(f'{self.prefix_display_str()} examines the current ingredients and finds nothing out of the ordinary.')
+            else:
+                print(f'{self.actor.name} examines the current ingredients, '
+                      f'noticing {self.tags_display_str(tags)} in the {chosen_ingredient.name}')
         else:
             output = next_action.execute(mistake)
             self.ingredients.append(output)
             # print(next_action)
             print(f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} '
-                  f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}')
+                  f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}.')
             # print(f'{self.actor.name} produces {output.amt}g of {output.name}')
             for ingredient in next_action.ingredients:
                 for curr_ingredient in self.ingredients:
-                    if ingredient.name == curr_ingredient.name:
+                    if ingredient.id == curr_ingredient.id:
                         self.ingredients.remove(curr_ingredient)
         node = self.recipe.execute(next_action)
         # print(self.ingredients)
@@ -243,5 +250,15 @@ class RecipeTask:
             strout += ings[i].name + ', '
         strout = strout[:-2]
         strout += ' and ' + ings[-1].name
+        return strout
+
+    def tags_display_str(self, tags: list[str]):
+        if len(tags) == 1: return tags[0]
+
+        strout = ''
+        for i in range(len(tags) - 1):
+            strout += tags[i] + ', '
+        strout = strout[:-2]
+        strout += ' and ' + tags[-1]
         return strout
 

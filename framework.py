@@ -125,8 +125,9 @@ class Recipe:
 class Actor:
     """ Default Actor class, neutral behavior"""
 
-    def __init__(self, name):
+    def __init__(self, name, pronoun):
         self.name = name
+        self.pronoun = pronoun
         self.threshold = 5
 
     def react(self, curr_ingredients: list[Ingredient]):
@@ -164,17 +165,17 @@ class Actor:
 
 
 class RecipeTask:
-    # TODO: random prefixes/pronouns (She, afterwards, then, etc.), combine ingredients/output
     # TODO: weight only known on examine
     # TODO: collective/distributive actions, certain actions do not create a mixture
     # goal is to produce a record of what an observer may see when the actor attempts to step through the recipe
     # ingredient gathering step?
     # track proportions over weight
     def __init__(self, recipe: Recipe, ingredients: list[Ingredient],
-                tr_types: list[str], tr_specs: dict[str, list[Transformation]], actor: Actor, max_steps: int=-1):
+                tr_types: list[str], tr_tense: dict[str, tuple[str]], tr_specs: dict[str, list[Transformation]], actor: Actor, max_steps: int=-1):
         self.recipe = recipe
         self.ingredients = ingredients
         self.tr_types = tr_types
+        self.tr_tense = tr_tense
         self.tr_specs = tr_specs
         self.actor = actor
         self.steps = 0
@@ -187,9 +188,8 @@ class RecipeTask:
 
     def execute(self):
         if self.done_executing(): return
-        print(f'current ingredients: {self.ingredients}')
+        # print(f'current ingredients: {self.ingredients}')
         next_action = self.actor.choose_action(self.recipe, self.tr_types, self.tr_specs, self.ingredients)
-        print(f'{self.actor.name} performs [{next_action.type}] on the following ingredients: {next_action.ingredients}')
 
         mistake = None
         if next_action.type != 'examine' and random.random() < 0.5:
@@ -202,15 +202,17 @@ class RecipeTask:
             # print(outputs)
             self.ingredients.remove(next_action.ingredients[0])
             self.ingredients.extend(outputs)
-            print(f'{self.actor.name} separates {next_action.ingredients[0]} into {outputs}')
+            print(f'{self.actor.name} separates the {next_action.ingredients[0]} into {self.ing_display_str(outputs)}')
         elif next_action.type == 'examine':
             print(f'{self.actor.name} examines the current ingredients')
-            print(f'{self.actor.name} notices the following: {self.actor.react(self.ingredients)}')
+            print(f'{self.actor.pronoun} notices the following: {self.actor.react(self.ingredients)}')
         else:
             output = next_action.execute(mistake)
             self.ingredients.append(output)
             # print(next_action)
-            print(f'{self.actor.name} produces {output.amt}g of {output.name}')
+            print(f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} '
+                  f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}')
+            # print(f'{self.actor.name} produces {output.amt}g of {output.name}')
             for ingredient in next_action.ingredients:
                 for curr_ingredient in self.ingredients:
                     if ingredient.name == curr_ingredient.name:
@@ -223,4 +225,23 @@ class RecipeTask:
 
     def done_executing(self):
         return not self.recipe.active_nodes or (-1 < self.max_steps <= self.steps)
+
+    def prefix_display_str(self):
+        if self.steps == 0: return self.actor.name
+
+        prefixes = ['Then, ', 'Afterwards, ', 'Continuing with the recipe, ']
+        prefix = random.choice(['', random.choice(prefixes)])
+        pronoun = self.actor.pronoun
+        if prefix != '': pronoun = pronoun.lower()
+        return f'{prefix}{random.choice([self.actor.name, pronoun])}'
+
+    def ing_display_str(self, ings: list[Ingredient]):
+        if len(ings) == 1: return ings[0].name
+
+        strout = ''
+        for i in range(len(ings) - 1):
+            strout += ings[i].name + ', '
+        strout = strout[:-2]
+        strout += ' and ' + ings[-1].name
+        return strout
 

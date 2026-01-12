@@ -1,0 +1,63 @@
+import random
+
+from framework import *
+
+sugar = Ingredient('bs', "brown sugar", 220, over="too sweet", under="not sweet enough")
+ev_milk = Ingredient('em', "evaporated milk", 125,  over="too thick", under="too thin")
+vanilla = Ingredient('ve', "vanilla extract", 2.5)
+nuts = Ingredient('p', "pecans", 220,  over="too crunchy", under="too smooth")
+butter = Ingredient('b', "butter", 45,  over="too oily", under="too dense")
+cereal = Ingredient('c', "cereal", 45)
+cream = Ingredient('cr', "cream", 50)
+
+ingredients=[sugar, ev_milk, vanilla, nuts, butter, cereal, cream]
+
+t1 = Transformation('mix', "In a heavy 2-quart saucepan, mix brown sugar, nuts, evaporated milk and butter or margarine.", [sugar, nuts, ev_milk, butter], 'batter')
+t2 = Transformation('stir', "Stir mixture over medium heat until mixture bubbles all over top.", [t1.execute()], 'batter')
+t3 = Transformation('boil', "Boil and stir 5 minutes more. Take off heat.", [t2.execute()], 'thick batter')
+t4 = Transformation('mix', "Stir in vanilla and cereal; mix well.", [t3.execute(), vanilla, cereal], 'textured batter')
+t5 = Transformation('chill', "Using 2 teaspoons, drop and shape into 30 clusters on wax paper. Let stand until firm, about 30 minutes.", [t4.execute()], 'cookies')
+t1a = Transformation('stir', "Beat cream until stiff peaks form. Set aside.", [cream], 'whipped cream')
+t6 = Transformation('mix', "Decorate top with cream.", [t5.execute(), t1a.execute()], 'decorated cookies')
+
+
+s1 = Node(t1)
+s1a = Node(t1a)
+s2 = Node(t2)
+s2.add_parent(s1)
+s3 = Node(t3)
+s3.add_parent(s2)
+s4 = Node(t4)
+s4.add_parent(s3)
+s5 = Node(t5)
+s5.add_parent(s4)
+s6 = Node(t6)
+s6.add_parent(s5)
+s6.add_parent(s1a)
+
+
+recipe = Recipe([s1, s1a, s2, s3, s4, s5, s6])
+
+tr_types = ['mix', 'stir', 'boil', 'chill']
+
+tr_tense = {
+    'mix': ('mixes', 'to make'),
+    'stir': ('stirs', 'to make'),
+    'boil': ('boils', 'to make'),
+    'chill': ('chills', 'to make')
+}
+
+tr_specs = {}
+for ing in ingredients:
+    tr_specs[ing.id] = None
+
+beef = Ingredient('bf', "chipped beef", )
+
+
+A list of ingredients will be provided below. For each ingredient, provide a one word name for the ingredient, a unique four character id for the ingredient, the full name of the ingredient without any amount quantifiers, the weight of the ingredient in grams as an integer, a tag1 starting with too followed by a space and a word representing too much use of the ingredient, and a tag2 starting with too followed by a space and a word representing too little of the ingredient. Output the information in the following format: name = ('id', 'full name', weight, over='too tag1', under='too tag2'). After parsing the whole list, output a python list called ingredients containing the names of all the given ingredients as variable names. Only provide the output for the given input and no other text. Reply Yes if understood.
+
+A list of recipe instructions will be provided below. For each step, select one word name from the list of possible transformations for the type of transformation described by the instruction step (List of possible transformations: ['mix', 'stir', 'boil', 'chill', 'fry', 'bake']) and provide a unique transformation id in the format of t# where # is the step number, a python list containing the variable names of ingredients used in the instruction step pulled from the previously generated list of ingredient variables, and a unique output name representing the resulting ingredient. If the current step uses the output of a previous step, represent that ingredient as id.execute() where id is the unique transformation id of the previous step. If necessary, split the recipe instruction into atomic steps that can be described using the permitted transformations. Output the information in the following format: id = Transformation('name', 'step instructions', [list], 'output name'). Reply Yes if understood.
+
+Finally, for each step, create a corresponding node variable in the following way: given step t# where # is the step number, output s# = Node(s#), followed by s#.add_parent(s*) where * represents a previous step whose output was used in the current step for all such previous steps. After all nodes have been created, output recipe = Recipe(list of node variables).
+
+Theory: all recipes can be represented as reverse trees, not dags. Unless, a recipe step exists where the outputs are used in two different steps.

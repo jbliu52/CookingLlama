@@ -41,8 +41,9 @@ class Mistake:
 
 class Transformation:
     # TODO: verb form of transformation
-    def __init__(self, type: str, ingredients: list[Ingredient], output: str=None):
+    def __init__(self, type: str, step: str, ingredients: list[Ingredient], output: str=None):
         self.type = type
+        self.step = step
         self.ingredients = ingredients
         if output:
             self.output = output
@@ -78,9 +79,8 @@ class Transformation:
 
 
 class Node:
-    def __init__(self, step: str, transformation: Transformation):
+    def __init__(self, transformation: Transformation):
         self.transformation = transformation
-        self.step = step
         self.children = []
         self.parents = []
 
@@ -154,13 +154,13 @@ class Actor:
             # TODO: get compound ing and seperate
             for curr_ingredient in curr_ingredients:
                 if curr_ingredient not in next_step.ingredients and curr_ingredient.base_ing and len(curr_ingredient.base_ing) > 1:
-                    return Transformation('separate', [curr_ingredient], output=str(curr_ingredient.base_ing))
+                    return Transformation('separate', "", [curr_ingredient], output=str(curr_ingredient.base_ing))
         elif random.random() < 0.5:
-            return Transformation('examine', [random.choice(curr_ingredients)])
+            return Transformation('examine', "", [random.choice(curr_ingredients)])
 
         ings = random.sample(curr_ingredients, k=2)
         type = random.choice(tr_types)
-        return Transformation(type, ings)
+        return Transformation(type, "", ings)
         # return random.choice(recipe.active_nodes).transformation
 
     def choose_mistake(self, transformation: Transformation):
@@ -168,7 +168,8 @@ class Actor:
 
 
 class RecipeTask:
-    # TODO: collective/distributive actions, certain actions do not create a mixture
+    # TODO: collective/distributive actions, certain actions do not create a mixture, implement ontology
+    # TODO: collective actions are always non-invertable
     # goal is to produce a record of what an observer may see when the actor attempts to step through the recipe
     # ingredient gathering step?
     # track proportions over weight
@@ -212,7 +213,7 @@ class RecipeTask:
                 print(f'{self.prefix_display_str()} examines the current ingredients and finds nothing out of the ordinary.')
             else:
                 print(f'{self.actor.name} examines the current ingredients, '
-                      f'noticing {self.tags_display_str(tags)} in the {chosen_ingredient.name}')
+                      f'noticing {self.tags_display_str(tags)} in the {chosen_ingredient.name}.')
         else:
             output = next_action.execute(mistake)
             self.ingredients.append(output)

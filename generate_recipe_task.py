@@ -2,7 +2,6 @@ import pandas as pd
 from openai import OpenAI
 
 
-client = OpenAI()
 
 def generate_task_file(recipe_id=-1, individual_ings=False):
     recipe_df = pd.read_csv("full_dataset.csv", header=0, nrows=50, index_col=0)
@@ -25,6 +24,8 @@ from framework import *
 
 """
                 )
+
+        client = OpenAI()
 
         # get ingredient list
         if individual_ings:

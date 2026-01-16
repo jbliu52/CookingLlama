@@ -3,22 +3,25 @@ import random
 
 from framework import *
 
-brownsugar = Ingredient('brwn', 'firmly packed brown sugar', 220, over='too sweet', under='too bland')
-evapmilk = Ingredient('evap', 'evaporated milk', 126, over='too runny', under='too dry')
-vanilla = Ingredient('vanl', 'vanilla', 2, over='too strong', under='too plain')
-pecans = Ingredient('pcan', 'broken nuts (pecans)', 57, over='too nutty', under='too sparse')
-butter = Ingredient('butr', 'butter or margarine', 28, over='too greasy', under='too dry')
-ricebiscuits = Ingredient('rbis', 'bite size shredded rice biscuits', 105, over='too bulky', under='too scant')
-ingredients = [brownsugar, evapmilk, vanilla, pecans, butter, ricebiscuits]
+cherries = Ingredient('CHER', 'dark sweet pitted cherries', 482, over='too tart', under='too bland')
+gingerale = Ingredient('GINA', 'ginger ale', 118, over='too fizzy', under='too flat')
+gelatin = Ingredient('JELC', 'Jell-O cherry flavor gelatin', 170, over='too firm', under='too soft')
+water = Ingredient('WATR', 'boiling water', 473, over='too watery', under='too thick')
+almondextract = Ingredient('ALMD', 'almond extract', 1, over='too strong', under='too plain')
+marshmallows = Ingredient('MRSH', 'miniature marshmallows', 50, over='too sticky', under='too bare')
+ingredients = [cherries, gingerale, gelatin, water, almondextract, marshmallows]
 
-t1 = Transformation('mix', 'In a heavy 2-quart saucepan, mix brown sugar, nuts, evaporated milk and butter or margarine.', [brownsugar, pecans, evapmilk, butter], 'saucepan_mixture')
-t2 = Transformation('stir', 'Stir over medium heat until mixture bubbles all over top.', [t1.execute()], 'bubbled_mixture')
-t3 = Transformation('boil', 'Boil 5 minutes more.', [t2.execute()], 'boiled_mixture')
-t4 = Transformation('stir', 'Stir 5 minutes more. Take off heat.', [t3.execute()], 'cooked_mixture')
-t5 = Transformation('stir', 'Stir in vanilla and cereal.', [t4.execute(), vanilla, ricebiscuits], 'enriched_mixture')
-t6 = Transformation('mix', 'Mix well.', [t5.execute()], 'homogenous_mixture')
-t7 = Transformation('mix', 'Using 2 teaspoons, drop and shape into 30 clusters on wax paper.', [t6.execute()], 'shaped_clusters')
-t8 = Transformation('chill', 'Let stand until firm, about 30 minutes.', [t7.execute()], 'firm_clusters')
+t1 = Transformation('mix', 'Drain cherries, measuring syrup.', [cherries], 'cherry_syrup')
+t2 = Transformation('mix', 'Cut cherries in half.', [cherries], 'halved_cherries')
+t3 = Transformation('mix', 'Add ginger ale and enough water to syrup to make 1 1/2 cups.', [gingerale, water, t1.execute()], 'measured_liquid')
+t4 = Transformation('boil', 'Boil water for dissolving gelatin.', [water], 'boiling_water')
+t5 = Transformation('stir', 'Stir gelatin into boiling water until dissolved.', [gelatin, t4.execute()], 'dissolved_gelatin_solution')
+t6 = Transformation('stir', 'Add measured liquid and almond extract to dissolved gelatin.', [t5.execute(), t3.execute(), almondextract], 'flavored_gelatin_mixture')
+t7 = Transformation('chill', 'Chill until very thick.', [t6.execute()], 'thickened_gelatin')
+t8 = Transformation('mix', 'Fold in marshmallows and the cherries. Spoon into 6-cup mold.', [t7.execute(), marshmallows, t2.execute()], 'gelatin_salad_mixture')
+t9 = Transformation('chill', 'Chill until firm, at least 4 hours or overnight.', [t8.execute()], 'firm_gelatin_salad')
+t10 = Transformation('mix', 'Unmold.', [t9.execute()], 'unmolded_gelatin_salad')
+t11 = Transformation('mix', 'Makes about 5 1/3 cups.', [t10.execute()], 'final_gelatin_salad')
 
 s1 = Node(t1) 
 s2 = Node(t2) 
@@ -53,4 +56,3 @@ task = RecipeTask(recipe, ingredients, tr_types, tr_tense, tr_specs, actor, 30)
 
 while not task.done_executing():
     task.execute()
-        

@@ -170,6 +170,10 @@ class Actor:
 class RecipeTask:
     # TODO: collective/distributive actions, certain actions do not create a mixture, implement ontology
     # TODO: collective actions are always non-invertable
+
+    # TODO: individual ingredients, independent of each other
+    # TODO: test with nonlinear recipes
+    # TODO: output to json
     # goal is to produce a record of what an observer may see when the actor attempts to step through the recipe
     # ingredient gathering step?
     # track proportions over weight

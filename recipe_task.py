@@ -1,46 +1,47 @@
+
 import random
 
 from framework import *
 
-sugar = Ingredient('sug1', 'granulated sugar', 300, over='too sweet', under='too bland') 
-butter = Ingredient('but1', 'unsalted butter', 113, over='too greasy', under='too dry') 
-egg = Ingredient('egg1', 'large egg', 50, over='too dense', under='too crumbly') 
-buttermilk1 = Ingredient('butm', 'buttermilk', 240, over='too tangy', under='too flat') 
-flour = Ingredient('flou', 'all-purpose flour', 240, over='too stiff', under='too runny') 
-salt = Ingredient('salt', 'salt', 3, over='too salty', under='too dull') 
-soda = Ingredient('soda', 'baking soda', 5, over='too bitter', under='too flat') 
-buttermilk2 = Ingredient('but2', 'buttermilk', 240, over='too sour', under='too dry') 
-rhubarb = Ingredient('rhub', 'finely cut rhubarb', 244, over='too tart', under='too mild') 
-vanilla = Ingredient('vani', 'vanilla extract', 4, over='too perfumed', under='too plain') 
+brownsugar = Ingredient('brwn', 'firmly packed brown sugar', 220, over='too sweet', under='too bland')
+evapmilk = Ingredient('evap', 'evaporated milk', 126, over='too runny', under='too dry')
+vanilla = Ingredient('vanl', 'vanilla', 2, over='too strong', under='too plain')
+pecans = Ingredient('pcan', 'broken nuts (pecans)', 57, over='too nutty', under='too sparse')
+butter = Ingredient('butr', 'butter or margarine', 28, over='too greasy', under='too dry')
+ricebiscuits = Ingredient('rbis', 'bite size shredded rice biscuits', 105, over='too bulky', under='too scant')
+ingredients = [brownsugar, evapmilk, vanilla, pecans, butter, ricebiscuits]
 
-ingredients = [sugar, butter, egg, buttermilk1, flour, salt, soda, buttermilk2, rhubarb, vanilla]
-
-t1 = Transformation('mix', 'Cream sugar and butter.', [sugar, butter], 'creamed_base') 
-t2 = Transformation('mix', 'Add egg and beat well.', [t1.execute(), egg], 'creamed_with_egg') 
-t3 = Transformation('mix', 'Add alternately buttermilk with flour, salt, and soda.', [t2.execute(), buttermilk1, buttermilk2, flour, salt, soda], 'batter') 
-t4 = Transformation('stir', 'Mix well.', [t3.execute()], 'smooth_batter') 
-t5 = Transformation('mix', 'Add rhubarb and vanilla.', [t4.execute(), rhubarb, vanilla], 'finished_batter') 
+t1 = Transformation('mix', 'In a heavy 2-quart saucepan, mix brown sugar, nuts, evaporated milk and butter or margarine.', [brownsugar, pecans, evapmilk, butter], 'saucepan_mixture')
+t2 = Transformation('stir', 'Stir over medium heat until mixture bubbles all over top.', [t1.execute()], 'bubbled_mixture')
+t3 = Transformation('boil', 'Boil 5 minutes more.', [t2.execute()], 'boiled_mixture')
+t4 = Transformation('stir', 'Stir 5 minutes more. Take off heat.', [t3.execute()], 'cooked_mixture')
+t5 = Transformation('stir', 'Stir in vanilla and cereal.', [t4.execute(), vanilla, ricebiscuits], 'enriched_mixture')
+t6 = Transformation('mix', 'Mix well.', [t5.execute()], 'homogenous_mixture')
+t7 = Transformation('mix', 'Using 2 teaspoons, drop and shape into 30 clusters on wax paper.', [t6.execute()], 'shaped_clusters')
+t8 = Transformation('chill', 'Let stand until firm, about 30 minutes.', [t7.execute()], 'firm_clusters')
 
 s1 = Node(t1) 
 s2 = Node(t2) 
-s2.add_parent(s1)
+s2.add_parent(s1) 
 s3 = Node(t3) 
-s3.add_parent(s2)
+s3.add_parent(s2) 
 s4 = Node(t4) 
-s4.add_parent(s3)
+s4.add_parent(s3) 
 s5 = Node(t5) 
-s5.add_parent(s4)
+s5.add_parent(s4) 
 
 recipe = Recipe([s1, s2, s3, s4, s5])
 
 
-tr_types = ['mix', 'stir', 'boil', 'chill']
+tr_types = ['mix', 'stir', 'boil', 'chill', 'fry', 'bake']
 
 tr_tense = {
     'mix': ('mixes', 'to make'),
     'stir': ('stirs', 'to make'),
     'boil': ('boils', 'to make'),
-    'chill': ('chills', 'to make')
+    'chill': ('chills', 'to make'),
+    'fry': ('fries', 'to make'),
+    'bake': ('bakes', 'to make')
 }
 
 tr_specs = {}

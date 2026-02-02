@@ -1,9 +1,9 @@
 import pandas as pd
 from openai import OpenAI
 
-def generate_sample_csv(n:int =10, individual_ings=False):
+def generate_sample_csv(in_path:str, out_path:str, n:int=10, individual_ings=False):
     print('reading from csv...\n')
-    recipe_df = pd.read_csv("full_dataset.csv", header=0, index_col=0)
+    recipe_df = pd.read_csv(in_path, header=0, index_col=0)
     samples = recipe_df.sample(n)
 
     def str_to_list(s): return s[2:-2].split('", "')
@@ -15,7 +15,7 @@ def generate_sample_csv(n:int =10, individual_ings=False):
     formatted_directions = []
 
     for index, selected_row in samples.iterrows():
-        print(f'reading recipe {index}:')
+        print(f'reading recipe {selected_row['title']}:')
         # print(index)
         # print(selected_row)
         # print(selected_row['ingredients'])
@@ -58,7 +58,7 @@ def generate_sample_csv(n:int =10, individual_ings=False):
         transformation_prompt = "A list of recipe instructions will be provided below. For each step, select one word name from the list of possible transformations for the type of transformation described by the instruction step (List of possible transformations: ['mix', 'stir', 'boil', 'chill', 'fry', 'bake']) and provide a unique transformation id in the format of t# where # is the step number, a python list containing the variable names of ingredients used in the instruction step pulled from the previously generated list of ingredient variables, and a unique output name representing the resulting ingredient. If the current step uses the output of a previous step, represent that ingredient as id.execute() where id is the unique transformation id of the previous step. If necessary, split the recipe instruction into atomic steps that can be described using the permitted transformations. Output the information in the following format: id = Transformation('name', 'step instructions', [list], 'output name')."  # Reply Yes if understood."
 
         response = client.responses.create(
-            model="gpt-5",
+            model="gpt-5-mini",
             instructions=transformation_prompt,
             input=ingredient_list + '\n\n' +
                   selected_row.squeeze()['directions'],
@@ -76,8 +76,8 @@ def generate_sample_csv(n:int =10, individual_ings=False):
     inputs_outputs.insert(len(inputs_outputs.columns), 'formatted_ingredient_list',  formatted_ingredient_list)
     inputs_outputs.insert(len(inputs_outputs.columns), 'formatted_directions',  formatted_directions)
 
-    inputs_outputs.to_csv('inputs_outputs.csv', index=False, header=False)
+    inputs_outputs.to_csv(out_path, index=False, header=False)
 
     print("Done")
 
-generate_sample_csv(40)
+# generate_sample_csv("csv/full_dataset.csv", "csv/inputs_outputs.csv", n=40)

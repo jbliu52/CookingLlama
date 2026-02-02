@@ -1,6 +1,6 @@
 import pandas as pd
 
-recipe_df = pd.read_csv("inputs_outputs.csv", header=0, index_col=0)
+recipe_df = pd.read_csv("csv/inputs_outputs.csv", header=0, index_col=0)
 
 for index, selected_row in recipe_df.iterrows():
     # TODO: regex formatting

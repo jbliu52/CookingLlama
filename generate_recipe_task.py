@@ -1,10 +1,12 @@
+import re
+
 import pandas as pd
 from openai import OpenAI
 
 
 
 def generate_task_file(recipe_id=-1, individual_ings=False):
-    recipe_df = pd.read_csv("full_dataset.csv", header=0, nrows=50, index_col=0)
+    recipe_df = pd.read_csv("csv/full_dataset.csv", header=0, nrows=50, index_col=0)
     if recipe_id < 0:
         selected_row = recipe_df.sample(1)
     else:
@@ -102,4 +104,63 @@ while not task.done_executing():
 """
                 )
 
-generate_task_file()
+
+def generate_task_file_from_df(filename, recipe_id):
+    recipe_df = pd.read_csv(filename)
+    selected_row = recipe_df.iloc[recipe_id]
+
+    ingredients = selected_row.iloc[3]
+    ing_list = selected_row.iloc[4]
+    transformations = selected_row.iloc[5]
+
+    with open("recipe_task.py", "w") as f:
+        f.write("import random\n")
+        f.write("from framework import *\n\n")
+
+        f.write(f"{ingredients}")
+        f.write(f"{ing_list}\n\n")
+        f.write(f"{transformations}\n\n")
+
+        i = 1
+        for t in transformations.split('\n'):
+            f.write(f"s{i} = Node(t{i})\n")
+            for parent in re.findall(r't\d\d?\.execute', t):
+                num = re.findall(r'\d+', parent)[0]
+                # print(num)
+                f.write(f"s{i}.add_parent(s{num})\n")
+            i += 1
+
+        f.write("\nrecipe = Recipe([")
+        for n in range(1, i):
+            f.write(f"s{n}, ")
+        f.write("])\n")
+
+        f.write(
+            """
+tr_types = ['mix', 'stir', 'boil', 'chill', 'fry', 'bake']
+
+tr_tense = {
+    'mix': ('mixes', 'to make'),
+    'stir': ('stirs', 'to make'),
+    'boil': ('boils', 'to make'),
+    'chill': ('chills', 'to make'),
+    'fry': ('fries', 'to make'),
+    'bake': ('bakes', 'to make')
+}
+
+tr_specs = {}
+for ing in ingredients:
+    tr_specs[ing.id] = None
+
+actor = Actor("Alice", "She", 1, 0.5, 0.5)
+task = RecipeTask(recipe, ingredients, tr_types, tr_tense, tr_specs, actor, 5)
+
+while not task.done_executing():
+    task.execute()
+            """
+        )
+
+    print(selected_row.iloc[4])
+    return
+
+generate_task_file_from_df('csv/cake_recipes_formatted.csv', 3)

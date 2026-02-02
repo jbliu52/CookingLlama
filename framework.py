@@ -125,10 +125,13 @@ class Recipe:
 class Actor:
     """ Default Actor class, neutral behavior"""
 
-    def __init__(self, name, pronoun):
+    def __init__(self, name, pronoun, lc, le, lm):
         self.name = name
         self.pronoun = pronoun
         self.threshold = 5
+        self.lc = lc
+        self.le = le
+        self.lm = lm
 
     def react(self, curr_ingredients: list[Ingredient]):
         # TODO: reaction to individual ing types
@@ -142,7 +145,7 @@ class Actor:
 
     def choose_action(self, recipe: Recipe, tr_types: list[str], tr_specs: dict[str, list[Transformation]],
                       curr_ingredients: list[Ingredient]):
-        if random.random() < 0.7:
+        if random.random() < self.lc:
             # attempt to perform a proper step from the recipe
             next_step = random.choice(recipe.active_nodes).transformation
             curr_ids = [curr_ingredient.id for curr_ingredient in curr_ingredients]
@@ -155,12 +158,12 @@ class Actor:
             for curr_ingredient in curr_ingredients:
                 if curr_ingredient not in next_step.ingredients and curr_ingredient.base_ing and len(curr_ingredient.base_ing) > 1:
                     return Transformation('separate', "", [curr_ingredient], output=str(curr_ingredient.base_ing))
-        elif random.random() < 0.5:
+        elif random.random() < self.le:
             return Transformation('examine', "", [random.choice(curr_ingredients)])
-
-        ings = random.sample(curr_ingredients, k=2)
-        type = random.choice(tr_types)
-        return Transformation(type, "", ings)
+        else:
+            ings = random.sample(curr_ingredients, k=2)
+            type = random.choice(tr_types)
+            return Transformation(type, "", ings)
         # return random.choice(recipe.active_nodes).transformation
 
     def choose_mistake(self, transformation: Transformation):
@@ -170,15 +173,27 @@ class Actor:
 class RecipeTask:
     # TODO: collective/distributive actions, certain actions do not create a mixture, implement ontology
     # TODO: collective actions are always non-invertable
+    # TODO: add emotion reactions (can say they appeared confused, irritated but not connect it to reasoning)
 
-    # TODO: individual ingredients, independent of each other
-    # TODO: test with nonlinear recipes
-    # TODO: output to json
+    # TODO: perturbation/abstraction in output
+    # TODO: look for overlapping recipes
+
+    # experiment ideas:
+    # see if model is capable of predicting goal after negative reaction to missing ingredient (try with diff batch sizes)
+    # see if giving the model background information on actor personality affects action distribution prediction
+    # ask model to get next action and
+    # in context examples (actor performing other recipes vs others)
+
+    # find distribution of actions by getting probabilities of each token corresponding to possible actions
+    # multiple examples of same actor?
+    # examples of different actors?
+    # provide personality type before prompting?
+    # model must first look for goal, and then predict next step
     # goal is to produce a record of what an observer may see when the actor attempts to step through the recipe
     # ingredient gathering step?
     # track proportions over weight
     def __init__(self, recipe: Recipe, ingredients: list[Ingredient],
-                tr_types: list[str], tr_tense: dict[str, tuple[str]], tr_specs: dict[str, list[Transformation]], actor: Actor, max_steps: int=-1):
+                tr_types: list[str], tr_tense: dict[str, tuple[str, str]], tr_specs: dict[str, list[Transformation]], actor: Actor, max_steps: int=-1):
         self.recipe = recipe
         self.ingredients = ingredients
         self.tr_types = tr_types
@@ -191,6 +206,7 @@ class RecipeTask:
         for node in recipe.nodes:
             tr_specs[node.transformation.output] = [node.transformation]
 
+        self.output = ''
         # print(tr_specs)
 
     def execute(self):
@@ -199,7 +215,7 @@ class RecipeTask:
         next_action = self.actor.choose_action(self.recipe, self.tr_types, self.tr_specs, self.ingredients)
 
         mistake = None
-        if next_action.type != 'examine' and random.random() < 0.5:
+        if next_action.type != 'examine' and random.random() < self.actor.lm:
             mistake = self.actor.choose_mistake(next_action)
             # print(f'{self.actor.name} makes the following mistake: {mistake} (may remove this print in the future)')
 
@@ -209,21 +225,27 @@ class RecipeTask:
             # print(outputs)
             self.ingredients.remove(next_action.ingredients[0])
             self.ingredients.extend(outputs)
-            print(f'{self.actor.name} separates the {next_action.ingredients[0]} into {self.ing_display_str(outputs)}.')
+            # print(f'{self.actor.name} separates the {next_action.ingredients[0]} into {self.ing_display_str(outputs)}.')
+            self.output += f'{self.actor.name} separates the {next_action.ingredients[0]} into {self.ing_display_str(outputs)}.\n'
         elif next_action.type == 'examine':
             chosen_ingredient = random.choice(self.ingredients)
             tags = list(set(self.actor.react(chosen_ingredient)))
             if len(tags) == 0:
-                print(f'{self.prefix_display_str()} examines the current ingredients and finds nothing out of the ordinary.')
+                # print(f'{self.prefix_display_str()} examines the current ingredients and finds nothing out of the ordinary.')
+                self.output += f'{self.prefix_display_str()} examines the current ingredients and finds nothing out of the ordinary.\n'
             else:
-                print(f'{self.actor.name} examines the current ingredients, '
-                      f'noticing {self.tags_display_str(tags)} in the {chosen_ingredient.name}.')
+                # print(f'{self.actor.name} examines the current ingredients, '
+                #       f'noticing {self.tags_display_str(tags)} in the {chosen_ingredient.name}.')
+                self.output += (f'{self.actor.name} examines the current ingredients, '
+                                f'noticing {self.tags_display_str(tags)} in the {chosen_ingredient.name}.\n')
         else:
             output = next_action.execute(mistake)
             self.ingredients.append(output)
             # print(next_action)
-            print(f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} '
-                  f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}.')
+            # print(f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} '
+            #       f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}.')
+            self.output += (f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} '
+                  f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}.\n')
             # print(f'{self.actor.name} produces {output.amt}g of {output.name}')
             for ingredient in next_action.ingredients:
                 for curr_ingredient in self.ingredients:

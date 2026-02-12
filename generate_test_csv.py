@@ -80,4 +80,4 @@ def generate_sample_csv(in_path:str, out_path:str, n:int=10, individual_ings=Fal
 
     print("Done")
 
-# generate_sample_csv("csv/full_dataset.csv", "csv/inputs_outputs.csv", n=40)
+generate_sample_csv("csv/full_dataset.csv", "csv/test.csv", n=1)

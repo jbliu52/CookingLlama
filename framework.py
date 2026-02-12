@@ -176,7 +176,12 @@ class RecipeTask:
     # TODO: add emotion reactions (can say they appeared confused, irritated but not connect it to reasoning)
 
     # TODO: perturbation/abstraction in output
-    # TODO: look for overlapping recipes
+
+    # TODO: synthetic data? (make own data, perturb existing data to produce pair)
+    # TODO: batch queries to improve speed
+
+    # TODO: confounding recipes, in context examples, larger/reasoning models, prompt changes (first person, ask for reasoning)
+    # TODO: explore including recipe steps
 
     # experiment ideas:
     # see if model is capable of predicting goal after negative reaction to missing ingredient (try with diff batch sizes)

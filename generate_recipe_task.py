@@ -17,7 +17,7 @@ def generate_task_file(recipe_id=-1, individual_ings=False):
     print(selected_row.squeeze()['ingredients'])
     print(selected_row.squeeze()['directions'])
 
-    with open("recipe_task.py", "w") as f:
+    with open("recipe_task/recipe_task.py", "w") as f:
         f.write(
 """
 import random
@@ -105,7 +105,7 @@ while not task.done_executing():
                 )
 
 
-def generate_task_file_from_df(filename, recipe_id):
+def generate_task_file_from_df(filename, recipe_id, actor_specs, steps, to_file=True):
     recipe_df = pd.read_csv(filename)
     selected_row = recipe_df.iloc[recipe_id]
 
@@ -113,7 +113,7 @@ def generate_task_file_from_df(filename, recipe_id):
     ing_list = selected_row.iloc[4]
     transformations = selected_row.iloc[5]
 
-    with open("recipe_task.py", "w") as f:
+    with open("recipe_task/recipe_task.py", "w") as f:
         f.write("import random\n")
         f.write("from framework import *\n\n")
 
@@ -151,16 +151,16 @@ tr_tense = {
 tr_specs = {}
 for ing in ingredients:
     tr_specs[ing.id] = None
-
-actor = Actor("Alice", "She", 1, 0.5, 0.5)
-task = RecipeTask(recipe, ingredients, tr_types, tr_tense, tr_specs, actor, 5)
-
-while not task.done_executing():
-    task.execute()
-            """
+    
+"""
         )
+        f.write(f"actor = Actor('{actor_specs[0]}', '{actor_specs[1]}', {actor_specs[2]}, {actor_specs[3]}, {actor_specs[4]})\n")
+        f.write(f"task = RecipeTask(recipe, ingredients, tr_types, tr_tense, tr_specs, actor, {steps})\n"
+                "while not task.done_executing():\n\ttask.execute()\n\n")
 
-    print(selected_row.iloc[4])
+        if to_file:
+            f.write("with")
+            f.write(" open('recipe_task/output.txt', 'w') as f: f.write(task.output)\n\n")
+
     return
 
-generate_task_file_from_df('csv/cake_recipes_formatted.csv', 3)

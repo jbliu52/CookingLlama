@@ -249,8 +249,8 @@ class RecipeTask:
             # print(next_action)
             # print(f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} '
             #       f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}.')
-            self.output += (f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} '
-                  f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} {output.name}.\n')
+            self.output += (f'{self.prefix_display_str()} {self.tr_tense[next_action.type][0]} the '
+                  f'{self.ing_display_str(next_action.ingredients)} {self.tr_tense[next_action.type][1]} some {output.name}.\n')
             # print(f'{self.actor.name} produces {output.amt}g of {output.name}')
             for ingredient in next_action.ingredients:
                 for curr_ingredient in self.ingredients:
@@ -275,11 +275,12 @@ class RecipeTask:
         return f'{prefix}{random.choice([self.actor.name, pronoun])}'
 
     def ing_display_str(self, ings: list[Ingredient]):
+        if len(ings) == 0: return ''
         if len(ings) == 1: return ings[0].name
 
         strout = ''
         for i in range(len(ings) - 1):
-            strout += ings[i].name + ', '
+            strout += ings[i].name.split(', ')[0] + ', '
         strout = strout[:-2]
         strout += ' and ' + ings[-1].name
         return strout

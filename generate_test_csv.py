@@ -14,8 +14,9 @@ def generate_sample_csv(in_path:str, out_path:str, n:int=10, individual_ings=Fal
     formatted_ingredient_list = []
     formatted_directions = []
 
-    for index, selected_row in samples.iterrows():
-        print(f'reading recipe {selected_row['title']}:')
+    for i, r in enumerate(samples.iterrows()):
+        index, selected_row = r
+        print(f'{i + 1}. reading recipe {selected_row['title']}:')
         # print(index)
         # print(selected_row)
         # print(selected_row['ingredients'])
@@ -43,7 +44,7 @@ def generate_sample_csv(in_path:str, out_path:str, n:int=10, individual_ings=Fal
             ingredient_prompt = "A list of ingredients will be provided below. For each ingredient, provide a one word name for the ingredient, a unique four character id for the ingredient, the full name of the ingredient without any amount quantifiers, the weight of the ingredient in grams as an integer, a tag1 starting with too followed by a space and a word representing too much use of the ingredient, and a tag2 starting with too followed by a space and a word representing too little of the ingredient. Output the information in the following format: name = Ingredient('id', 'full name', weight, over='too tag1', under='too tag2'). After parsing the whole list, output a python list called ingredients containing the names of all the given ingredients as variable names. Only provide the output for the given input and no other text."  # Reply Yes if understood."
 
             response = client.responses.create(
-                model="gpt-5-mini",
+                model="gpt-5",
                 instructions=ingredient_prompt,
                 input=selected_row.squeeze()['ingredients'],
             )
@@ -58,7 +59,7 @@ def generate_sample_csv(in_path:str, out_path:str, n:int=10, individual_ings=Fal
         transformation_prompt = "A list of recipe instructions will be provided below. For each step, select one word name from the list of possible transformations for the type of transformation described by the instruction step (List of possible transformations: ['mix', 'stir', 'boil', 'chill', 'fry', 'bake']) and provide a unique transformation id in the format of t# where # is the step number, a python list containing the variable names of ingredients used in the instruction step pulled from the previously generated list of ingredient variables, and a unique output name representing the resulting ingredient. If the current step uses the output of a previous step, represent that ingredient as id.execute() where id is the unique transformation id of the previous step. If necessary, split the recipe instruction into atomic steps that can be described using the permitted transformations. Output the information in the following format: id = Transformation('name', 'step instructions', [list], 'output name')."  # Reply Yes if understood."
 
         response = client.responses.create(
-            model="gpt-5-mini",
+            model="gpt-5",
             instructions=transformation_prompt,
             input=ingredient_list + '\n\n' +
                   selected_row.squeeze()['directions'],
@@ -80,4 +81,9 @@ def generate_sample_csv(in_path:str, out_path:str, n:int=10, individual_ings=Fal
 
     print("Done")
 
-generate_sample_csv("csv/full_dataset.csv", "csv/test.csv", n=1)
+for i in range(4):
+    print('=' * 50)
+    print()
+    print(f'generating csv/bulk_formatted_{i+1}.csv')
+    print()
+    generate_sample_csv("csv/full_dataset.csv", f"csv/bulk_formatted_{i+1}.csv", n=50)

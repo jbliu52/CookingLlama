@@ -108,7 +108,10 @@ while not task.done_executing():
 def generate_task_file_from_df(filename, recipe_id, actor_specs, steps, to_file=True):
     recipe_df = pd.read_csv(filename)
     selected_row = recipe_df.iloc[recipe_id]
+    generate_task_file_from_row(selected_row, actor_specs, steps, to_file)
 
+
+def generate_task_file_from_row(selected_row, actor_specs, steps, to_file=True):
     ingredients = selected_row.iloc[3]
     ing_list = selected_row.iloc[4]
     transformations = selected_row.iloc[5]
@@ -151,10 +154,11 @@ tr_tense = {
 tr_specs = {}
 for ing in ingredients:
     tr_specs[ing.id] = None
-    
+
 """
         )
-        f.write(f"actor = Actor('{actor_specs[0]}', '{actor_specs[1]}', {actor_specs[2]}, {actor_specs[3]}, {actor_specs[4]})\n")
+        f.write(
+            f"actor = Actor('{actor_specs[0]}', '{actor_specs[1]}', {actor_specs[2]}, {actor_specs[3]}, {actor_specs[4]})\n")
         f.write(f"task = RecipeTask(recipe, ingredients, tr_types, tr_tense, tr_specs, actor, {steps})\n"
                 "while not task.done_executing():\n\ttask.execute()\n\n")
 
@@ -163,4 +167,3 @@ for ing in ingredients:
             f.write(" open('recipe_task/output.txt', 'w') as f: f.write(task.output)\n\n")
 
     return
-

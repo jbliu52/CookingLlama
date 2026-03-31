@@ -1,44 +1,32 @@
 import random
 from framework import *
 
-groundbeef = Ingredient('GDBF', 'Ground Beef', 454, over='too fatty', under='too meager')
-tacoseasoning = Ingredient('TCSN', 'taco seasoning', 28, over='too salty', under='too bland')
-kidneybeans = Ingredient('KDBN', 'Kidney beans', 425, over='too mushy', under='too sparse')
-onion = Ingredient('ONIN', 'onion, chopped', 110, over='too strong', under='too mild')
-salsa = Ingredient('SLSA', 'salsa', 240, over='too watery', under='too scant')
-greenpeppers = Ingredient('GRNP', 'green peppers', 480, over='too bitter', under='too few')
-tomato = Ingredient('TMT0', 'Tomato, chopped', 123, over='too acidic', under='too lacking')
-cheddarcheese = Ingredient('CHDR', 'cheddar cheese, shredded', 57, over='too greasy', under='too light')
-sourcream = Ingredient('SRCR', 'sour cream', 120, over='too sour', under='too dry')
+shrimp = Ingredient('shmp', 'shrimp', 1000, over='too fishy', under='too sparse')
+lettuce = Ingredient('lett', 'iceberg lettuce', 600, over='too leafy', under='too dense')
+avocado = Ingredient('avoc', 'avocado', 200, over='too rich', under='too lean')
+mayo = Ingredient('mayo', 'whole egg mayo', 220, over='too creamy', under='too dry')
+ketchup = Ingredient('ketc', 'tomato ketchup', 51, over='too sweet', under='too flat')
+worcesteshire = Ingredient('worc', 'worcesteshire sauce', 30, over='too salty', under='too bland')
+lemonjuice = Ingredient('lemj', 'lemon juice', 30, over='too sour', under='too dull')
+ingredients = [shrimp, lettuce, avocado, mayo, ketchup, worcesteshire, lemonjuice]
 
-ingredients = [groundbeef, tacoseasoning, kidneybeans, onion, salsa, greenpeppers, tomato, cheddarcheese, sourcream]
-
-t1 = Transformation('fry', 'Brown the ground beef in a large skillet.', [groundbeef], 'brownedbeef')
-t2 = Transformation('stir', 'Stir in taco seasoning, kidney beans, and salsa.', [t1.execute(), tacoseasoning, kidneybeans, salsa], 'meatmixture')
-t3 = Transformation('boil', 'Bring the meat mixture to a boil.', [t2.execute()], 'boilingmeatmixture')
-t4 = Transformation('boil', 'Reduce heat and simmer for about 5 minutes.', [t3.execute()], 'simmeredmeatmixture')
-t5 = Transformation('boil', 'Boil the halved, cleaned green peppers for 3 minutes, then drain.', [greenpeppers], 'parboiledpeppers')
-t6 = Transformation('mix', 'Spoon the meat mixture into the green peppers.', [t4.execute(), t5.execute()], 'stuffedpeppers')
-t7 = Transformation('bake', 'Place stuffed peppers in an ungreased pan, cover, and bake at 350 degrees for 15–20 minutes until peppers are crisp and filling is heated through.', [t6.execute()], 'bakedstuffedpeppers')
-t8 = Transformation('mix', 'Top with tomato, cheddar cheese, and sour cream.', [t7.execute(), tomato, cheddarcheese, sourcream], 'finishedstuffedpeppers')
+t1 = Transformation('boil', 'Devein, shell & clean the shrimp', [shrimp], 'prepped_shrimp')
+t2 = Transformation('mix', 'Finally slice the lettuce & avocado', [lettuce, avocado], 'sliced_lettuce_avocado')
+t3 = Transformation('mix', 'Combine the mayo, ketchup, worcesteshire & lemon juice.', [mayo, ketchup, worcesteshire, lemonjuice], 'sauce')
+t4 = Transformation('stir', 'Salt & pepper to taste.', [t3.execute()], 'seasoned_sauce')
+t5 = Transformation('stir', 'Now its about building... Place lettuce at base of bowl followed by shrimp, avocado & sauce.', [t2.execute(), t1.execute(), t4.execute()], 'assembled_bowl')
 
 s1 = Node(t1)
 s2 = Node(t2)
-s2.add_parent(s1)
 s3 = Node(t3)
-s3.add_parent(s2)
 s4 = Node(t4)
 s4.add_parent(s3)
 s5 = Node(t5)
-s6 = Node(t6)
-s6.add_parent(s4)
-s6.add_parent(s5)
-s7 = Node(t7)
-s7.add_parent(s6)
-s8 = Node(t8)
-s8.add_parent(s7)
+s5.add_parent(s2)
+s5.add_parent(s1)
+s5.add_parent(s4)
 
-recipe = Recipe([s1, s2, s3, s4, s5, s6, s7, s8, ])
+recipe = Recipe([s1, s2, s3, s4, s5, ])
 
 tr_types = ['mix', 'stir', 'boil', 'chill', 'fry', 'bake']
 

@@ -2,7 +2,7 @@ import random
 from openai import OpenAI
 from together import Together
 
-class WrongIngTest:
+class WrongIngTestOld:
     def __init__(self, transcript, num_steps, df_row, actor_specs, num_ings_per_recipe=None, augmented_ingredients=None):
         self.transcript = transcript
         self.num_steps = num_steps
@@ -165,8 +165,8 @@ class WrongIngTest:
             print('='*20)
 
 
-class WrongIngTestSimple:
-    def __init__(self, transcript_text, used_ings, unused_ings, actor_specs, spec_level):
+class WrongIngTest:
+    def __init__(self, transcript_text, used_ings, unused_ings, actor_specs, spec_level, extra_ings=None):
         self.actor_specs = actor_specs
         self.spec_level = spec_level
         self.transcript_text = transcript_text
@@ -179,6 +179,7 @@ class WrongIngTestSimple:
             f' and glances back at the recipe. {actor_specs[0]} appears shocked.',
             f' and glances back at the recipe. {actor_specs[0]} appears shocked and begins trying to remove them.',
         ]
+        self.extra_ings = extra_ings
         self.recipe_text = ''
         self.missing_ing_map = {}
 
@@ -186,26 +187,78 @@ class WrongIngTestSimple:
         self.full_outputs = {}
         self.reasoning = {}
 
-    def perturb_recipe(self, max_examples=None, include_r1=False):
-        self.recipe_text = ''
+    def perturb_recipe(self, max_examples=None, include_r1=False, standardize_trials=True):
+        recipe_examples = []
+        keys = []
+
+        if not self.extra_ings:
+            self.extra_ings = []
+            all_ings = self.total_ings.copy()
+            for i in range(max_examples - len(self.unused_ingredients)):
+                client = OpenAI()
+                response = client.responses.create(
+                    model='gpt-5',
+                    instructions='Given a list of ingredients used in a recipe, '
+                                 'provide an ingredient (with measurements) that could be added to the recipe. '
+                                 'Output only the ingredient (with measurements) and nothing else.',
+                    input=str(all_ings),
+                )
+                ing = response.output_text
+                all_ings.append(ing)
+                self.extra_ings.append(ing)
+
+        self.extra_ings = self.extra_ings[:max_examples - len(self.unused_ingredients)]
+
+        if standardize_trials: self.unused_ingredients.extend(self.extra_ings)
+
         if include_r1:
-            self.recipe_text = f'Recipe 0\n {self.total_ings}\n\n'
-            if max_examples: max_examples -= 1
-
-        self.unused_ingredients = self.unused_ingredients[:max_examples]
-
-        for i, unused in enumerate(self.unused_ingredients):
+            recipe_examples.append(self.total_ings)
+            keys.append(None)
+        for unused in self.unused_ingredients:
             loo = self.total_ings.copy()
             loo.remove(unused)
-            self.recipe_text += f'Recipe {i + 1}\n {loo}\n\n'
-            self.missing_ing_map[unused] = f'Recipe {i + 1}'
+            keys.append(unused)
+            recipe_examples.append(loo)
+        recipe_examples = recipe_examples[:max_examples]
+
+        # if len(recipe_examples) < max_examples:
+        #     if self.extra_ings:
+        #         for ing in self.extra_ings[:max_examples - len(recipe_examples)]:
+        #             loo = self.used_ings.copy()
+        #             loo.append(ing)
+        #             loo.append('*test_ing*')
+        #             keys.append(ing)
+        #             recipe_examples.append(loo)
+        #     else:
+        #         all_ings = self.total_ings.copy()
+        #         for i in range(max_examples - len(recipe_examples)):
+        #             client = OpenAI()
+        #             response = client.responses.create(
+        #                 model='gpt-5',
+        #                 instructions='Given a list of ingredients used in a recipe, '
+        #                              'provide an ingredient (with measurements) that could be added to the recipe. '
+        #                              'Output only the ingredient (with measurements) and nothing else.',
+        #                 input=str(all_ings),
+        #             )
+        #             ing = response.output_text
+        #             all_ings.append(ing)
+        #
+        #             loo = self.used_ings.copy()
+        #             loo.append(ing)
+        #             loo.append('*test_ing*')
+        #             keys.append(ing)
+        #             recipe_examples.append(loo)
 
 
+        self.recipe_text = ''
+        for i, recipe in enumerate(recipe_examples):
+            self.recipe_text += f'Recipe {i + 1}\n {recipe}\n\n'
+            self.missing_ing_map[keys[i]] = f'Recipe {i + 1}'
 
         return self.recipe_text
 
 
-    def run_test(self, specification_level=0, client=OpenAI(), model='gpt-5', effort='medium', n=5, prompt=None, batch=False, debug=False):
+    def run_test(self, specification_level=0, use_openai=True, model='gpt-5', effort='medium', n=5, prompt=None, batch=False, debug=False):
         self.outputs = {}
         self.full_outputs = {}
         self.reasoning = {}
@@ -213,10 +266,11 @@ class WrongIngTestSimple:
 
         if prompt is None: prompt = f'Given a transcript of actions performed by {self.actor_specs[0]}, output only the name of the recipe {self.actor_specs[0]} is trying to cook.'
 
-        instructions = f"Below are a list of recipes {self.actor_specs[0]} may be attempting to make, followed by their ingredients: \n{self.recipe_text}{prompt}"
-
-
         for i, ing in enumerate(self.unused_ingredients):
+            recipe_text = self.recipe_text.replace('*test_ing*', ing)
+            # print(recipe_text)
+            instructions = f"Below are a list of recipes {self.actor_specs[0]} may be attempting to make, followed by their ingredients: \n{recipe_text}{prompt}"
+
             mistake_text = f"{self.actor_specs[0]} mixes in the {ing}{self.spec_level[specification_level]}"
             self.outputs[ing] = []
             self.full_outputs[ing] = []
@@ -226,7 +280,7 @@ class WrongIngTestSimple:
                 print('[', end='')
             for j in range(n):
                 if batch:
-                    if client == OpenAI():
+                    if use_openai:
                         batch_queries.append({
                             'custom_id': f'{self.missing_ing_map[ing]}r{j}',
                             'method': 'POST',
@@ -253,7 +307,8 @@ class WrongIngTestSimple:
                         })
                     continue
                 try:
-                    if client == OpenAI():
+                    if use_openai:
+                        client = OpenAI()
                         response = client.responses.create(
                             model=model,
                             instructions=instructions,
@@ -262,8 +317,9 @@ class WrongIngTestSimple:
                         )
                         self.outputs[ing].append(response.output_text)
                         self.full_outputs[ing].append(response)
-                        self.reasoning[ing].append(response.output[0].summary[0].text)
+                        # self.reasoning[ing].append(response.output[0].summary[0].text)
                     else:
+                        client = Together()
                         response = client.chat.completions.create(
                             model=model,
                             messages=[
@@ -277,6 +333,7 @@ class WrongIngTestSimple:
                         self.full_outputs[ing].append(response)
                     if debug: print('*', end='')
                 except Exception as e:
+                    print('Error: ' + str(e))
                     self.outputs[ing].append('timeout')
                     self.full_outputs[ing].append('timeout')
                     self.reasoning[ing].append('timeout')

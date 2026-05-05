@@ -1,0 +1,1679 @@
+title,transcript,used,unused,tested,transcript_text,recipe_text,full_prompt
+Hijiki With Shiitakes And Beans,"[(['1 1/2 ounces hijiki ', '5 large'], 'soak', 'soaked hijiki and shiitakes'), (['soaked hijiki'], 'slice', 'sliced shiitakes'), (['2 tablespoons extra virgin olive oil'], 'heat', 'olive oil in skillet'), (['1 cup diced chicken', 'olive oil in skillet'], 'brown', 'browned chicken or shrimp'), (['browned chicken'], 'remove', 'removed chicken or shrimp'), (['sliced shiitakes'], 'adds', 'mixture'), (['removed chicken'], 'adds', 'mixture'), (['mixture', 'mixture'], 'cooks', 'cooked mixture')]","['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken']","['2 medium carrots', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']",Salt if necessary,"Alice soaks 1 1/2 ounces hijiki  and 5 large, producing some soaked hijiki and shiitakes.
+Alice slices the soaked hijiki, producing some sliced shiitakes.
+Alice heats the 2 tablespoons extra virgin olive oil, producing some olive oil in skillet.
+","Recipe 1
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce']
+
+Recipe 2
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 3
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 4
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce']
+
+Recipe 2
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 3
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 4
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice soaks 1 1/2 ounces hijiki  and 5 large, producing some soaked hijiki and shiitakes.
+Alice slices the soaked hijiki, producing some sliced shiitakes.
+Alice heats the 2 tablespoons extra virgin olive oil, producing some olive oil in skillet.
+Alice mixes in the Salt if necessary. Alice appears shocked."
+Grandma'S Spicy Beans,"[(['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper'], 'adds', 'mixture')]","['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper']","['1 stalk celery', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']",1 can Ro-Tel,"Alice adds 1 lb. dry pinto beans, 1 tsp. seasoned salt, 1 tsp. pepper and 1 chopped bell pepper, producing some mixture.
+","Recipe 1
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef']
+
+Recipe 2
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 3
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 4
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef']
+
+Recipe 2
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 3
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 4
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice adds 1 lb. dry pinto beans, 1 tsp. seasoned salt, 1 tsp. pepper and 1 chopped bell pepper, producing some mixture.
+Alice mixes in the 1 can Ro-Tel. Alice appears shocked."
+Macrobiotic Sweet Potato and Apple Cake,"[(['1/2 Sweet potato', '1 small apple'], 'cuts', 'sweet potato and apple pieces'), (['sweet potato', '100 ml Sugar-free apple juice'], 'simmer', 'sweet potato and apple mixture'), (['2 tbsp Raisins', 'sweet potato'], 'mixes', 'batter'), (['batter'], 'pours', 'cake mixture'), (['cake mixture'], 'bakes', 'cake')]","['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins']","['1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']",1/8 tsp Salt,"Alice cuts 1/2 Sweet potato and 1 small apple, producing some sweet potato and apple pieces.
+Alice simmers sweet potato and 100 ml Sugar-free apple juice, producing some sweet potato and apple mixture.
+Alice mixes 2 tbsp Raisins and sweet potato, producing some batter.
+","Recipe 1
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 2
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 3
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 4
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 2
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 3
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 4
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice cuts 1/2 Sweet potato and 1 small apple, producing some sweet potato and apple pieces.
+Alice simmers sweet potato and 100 ml Sugar-free apple juice, producing some sweet potato and apple mixture.
+Alice mixes 2 tbsp Raisins and sweet potato, producing some batter.
+Alice mixes in the 1/8 tsp Salt. Alice appears shocked."
+Black Bean And Ch0rizo Chili Recipe,"[(['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper'], 'saute', 'sauteed onion and bell pepper'), (['1/2 lb chorizo'], 'stirs', 'lightly browned chorizo'), (['sauteed onion', 'lightly browned chorizo'], 'add', 'boiled mixture')]","['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo']","['2 x cloves garlic', '2 med red potatoes', '3 c. cooked black beans', '1/2 x orange habanero chile', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']",1/2 x orange habanero chile,"Alice sautes 1 Tbsp. extra virgin olive oil, 1 med yellow onion and 1 med green bell pepper, producing some sauteed onion and bell pepper.
+Alice stirs the 1/2 lb chorizo, producing some lightly browned chorizo.
+Alice adds sauteed onion and lightly browned chorizo, producing some boiled mixture.
+","Recipe 1
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 x cloves garlic', '2 med red potatoes', '3 c. cooked black beans', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+Recipe 2
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 med red potatoes', '3 c. cooked black beans', '1/2 x orange habanero chile', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+Recipe 3
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 x cloves garlic', '3 c. cooked black beans', '1/2 x orange habanero chile', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+Recipe 4
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 x cloves garlic', '2 med red potatoes', '1/2 x orange habanero chile', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 x cloves garlic', '2 med red potatoes', '3 c. cooked black beans', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+Recipe 2
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 med red potatoes', '3 c. cooked black beans', '1/2 x orange habanero chile', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+Recipe 3
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 x cloves garlic', '3 c. cooked black beans', '1/2 x orange habanero chile', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+Recipe 4
+ ['1 Tbsp. extra virgin olive oil', '1 med yellow onion', '1 med green bell pepper', '1/2 lb chorizo', '2 x cloves garlic', '2 med red potatoes', '1/2 x orange habanero chile', '1 x lime', '2 Tbsp. fresh cilantro', '4 c. chicken stock']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice sautes 1 Tbsp. extra virgin olive oil, 1 med yellow onion and 1 med green bell pepper, producing some sauteed onion and bell pepper.
+Alice stirs the 1/2 lb chorizo, producing some lightly browned chorizo.
+Alice adds sauteed onion and lightly browned chorizo, producing some boiled mixture.
+Alice mixes in the 1/2 x orange habanero chile. Alice appears shocked."
+Vegetarian Red Bean Stew,"[(['2 cups red beans dried'], 'wash', 'sorted beans'), (['sorted beans'], 'boils', 'bean mixture'), (['bean mixture'], 'simmer', 'creamy bean mixture'), (['13 cup olive oil'], 'heats', 'olive oil mixture'), (['1 1/2 medium white onion diced', '2 teaspoons salt'], 'cooks', 'caramelized onions'), (['creamy bean mixture'], 'pours', 'mixture')]","['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt']","['1/2 teaspoon black pepper freshly ground', '4 each garlic cloves crushed', '7 ounce green chili peppers mild fire roasted', '2 medium parsnips peel', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']",4 each garlic cloves crushed,"Alice washs the 2 cups red beans dried, producing some sorted beans.
+Alice boils the sorted beans, producing some bean mixture.
+Alice simmers the bean mixture, producing some creamy bean mixture.
+","Recipe 1
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '1/2 teaspoon black pepper freshly ground', '7 ounce green chili peppers mild fire roasted', '2 medium parsnips peel', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+Recipe 2
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '4 each garlic cloves crushed', '7 ounce green chili peppers mild fire roasted', '2 medium parsnips peel', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+Recipe 3
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '1/2 teaspoon black pepper freshly ground', '4 each garlic cloves crushed', '2 medium parsnips peel', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+Recipe 4
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '1/2 teaspoon black pepper freshly ground', '4 each garlic cloves crushed', '7 ounce green chili peppers mild fire roasted', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '1/2 teaspoon black pepper freshly ground', '7 ounce green chili peppers mild fire roasted', '2 medium parsnips peel', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+Recipe 2
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '4 each garlic cloves crushed', '7 ounce green chili peppers mild fire roasted', '2 medium parsnips peel', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+Recipe 3
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '1/2 teaspoon black pepper freshly ground', '4 each garlic cloves crushed', '2 medium parsnips peel', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+Recipe 4
+ ['2 cups red beans dried', '13 cup olive oil', '1 1/2 medium white onion diced', '2 teaspoons salt', '1/2 teaspoon black pepper freshly ground', '4 each garlic cloves crushed', '7 ounce green chili peppers mild fire roasted', '2 medium carrots peel', '2 each celery stalks chopped', '1 medium zucchini trimmed', '1 medium yellow summer squash trimmed', '1 x salsa red', '1 x cheddar cheese shredded']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice washs the 2 cups red beans dried, producing some sorted beans.
+Alice boils the sorted beans, producing some bean mixture.
+Alice simmers the bean mixture, producing some creamy bean mixture.
+Alice mixes in the 4 each garlic cloves crushed. Alice appears shocked."
+Summertime Finger Salad,"[(['10 collard greens'], 'trim', 'prepared collard greens'), (['prepared collard greens'], 'lay', 'collard base'), (['2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', 'collard base'], 'roll', 'roll')]","['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers']","['10 scallions', '1 cup almond butter', '1 tablespoon ginger', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce', '12 cup water']",12 cup water,"Alice trims the 10 collard greens, producing some prepared collard greens.
+Alice lays the prepared collard greens, producing some collard base.
+Alice rolls 2 cups carrots, 2 cups red cabbage, 2 cups cucumbers and collard base, producing some roll.
+","Recipe 1
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '10 scallions', '1 cup almond butter', '1 tablespoon ginger', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce']
+
+Recipe 2
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '1 cup almond butter', '1 tablespoon ginger', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce', '12 cup water']
+
+Recipe 3
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '10 scallions', '1 tablespoon ginger', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce', '12 cup water']
+
+Recipe 4
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '10 scallions', '1 cup almond butter', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce', '12 cup water']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '10 scallions', '1 cup almond butter', '1 tablespoon ginger', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce']
+
+Recipe 2
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '1 cup almond butter', '1 tablespoon ginger', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce', '12 cup water']
+
+Recipe 3
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '10 scallions', '1 tablespoon ginger', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce', '12 cup water']
+
+Recipe 4
+ ['10 collard greens', '2 cups carrots', '2 cups red cabbage', '2 cups cucumbers', '10 scallions', '1 cup almond butter', '14 cup lemon juice', '14 cup raw honey', '2 tablespoons sesame oil', '1 pinch chili powder', '14 cup soy sauce', '12 cup water']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice trims the 10 collard greens, producing some prepared collard greens.
+Alice lays the prepared collard greens, producing some collard base.
+Alice rolls 2 cups carrots, 2 cups red cabbage, 2 cups cucumbers and collard base, producing some roll.
+Alice mixes in the 12 cup water. Alice appears shocked."
+"Roasted Tomatoes Stuffed With Couscous, Chanterelles And Pine Nuts","[(['9 small ripe tomatoes'], 'peel', 'peeled tomatoes'), (['peeled tomatoes'], 'minces', 'minced tomato'), (['2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme'], 'rub', 'prepared insides'), (['minced tomato'], 'stir', 'tomato-chanterelle salad'), (['tomato-chanterelle salad'], 'spoons', 'stuffed tomatoes')]","['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme']","['8 sprigs tarragon', '8 bay leaves', '8 basil leaves', '1 cup cooked couscous', '8 chanterelle mushrooms', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']",8 chanterelle mushrooms,"Alice peels the 9 small ripe tomatoes, producing some peeled tomatoes.
+Alice minces the peeled tomatoes, producing some minced tomato.
+Alice rubs 2 tablespoons olive oil, 8 garlic cloves and 8 sprigs thyme, producing some prepared insides.
+","Recipe 1
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 sprigs tarragon', '8 bay leaves', '8 basil leaves', '1 cup cooked couscous', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+Recipe 2
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 bay leaves', '8 basil leaves', '1 cup cooked couscous', '8 chanterelle mushrooms', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+Recipe 3
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 sprigs tarragon', '8 basil leaves', '1 cup cooked couscous', '8 chanterelle mushrooms', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+Recipe 4
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 sprigs tarragon', '8 bay leaves', '1 cup cooked couscous', '8 chanterelle mushrooms', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 sprigs tarragon', '8 bay leaves', '8 basil leaves', '1 cup cooked couscous', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+Recipe 2
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 bay leaves', '8 basil leaves', '1 cup cooked couscous', '8 chanterelle mushrooms', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+Recipe 3
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 sprigs tarragon', '8 basil leaves', '1 cup cooked couscous', '8 chanterelle mushrooms', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+Recipe 4
+ ['9 small ripe tomatoes', '2 tablespoons olive oil', '8 garlic cloves', '8 sprigs thyme', '8 sprigs tarragon', '8 bay leaves', '1 cup cooked couscous', '8 chanterelle mushrooms', '1 tablespoon toasted pine nuts', '1 tablespoon peeled', '1 tablespoon corn kernels', '1 teaspoon chopped chives', '1 teaspoon chopped mint']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice peels the 9 small ripe tomatoes, producing some peeled tomatoes.
+Alice minces the peeled tomatoes, producing some minced tomato.
+Alice rubs 2 tablespoons olive oil, 8 garlic cloves and 8 sprigs thyme, producing some prepared insides.
+Alice mixes in the 8 chanterelle mushrooms. Alice appears shocked."
+Kibbie Seniyeh (Pan Baked Kibbee),"[(['1 lb coarsely ground lamb', '1 tablespoon butter'], 'fries', 'fried meat filling'), (['fried meat filling'], 'stirs', 'cooked filling'), (['Filling'], 'spreads', 'layered filling'), (['layered filling'], 'spread', 'covered kibbee'), (['covered kibbee'], 'pours', 'oiled kibbee'), (['oiled kibbee'], 'bake', 'baked kibbee')]","['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion']","['3 tablespoons pine nuts', '3/4 teaspoon salt', '1/2 teaspoon allspice', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '4 teaspoons salt', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']",4 teaspoons salt,"Alice fries 1 lb coarsely ground lamb and 1 tablespoon butter, producing some fried meat filling.
+Alice stirs the fried meat filling, producing some cooked filling.
+Alice spreads the Filling, producing some layered filling.
+","Recipe 1
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3 tablespoons pine nuts', '3/4 teaspoon salt', '1/2 teaspoon allspice', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+Recipe 2
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3/4 teaspoon salt', '1/2 teaspoon allspice', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '4 teaspoons salt', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+Recipe 3
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3 tablespoons pine nuts', '1/2 teaspoon allspice', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '4 teaspoons salt', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+Recipe 4
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3 tablespoons pine nuts', '3/4 teaspoon salt', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '4 teaspoons salt', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3 tablespoons pine nuts', '3/4 teaspoon salt', '1/2 teaspoon allspice', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+Recipe 2
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3/4 teaspoon salt', '1/2 teaspoon allspice', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '4 teaspoons salt', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+Recipe 3
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3 tablespoons pine nuts', '1/2 teaspoon allspice', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '4 teaspoons salt', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+Recipe 4
+ ['Filling', '1 lb coarsely ground lamb', '1 tablespoon butter', '3/4 cup chopped onion', '3 tablespoons pine nuts', '3/4 teaspoon salt', 'Kibbee', '2 1/2 cups fine burghul ', '2 lbs ground lamb', '1 medium onion', '4 teaspoons salt', '3/4 teaspoon allspice', '1/4 teaspoon black pepper', '2/3 cup corn oil']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice fries 1 lb coarsely ground lamb and 1 tablespoon butter, producing some fried meat filling.
+Alice stirs the fried meat filling, producing some cooked filling.
+Alice spreads the Filling, producing some layered filling.
+Alice mixes in the 4 teaspoons salt. Alice appears shocked."
+Big Blue Burgers,"[(['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot'], 'combine', 'meat mixture'), (['meat mixture'], 'forms', 'patties'), (['patties'], 'grill', 'burgers'), (['burgers'], 'grills', 'grilled burgers'), (['grilled burgers'], 'broil', 'broiled burgers'), (['broiled burgers'], 'serve', 'burgers')]","['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot']","['1/2 pound crumbled blue cheese', 'Extra-virgin olive oil', 'Steak seasoning', '4 crusty rolls', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']",4 crusty rolls,"Alice combines 1 1/3 pounds ground sirloin, 1 tablespoon Worcestershire, A handful chopped flat leaf parsley and 1 shallot, producing some meat mixture.
+Alice forms the meat mixture, producing some patties.
+Alice grills the patties, producing some burgers.
+","Recipe 1
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', '1/2 pound crumbled blue cheese', 'Extra-virgin olive oil', 'Steak seasoning', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+Recipe 2
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', 'Extra-virgin olive oil', 'Steak seasoning', '4 crusty rolls', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+Recipe 3
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', '1/2 pound crumbled blue cheese', 'Steak seasoning', '4 crusty rolls', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+Recipe 4
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', '1/2 pound crumbled blue cheese', 'Extra-virgin olive oil', '4 crusty rolls', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', '1/2 pound crumbled blue cheese', 'Extra-virgin olive oil', 'Steak seasoning', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+Recipe 2
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', 'Extra-virgin olive oil', 'Steak seasoning', '4 crusty rolls', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+Recipe 3
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', '1/2 pound crumbled blue cheese', 'Steak seasoning', '4 crusty rolls', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+Recipe 4
+ ['1 1/3 pounds ground sirloin', '1 tablespoon Worcestershire', 'A handful chopped flat leaf parsley', '1 shallot', '1/2 pound crumbled blue cheese', 'Extra-virgin olive oil', '4 crusty rolls', 'Romaine lettuce leaves', 'Vine ripe tomato slices', 'Blue cheese dressing ']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice combines 1 1/3 pounds ground sirloin, 1 tablespoon Worcestershire, A handful chopped flat leaf parsley and 1 shallot, producing some meat mixture.
+Alice forms the meat mixture, producing some patties.
+Alice grills the patties, producing some burgers.
+Alice mixes in the 4 crusty rolls. Alice appears shocked."
+Finnish Easter Pasha Paasiaispasha (Molded Ricotta Cheese Dessert),"[(['1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar'], 'combine', 'combined cream mixture'), (['combined cream mixture'], 'beats', 'light and fluffy mixture'), (['light'], 'beats', 'thick and light cream mixture'), (['thick'], 'turns', 'pasha mixture in lined mold'), (['pasha mixture in lined mold'], 'refrigerates', 'firm pasha'), (['firm pasha'], 'unmolds', 'unmolded pasha'), (['unmolded pasha'], 'serve', 'served pasha')]","['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar']","['4 eggs', '1-1/2 qt. ricotta cheese', '1/2 cup sour cream', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit', 'preserves']",preserves,"Alice combines 1 cup heavy  cream, 1/2 cup unsalted butter and 1 cup sugar, producing some combined cream mixture.
+Alice beats the combined cream mixture, producing some light and fluffy mixture.
+Alice beats the light, producing some thick and light cream mixture.
+","Recipe 1
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '4 eggs', '1-1/2 qt. ricotta cheese', '1/2 cup sour cream', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit']
+
+Recipe 2
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '1-1/2 qt. ricotta cheese', '1/2 cup sour cream', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit', 'preserves']
+
+Recipe 3
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '4 eggs', '1/2 cup sour cream', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit', 'preserves']
+
+Recipe 4
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '4 eggs', '1-1/2 qt. ricotta cheese', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit', 'preserves']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '4 eggs', '1-1/2 qt. ricotta cheese', '1/2 cup sour cream', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit']
+
+Recipe 2
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '1-1/2 qt. ricotta cheese', '1/2 cup sour cream', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit', 'preserves']
+
+Recipe 3
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '4 eggs', '1/2 cup sour cream', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit', 'preserves']
+
+Recipe 4
+ ['FINNISH EASTER PASHA PAASIAISPASHA', '1 cup heavy  cream', '1/2 cup unsalted butter', '1 cup sugar', '4 eggs', '1-1/2 qt. ricotta cheese', '1/2 cup minced almonds', '1/2 cup raisins', 'Fresh fruit', 'preserves']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice combines 1 cup heavy  cream, 1/2 cup unsalted butter and 1 cup sugar, producing some combined cream mixture.
+Alice beats the combined cream mixture, producing some light and fluffy mixture.
+Alice beats the light, producing some thick and light cream mixture.
+Alice mixes in the preserves. Alice appears shocked."
+Grandma'S Spicy Beans,"[(['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper'], 'adds', 'mixture')]","['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper']","['1 stalk celery', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']",1 bay leaf,"Alice adds 1 lb. dry pinto beans, 1 tsp. seasoned salt, 1 tsp. pepper and 1 chopped bell pepper, producing some mixture.
+","Recipe 1
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 2
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 3
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 4
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 bay leaf', '1 lb. ground beef', '1 can Ro-Tel']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 2
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 chopped onion', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 3
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 bay leaf', '1 clove garlic', '1 lb. ground beef', '1 can Ro-Tel']
+
+Recipe 4
+ ['1 lb. dry pinto beans', '1 tsp. seasoned salt', '1 tsp. pepper', '1 chopped bell pepper', '1 stalk celery', '1 chopped onion', '1 bay leaf', '1 lb. ground beef', '1 can Ro-Tel']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice adds 1 lb. dry pinto beans, 1 tsp. seasoned salt, 1 tsp. pepper and 1 chopped bell pepper, producing some mixture.
+Alice mixes in the 1 bay leaf. Alice appears shocked."
+Biryani,"[(['1/2 lb. meat', '1/2 c. thick yogurt'], 'marinates', 'marinated meat or chicken'), (['1 big onion'], 'adds', 'mixture'), (['marinated meat'], 'cooks', 'cooked meat with curds'), (['1/2 lb. Bhasmathi rice '], 'adds', 'rice mixture'), (['rice mixture'], 'add', 'rice mixture with water'), (['cooked meat with curds'], 'cook', 'cooked meat with curds')]","['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion']","['6 tsp. ghee', '2 sticks cinnamon', '4 cloves', '1 cardamon', '1 tsp. paste of ginger', '2 green chillies', '1/2 tsp. chili powder', '1/2 bunch mint']",2 green chillies,"Alice marinates 1/2 lb. meat and 1/2 c. thick yogurt, producing some marinated meat or chicken.
+Alice adds the 1 big onion, producing some mixture.
+Alice cooks the marinated meat, producing some cooked meat with curds.
+","Recipe 1
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '6 tsp. ghee', '2 sticks cinnamon', '4 cloves', '1 cardamon', '1 tsp. paste of ginger', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+Recipe 2
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '2 sticks cinnamon', '4 cloves', '1 cardamon', '1 tsp. paste of ginger', '2 green chillies', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+Recipe 3
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '6 tsp. ghee', '4 cloves', '1 cardamon', '1 tsp. paste of ginger', '2 green chillies', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+Recipe 4
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '6 tsp. ghee', '2 sticks cinnamon', '1 cardamon', '1 tsp. paste of ginger', '2 green chillies', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '6 tsp. ghee', '2 sticks cinnamon', '4 cloves', '1 cardamon', '1 tsp. paste of ginger', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+Recipe 2
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '2 sticks cinnamon', '4 cloves', '1 cardamon', '1 tsp. paste of ginger', '2 green chillies', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+Recipe 3
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '6 tsp. ghee', '4 cloves', '1 cardamon', '1 tsp. paste of ginger', '2 green chillies', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+Recipe 4
+ ['1/2 lb. meat', '1/2 lb. Bhasmathi rice ', '1/2 c. thick yogurt', '1 big onion', '6 tsp. ghee', '2 sticks cinnamon', '1 cardamon', '1 tsp. paste of ginger', '2 green chillies', '1/2 tsp. chili powder', '1/2 bunch mint']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice marinates 1/2 lb. meat and 1/2 c. thick yogurt, producing some marinated meat or chicken.
+Alice adds the 1 big onion, producing some mixture.
+Alice cooks the marinated meat, producing some cooked meat with curds.
+Alice mixes in the 2 green chillies. Alice appears shocked."
+Tuna Basquaise,"[(['1/3 cup plus 1/4 cup extra-virgin olive oil'], 'heat', 'heated oil'), (['1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots'], 'cooks', 'softened onion mixture'), (['softened onion mixture'], 'cook', 'cooked onion mixture'), (['heated oil'], 'cooks', 'cooked eggplant mixture')]","['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots']","['6 thyme sprigs', '4 large garlic cloves', '3 bay leaves', '3 large red bell peppers', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']",3 bay leaves,"Alice heats the 1/3 cup plus 1/4 cup extra-virgin olive oil, producing some heated oil.
+Alice cooks 1 large onion plus 1 small onion, 1/4 pound prosciutto and 3 large shallots, producing some softened onion mixture.
+Alice cooks the softened onion mixture, producing some cooked onion mixture.
+","Recipe 1
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '6 thyme sprigs', '4 large garlic cloves', '3 large red bell peppers', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+Recipe 2
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '4 large garlic cloves', '3 bay leaves', '3 large red bell peppers', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+Recipe 3
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '6 thyme sprigs', '3 bay leaves', '3 large red bell peppers', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+Recipe 4
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '6 thyme sprigs', '4 large garlic cloves', '3 bay leaves', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '6 thyme sprigs', '4 large garlic cloves', '3 large red bell peppers', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+Recipe 2
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '4 large garlic cloves', '3 bay leaves', '3 large red bell peppers', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+Recipe 3
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '6 thyme sprigs', '3 bay leaves', '3 large red bell peppers', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+Recipe 4
+ ['1/3 cup plus 1/4 cup extra-virgin olive oil', '1 large onion plus 1 small onion', '1/4 pound prosciutto', '3 large shallots', '6 thyme sprigs', '4 large garlic cloves', '3 bay leaves', '2 medium yellow bell peppers', '1 medium eggplant', '2 pounds zucchini', '1 cup dry white wine', '4 medium tomatoespeeled', '1 1/2 cups V-8 juice', '1/2 tablespoon tomato paste', 'Salt', 'Four 1 3/4-inch-thick tuna steaks ']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice heats the 1/3 cup plus 1/4 cup extra-virgin olive oil, producing some heated oil.
+Alice cooks 1 large onion plus 1 small onion, 1/4 pound prosciutto and 3 large shallots, producing some softened onion mixture.
+Alice cooks the softened onion mixture, producing some cooked onion mixture.
+Alice mixes in the 3 bay leaves. Alice appears shocked."
+Abuelo'S Pan Seared Tuna Appetizer,"[(['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules'], 'blends', 'Bistec seasoning mixture'), (['Bistec seasoning mixture'], 'place', 'garnished plate')]","['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules']","['1 teaspoon cumin ', '1 tablespoon onion powder', '1 tablespoon celery salt', 'For the tuna', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']",1 tablespoon celery salt,"Alice blends For the Bistec seasoning, 1/2 cup Lawry's Seasoned Salt, 1/3 cup dried red pepper and 3 tablespoons garlic granules, producing some Bistec seasoning mixture.
+Alice places the Bistec seasoning mixture, producing some garnished plate.
+","Recipe 1
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 teaspoon cumin ', '1 tablespoon onion powder', 'For the tuna', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+Recipe 2
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 tablespoon onion powder', '1 tablespoon celery salt', 'For the tuna', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+Recipe 3
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 teaspoon cumin ', '1 tablespoon celery salt', 'For the tuna', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+Recipe 4
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 teaspoon cumin ', '1 tablespoon onion powder', '1 tablespoon celery salt', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 teaspoon cumin ', '1 tablespoon onion powder', 'For the tuna', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+Recipe 2
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 tablespoon onion powder', '1 tablespoon celery salt', 'For the tuna', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+Recipe 3
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 teaspoon cumin ', '1 tablespoon celery salt', 'For the tuna', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+Recipe 4
+ ['For the Bistec seasoning', ""1/2 cup Lawry's Seasoned Salt"", '1/3 cup dried red pepper', '3 tablespoons garlic granules', '1 teaspoon cumin ', '1 tablespoon onion powder', '1 tablespoon celery salt', '6 ounces tuna', '3/4 teaspoon bistec seasoning ', '1/4 teaspoon black pepper', 'canola oil ', '2 ounces mixed baby lettuces', '1/4 lemon', 'mustard', 'honey lime dressing ']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice blends For the Bistec seasoning, 1/2 cup Lawry's Seasoned Salt, 1/3 cup dried red pepper and 3 tablespoons garlic granules, producing some Bistec seasoning mixture.
+Alice places the Bistec seasoning mixture, producing some garnished plate.
+Alice mixes in the 1 tablespoon celery salt. Alice appears shocked."
+Butterscotch Cream Cheese Bars,"[(['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter'], 'melts', 'melted morsels and butter'), (['2 c. graham cracker crumbs', '2 c. chopped walnuts', 'melted morsels'], 'mixes', 'crumb mixture'), (['crumb mixture'], 'reserves', 'reserved crumb mixture'), (['reserved crumb mixture'], 'bake', 'crust')]","['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts']","['2  pkg. cream cheese', '1/2 c. granulated sugar', '4 eggs', '1/4 c. all-purpose flour', '2 Tbsp. lemon juice']",2 Tbsp. lemon juice,"Alice melts 2 c.  Nestle Toll House butterscotch flavored morsels and 6 Tbsp. butter, producing some melted morsels and butter.
+Alice mixes 2 c. graham cracker crumbs, 2 c. chopped walnuts and melted morsels, producing some crumb mixture.
+Alice reserves the crumb mixture, producing some reserved crumb mixture.
+","Recipe 1
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '2  pkg. cream cheese', '1/2 c. granulated sugar', '4 eggs', '1/4 c. all-purpose flour']
+
+Recipe 2
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '1/2 c. granulated sugar', '4 eggs', '1/4 c. all-purpose flour', '2 Tbsp. lemon juice']
+
+Recipe 3
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '2  pkg. cream cheese', '4 eggs', '1/4 c. all-purpose flour', '2 Tbsp. lemon juice']
+
+Recipe 4
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '2  pkg. cream cheese', '1/2 c. granulated sugar', '1/4 c. all-purpose flour', '2 Tbsp. lemon juice']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '2  pkg. cream cheese', '1/2 c. granulated sugar', '4 eggs', '1/4 c. all-purpose flour']
+
+Recipe 2
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '1/2 c. granulated sugar', '4 eggs', '1/4 c. all-purpose flour', '2 Tbsp. lemon juice']
+
+Recipe 3
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '2  pkg. cream cheese', '4 eggs', '1/4 c. all-purpose flour', '2 Tbsp. lemon juice']
+
+Recipe 4
+ ['2 c.  Nestle Toll House butterscotch flavored morsels', '6 Tbsp. butter', '2 c. graham cracker crumbs', '2 c. chopped walnuts', '2  pkg. cream cheese', '1/2 c. granulated sugar', '1/4 c. all-purpose flour', '2 Tbsp. lemon juice']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice melts 2 c.  Nestle Toll House butterscotch flavored morsels and 6 Tbsp. butter, producing some melted morsels and butter.
+Alice mixes 2 c. graham cracker crumbs, 2 c. chopped walnuts and melted morsels, producing some crumb mixture.
+Alice reserves the crumb mixture, producing some reserved crumb mixture.
+Alice mixes in the 2 Tbsp. lemon juice. Alice appears shocked."
+"Roasted Artichokes, Carrots, and Fennel with Pan-Roasted Halibut","[(['2 lemons'], 'squeezes', 'lemon juice salted water'), (['3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb'], 'add', 'artichoke hearts, carrots, and fennel'), (['artichoke hearts'], 'cooks', 'tender vegetables'), (['tender vegetables'], 'adds', 'vegetables in pan'), (['vegetables in pan'], 'saute', 'browned vegetables'), (['browned vegetables'], 'arranges', 'fish and vegetables baked'), (['fish'], 'remove', 'fish and vegetables on warm platter'), (['fish'], 'pours', 'fish with sauce')]","['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb']","['4 halibut', 'Salt', '2 1/2 teaspoons herbes de Provence', '2 tablespoons extra virgin olive oil', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']",2 tablespoons extra virgin olive oil,"Alice squeezes the 2 lemons, producing some lemon juice salted water.
+Alice adds 3 large artichoke hearts  , 16 baby-cut carrots and 1 small fennel bulb, producing some artichoke hearts, carrots, and fennel.
+Alice cooks the artichoke hearts, producing some tender vegetables.
+","Recipe 1
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', '4 halibut', 'Salt', '2 1/2 teaspoons herbes de Provence', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+Recipe 2
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', 'Salt', '2 1/2 teaspoons herbes de Provence', '2 tablespoons extra virgin olive oil', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+Recipe 3
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', '4 halibut', '2 1/2 teaspoons herbes de Provence', '2 tablespoons extra virgin olive oil', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+Recipe 4
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', '4 halibut', 'Salt', '2 tablespoons extra virgin olive oil', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', '4 halibut', 'Salt', '2 1/2 teaspoons herbes de Provence', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+Recipe 2
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', 'Salt', '2 1/2 teaspoons herbes de Provence', '2 tablespoons extra virgin olive oil', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+Recipe 3
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', '4 halibut', '2 1/2 teaspoons herbes de Provence', '2 tablespoons extra virgin olive oil', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+Recipe 4
+ ['2 lemons', '3 large artichoke hearts  ', '16 baby-cut carrots', '1 small fennel bulb', '4 halibut', 'Salt', '2 tablespoons extra virgin olive oil', '1 cup dry white wine', '1 1/2 tablespoons finely chopped fennel leaves', '3 tablespoons unsalted butter ']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice squeezes the 2 lemons, producing some lemon juice salted water.
+Alice adds 3 large artichoke hearts  , 16 baby-cut carrots and 1 small fennel bulb, producing some artichoke hearts, carrots, and fennel.
+Alice cooks the artichoke hearts, producing some tender vegetables.
+Alice mixes in the 2 tablespoons extra virgin olive oil. Alice appears shocked."
+Plain Ol' Bread Stuffing,"[(['1 tablespoon oil', '1 tablespoon butter'], 'melts', 'mixture'), (['6 cups cubed whole wheat bread'], 'place', 'mixture'), (['2 eggs'], 'mix', 'mixture')]","['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter']","['2 stalks celery', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']",1 onion,"Alice melts 1 tablespoon oil and 1 tablespoon butter, producing some mixture.
+Alice places the 6 cups cubed whole wheat bread, producing some mixture.
+Alice mixes the 2 eggs, producing some mixture.
+","Recipe 1
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 2
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 3
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 4
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '5 large mushrooms', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 2
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 3
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 4
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '5 large mushrooms', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice melts 1 tablespoon oil and 1 tablespoon butter, producing some mixture.
+Alice places the 6 cups cubed whole wheat bread, producing some mixture.
+Alice mixes the 2 eggs, producing some mixture.
+Alice mixes in the 1 onion. Alice appears shocked."
+Tarte Flambee (Alsatian Pizza) ,"[(['1 cup flour', '1 teaspoon salt'], 'mix', 'flour and salt mixture'), (['1 teaspoon active dry yeast', '1/2 cup warm water'], 'stir', 'yeast mixture')]","['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water']","['1/2 teaspoon sugar', '1/2 cup fromage blanc', '1/2 cup creme fraiche', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper', 'Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback']",Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback,"Alice mixes 1 cup flour and 1 teaspoon salt, producing some flour and salt mixture.
+Alice stirs 1 teaspoon active dry yeast and 1/2 cup warm water, producing some yeast mixture.
+","Recipe 1
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 teaspoon sugar', '1/2 cup fromage blanc', '1/2 cup creme fraiche', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper']
+
+Recipe 2
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 cup fromage blanc', '1/2 cup creme fraiche', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper', 'Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback']
+
+Recipe 3
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 teaspoon sugar', '1/2 cup creme fraiche', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper', 'Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback']
+
+Recipe 4
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 teaspoon sugar', '1/2 cup fromage blanc', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper', 'Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 teaspoon sugar', '1/2 cup fromage blanc', '1/2 cup creme fraiche', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper']
+
+Recipe 2
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 cup fromage blanc', '1/2 cup creme fraiche', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper', 'Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback']
+
+Recipe 3
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 teaspoon sugar', '1/2 cup creme fraiche', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper', 'Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback']
+
+Recipe 4
+ ['1 cup flour', '1 teaspoon salt', '1 teaspoon active dry yeast', '1/2 cup warm water', '1/2 teaspoon sugar', '1/2 cup fromage blanc', '1 tablespoon flour', '1/4 lb smoked bacon', '1 small onion', 'kosher salt', 'fresh ground black pepper', 'Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice mixes 1 cup flour and 1 teaspoon salt, producing some flour and salt mixture.
+Alice stirs 1 teaspoon active dry yeast and 1/2 cup warm water, producing some yeast mixture.
+Alice mixes in the Read more at: http://www.food.com/recipe/tarte-flambee-alsatian-pizza-68350?oc=linkback. Alice appears shocked."
+Crazy Cake,"[(['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar'], 'mixes', 'mixed dry ingredients'), (['mixed dry ingredients'], 'sifts', 'sifted dry ingredients'), (['sifted dry ingredients'], 'makes', '3 holes in the dry mixture')]","['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar']","['1/2 tsp. salt', '5 Tbsp. oil', '1 Tbsp. vinegar', '1 tsp. vanilla', '1 c. cold water']",1 c. cold water,"Alice mixes 1 1/2 c. sifted flour, 3 Tbsp. cocoa, 1 tsp. baking soda and 1 c. granulated sugar, producing some mixed dry ingredients.
+Alice sifts the mixed dry ingredients, producing some sifted dry ingredients.
+Alice makes the sifted dry ingredients, producing some 3 holes in the dry mixture.
+","Recipe 1
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '1/2 tsp. salt', '5 Tbsp. oil', '1 Tbsp. vinegar', '1 tsp. vanilla']
+
+Recipe 2
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '5 Tbsp. oil', '1 Tbsp. vinegar', '1 tsp. vanilla', '1 c. cold water']
+
+Recipe 3
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '1/2 tsp. salt', '1 Tbsp. vinegar', '1 tsp. vanilla', '1 c. cold water']
+
+Recipe 4
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '1/2 tsp. salt', '5 Tbsp. oil', '1 tsp. vanilla', '1 c. cold water']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '1/2 tsp. salt', '5 Tbsp. oil', '1 Tbsp. vinegar', '1 tsp. vanilla']
+
+Recipe 2
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '5 Tbsp. oil', '1 Tbsp. vinegar', '1 tsp. vanilla', '1 c. cold water']
+
+Recipe 3
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '1/2 tsp. salt', '1 Tbsp. vinegar', '1 tsp. vanilla', '1 c. cold water']
+
+Recipe 4
+ ['1 1/2 c. sifted flour', '3 Tbsp. cocoa', '1 tsp. baking soda', '1 c. granulated sugar', '1/2 tsp. salt', '5 Tbsp. oil', '1 tsp. vanilla', '1 c. cold water']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice mixes 1 1/2 c. sifted flour, 3 Tbsp. cocoa, 1 tsp. baking soda and 1 c. granulated sugar, producing some mixed dry ingredients.
+Alice sifts the mixed dry ingredients, producing some sifted dry ingredients.
+Alice makes the sifted dry ingredients, producing some 3 holes in the dry mixture.
+Alice mixes in the 1 c. cold water. Alice appears shocked."
+Macrobiotic Sweet Potato and Apple Cake,"[(['1/2 Sweet potato', '1 small apple'], 'cuts', 'sweet potato and apple pieces'), (['sweet potato', '100 ml Sugar-free apple juice'], 'simmer', 'sweet potato and apple mixture'), (['2 tbsp Raisins', 'sweet potato'], 'mixes', 'batter'), (['batter'], 'pours', 'cake mixture'), (['cake mixture'], 'bakes', 'cake')]","['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins']","['1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']",1/2 tsp Baking soda,"Alice cuts 1/2 Sweet potato and 1 small apple, producing some sweet potato and apple pieces.
+Alice simmers sweet potato and 100 ml Sugar-free apple juice, producing some sweet potato and apple mixture.
+Alice mixes 2 tbsp Raisins and sweet potato, producing some batter.
+","Recipe 1
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 2
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 3
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 4
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 2
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '100 ml Whole wheat flour', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 3
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '1/2 tsp Baking powder', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Recipe 4
+ ['1/2 Sweet potato', '1 small apple', '100 ml Sugar-free apple juice', '2 tbsp Raisins', '1 dash Salt', '100 ml Whole wheat flour', '1/2 tsp Baking soda', '1/8 tsp Salt', '200 ml Soy milk', '2 tbsp Canola oil', '4 tbsp Maple syrup']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice cuts 1/2 Sweet potato and 1 small apple, producing some sweet potato and apple pieces.
+Alice simmers sweet potato and 100 ml Sugar-free apple juice, producing some sweet potato and apple mixture.
+Alice mixes 2 tbsp Raisins and sweet potato, producing some batter.
+Alice mixes in the 1/2 tsp Baking soda. Alice appears shocked."
+Roasted Garlic Soup,"[(['40 garlic cloves', '1 large russet potato', '1 large yellow onion'], 'toss', 'garlic potato onion mixture'), (['2 garlic cloves'], 'puts', 'garnish mixture'), (['garlic potato onion mixture'], 'cooks', 'browned garlic mixture'), (['browned garlic mixture'], 'transfers', 'drained garlic slices'), (['garnish mixture'], 'garnishes', 'bowls of soup')]","['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion']","['4 fresh sage leaves', '1 tablespoon olive oil', '1 12 teaspoons olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', '6 slices whole wheat baguette', 'snipped fresh chives']",6 slices whole wheat baguette,"Alice toss 40 garlic cloves, 1 large russet potato and 1 large yellow onion, producing some garlic potato onion mixture.
+Alice puts the 2 garlic cloves, producing some garnish mixture.
+Alice cooks the garlic potato onion mixture, producing some browned garlic mixture.
+","Recipe 1
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '4 fresh sage leaves', '1 tablespoon olive oil', '1 12 teaspoons olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', 'snipped fresh chives']
+
+Recipe 2
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '1 tablespoon olive oil', '1 12 teaspoons olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', '6 slices whole wheat baguette', 'snipped fresh chives']
+
+Recipe 3
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '4 fresh sage leaves', '1 12 teaspoons olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', '6 slices whole wheat baguette', 'snipped fresh chives']
+
+Recipe 4
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '4 fresh sage leaves', '1 tablespoon olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', '6 slices whole wheat baguette', 'snipped fresh chives']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '4 fresh sage leaves', '1 tablespoon olive oil', '1 12 teaspoons olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', 'snipped fresh chives']
+
+Recipe 2
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '1 tablespoon olive oil', '1 12 teaspoons olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', '6 slices whole wheat baguette', 'snipped fresh chives']
+
+Recipe 3
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '4 fresh sage leaves', '1 12 teaspoons olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', '6 slices whole wheat baguette', 'snipped fresh chives']
+
+Recipe 4
+ ['40 garlic cloves', '2 garlic cloves', '1 large russet potato', '1 large yellow onion', '4 fresh sage leaves', '1 tablespoon olive oil', '1 12 teaspoons coarse salt', 'fresh ground pepper', '3 12 cups chicken stock', '1 teaspoon fresh lemon juice', '6 slices whole wheat baguette', 'snipped fresh chives']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice toss 40 garlic cloves, 1 large russet potato and 1 large yellow onion, producing some garlic potato onion mixture.
+Alice puts the 2 garlic cloves, producing some garnish mixture.
+Alice cooks the garlic potato onion mixture, producing some browned garlic mixture.
+Alice mixes in the 6 slices whole wheat baguette. Alice appears shocked."
+Acini Di Pepe Salad,"[(['1 1/2 cups acini di pepe pasta', '2 teaspoons kosher salt'], 'cooks', 'cooked pasta'), (['1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', 'cooked pasta'], 'tosses', 'pasta mixture')]","['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt']","['1 cup red grape tomatoes', '1 cup yellow grape tomatoes', '1/2 cup pine nuts', '1 cup finely sliced radicchio', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']",1 cup yellow grape tomatoes,"Alice cooks 1 1/2 cups acini di pepe pasta and 2 teaspoons kosher salt, producing some cooked pasta.
+Alice tosses 1/2 cup extra virgin olive oil, 1/2 cup red wine vinegar and cooked pasta, producing some pasta mixture.
+","Recipe 1
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup red grape tomatoes', '1/2 cup pine nuts', '1 cup finely sliced radicchio', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+Recipe 2
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup yellow grape tomatoes', '1/2 cup pine nuts', '1 cup finely sliced radicchio', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+Recipe 3
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup red grape tomatoes', '1 cup yellow grape tomatoes', '1 cup finely sliced radicchio', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+Recipe 4
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup red grape tomatoes', '1 cup yellow grape tomatoes', '1/2 cup pine nuts', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup red grape tomatoes', '1/2 cup pine nuts', '1 cup finely sliced radicchio', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+Recipe 2
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup yellow grape tomatoes', '1/2 cup pine nuts', '1 cup finely sliced radicchio', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+Recipe 3
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup red grape tomatoes', '1 cup yellow grape tomatoes', '1 cup finely sliced radicchio', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+Recipe 4
+ ['1 1/2 cups acini di pepe pasta', '1/2 cup extra virgin olive oil', '1/2 cup red wine vinegar', '2 teaspoons kosher salt', '1 cup red grape tomatoes', '1 cup yellow grape tomatoes', '1/2 cup pine nuts', '1/2 cup finely diced red onion', '1 1/2 cups basil leaves', '1 cup crumbled feta cheese']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice cooks 1 1/2 cups acini di pepe pasta and 2 teaspoons kosher salt, producing some cooked pasta.
+Alice tosses 1/2 cup extra virgin olive oil, 1/2 cup red wine vinegar and cooked pasta, producing some pasta mixture.
+Alice mixes in the 1 cup yellow grape tomatoes. Alice appears shocked."
+Bibb Lettuce Salad Recipe,"[(['1 head Bibb lettuce'], 'wash', 'washed lettuce'), (['washed lettuce'], 'pat', 'dried lettuce'), (['1/2 x Lemon'], 'blanch', 'blanched lemon zest'), (['1 x Egg', '1 1/2 tsp Dijon-style mustard'], 'whisks', 'mixture'), (['blanched lemon zest'], 'whisk', 'mixture'), (['dried lettuce'], 'toss', 'salad')]","['1 head Bibb lettuce', '1/2 x Lemon', '1 x Egg', '1 1/2 tsp Dijon-style mustard']","['1 c. Vegetable oil', '1/2 x Lemon', '1 pch Fresh tarragon leaves', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey', '1/2 c. Finely minced pecans Salt']",1/2 c. Finely minced pecans Salt,"Alice washs the 1 head Bibb lettuce, producing some washed lettuce.
+Alice pats the washed lettuce, producing some dried lettuce.
+Alice blanchs the 1/2 x Lemon, producing some blanched lemon zest.
+","Recipe 1
+ ['1 head Bibb lettuce', '1/2 x Lemon', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1 c. Vegetable oil', '1/2 x Lemon', '1 pch Fresh tarragon leaves', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey']
+
+Recipe 2
+ ['1 head Bibb lettuce', '1/2 x Lemon', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1/2 x Lemon', '1 pch Fresh tarragon leaves', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey', '1/2 c. Finely minced pecans Salt']
+
+Recipe 3
+ ['1 head Bibb lettuce', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1 c. Vegetable oil', '1/2 x Lemon', '1 pch Fresh tarragon leaves', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey', '1/2 c. Finely minced pecans Salt']
+
+Recipe 4
+ ['1 head Bibb lettuce', '1/2 x Lemon', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1 c. Vegetable oil', '1/2 x Lemon', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey', '1/2 c. Finely minced pecans Salt']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 head Bibb lettuce', '1/2 x Lemon', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1 c. Vegetable oil', '1/2 x Lemon', '1 pch Fresh tarragon leaves', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey']
+
+Recipe 2
+ ['1 head Bibb lettuce', '1/2 x Lemon', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1/2 x Lemon', '1 pch Fresh tarragon leaves', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey', '1/2 c. Finely minced pecans Salt']
+
+Recipe 3
+ ['1 head Bibb lettuce', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1 c. Vegetable oil', '1/2 x Lemon', '1 pch Fresh tarragon leaves', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey', '1/2 c. Finely minced pecans Salt']
+
+Recipe 4
+ ['1 head Bibb lettuce', '1/2 x Lemon', '1 x Egg', '1 1/2 tsp Dijon-style mustard', '1 c. Vegetable oil', '1/2 x Lemon', '1 1/2 Tbsp. Tarragon vinegar', '1 Tbsp. Honey', '1/2 c. Finely minced pecans Salt']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice washs the 1 head Bibb lettuce, producing some washed lettuce.
+Alice pats the washed lettuce, producing some dried lettuce.
+Alice blanchs the 1/2 x Lemon, producing some blanched lemon zest.
+Alice mixes in the 1/2 c. Finely minced pecans Salt. Alice appears shocked."
+Spinach Pasta Using A Pasta Machine,"[(['SPINACH', '1  package frozen spinach', '2 tablespoons water'], 'prepares', 'prepared spinach'), (['prepared spinach'], 'adds', 'spinach mixture')]","['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA']","['2 cups all-purpose flour ', '1/4 cup prepared spinach', '1 teaspoon salt', '1 tablespoon extra virgin olive oil', '1 large egg', '1/2 cup semolina flour']",1 tablespoon extra virgin olive oil,"Alice prepares SPINACH, 1  package frozen spinach and 2 tablespoons water, producing some prepared spinach.
+Alice adds the prepared spinach, producing some spinach mixture.
+","Recipe 1
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '2 cups all-purpose flour ', '1/4 cup prepared spinach', '1 teaspoon salt', '1 large egg', '1/2 cup semolina flour']
+
+Recipe 2
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '1/4 cup prepared spinach', '1 teaspoon salt', '1 tablespoon extra virgin olive oil', '1 large egg', '1/2 cup semolina flour']
+
+Recipe 3
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '2 cups all-purpose flour ', '1 teaspoon salt', '1 tablespoon extra virgin olive oil', '1 large egg', '1/2 cup semolina flour']
+
+Recipe 4
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '2 cups all-purpose flour ', '1/4 cup prepared spinach', '1 tablespoon extra virgin olive oil', '1 large egg', '1/2 cup semolina flour']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '2 cups all-purpose flour ', '1/4 cup prepared spinach', '1 teaspoon salt', '1 large egg', '1/2 cup semolina flour']
+
+Recipe 2
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '1/4 cup prepared spinach', '1 teaspoon salt', '1 tablespoon extra virgin olive oil', '1 large egg', '1/2 cup semolina flour']
+
+Recipe 3
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '2 cups all-purpose flour ', '1 teaspoon salt', '1 tablespoon extra virgin olive oil', '1 large egg', '1/2 cup semolina flour']
+
+Recipe 4
+ ['SPINACH', '1  package frozen spinach', '2 tablespoons water', 'PASTA', '2 cups all-purpose flour ', '1/4 cup prepared spinach', '1 tablespoon extra virgin olive oil', '1 large egg', '1/2 cup semolina flour']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice prepares SPINACH, 1  package frozen spinach and 2 tablespoons water, producing some prepared spinach.
+Alice adds the prepared spinach, producing some spinach mixture.
+Alice mixes in the 1 tablespoon extra virgin olive oil. Alice appears shocked."
+Healthy Salmon Salad,"[(['2 tablespoons olive oil'], 'heats', 'heated olive oil'), (['5 garlic cloves', 'heated olive oil'], 'cooks', 'garlic'), (['garlic'], 'transfer', 'blender container'), (['2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce'], 'add', 'dressing'), (['dressing'], 'blends', 'blended dressing'), (['blender container'], 'adds', 'yogurt-garlic mixture'), (['yogurt-garlic mixture'], 'brush', 'salmon coated with garlic mixture'), (['salmon coated with garlic mixture'], 'places', 'salmon on the rack'), (['salmon on the rack'], 'broils', 'broiled salmon'), (['broiled salmon'], 'place', 'salad plates with salmon')]","['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce']","['1 tablespoon dijon-style mustard', '1 tablespoon water', '1/2 teaspoon pepper', '1/3 cup plain fat-free yogurt', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']",1/2 teaspoon pepper,"Alice heats the 2 tablespoons olive oil, producing some heated olive oil.
+Alice cooks 5 garlic cloves and heated olive oil, producing some garlic.
+Alice transfers the garlic, producing some blender container.
+","Recipe 1
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon dijon-style mustard', '1 tablespoon water', '1/3 cup plain fat-free yogurt', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+Recipe 2
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon water', '1/2 teaspoon pepper', '1/3 cup plain fat-free yogurt', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+Recipe 3
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon dijon-style mustard', '1/2 teaspoon pepper', '1/3 cup plain fat-free yogurt', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+Recipe 4
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon dijon-style mustard', '1 tablespoon water', '1/2 teaspoon pepper', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon dijon-style mustard', '1 tablespoon water', '1/3 cup plain fat-free yogurt', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+Recipe 2
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon water', '1/2 teaspoon pepper', '1/3 cup plain fat-free yogurt', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+Recipe 3
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon dijon-style mustard', '1/2 teaspoon pepper', '1/3 cup plain fat-free yogurt', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+Recipe 4
+ ['2 tablespoons olive oil', '5 garlic cloves', '2 tablespoons lemon juice', '1 tablespoon Worcestershire sauce', '1 tablespoon dijon-style mustard', '1 tablespoon water', '1/2 teaspoon pepper', '12 ounces boneless salmon fillets ', 'nonstick spray coating', '10 cups torn romaine lettuce', '1/2 cup thinly sliced red onion', '1/4 cup freshly grated parmesan cheese', '1 cup cherry tomatoes', '1/2 cup pitted ripe olives']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice heats the 2 tablespoons olive oil, producing some heated olive oil.
+Alice cooks 5 garlic cloves and heated olive oil, producing some garlic.
+Alice transfers the garlic, producing some blender container.
+Alice mixes in the 1/2 teaspoon pepper. Alice appears shocked."
+Shmackin Good Bran Muffins,"[(['12 cup raisins'], 'soaks', 'soaked raisins'), (['34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran '], 'mixes', 'warmed mixture'), (['soaked raisins'], 'mixes', 'wet mixture'), (['wet mixture'], 'mixes', 'wet mixture with walnuts and coconut'), (['wet mixture with walnuts'], 'mix', 'combined mixture'), (['combined mixture'], 'spoons', 'muffins'), (['muffins'], 'tests', 'done muffins')]","['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ']","['1 cup flour', '1 teaspoon baking soda', '1 teaspoon baking powder', '12 teaspoon salt', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']",12 teaspoon salt,"Alice soaks the 12 cup raisins, producing some soaked raisins.
+Alice mixes 34 cup milk, 34 cup yogurt  and 1 12 cups wheat bran , producing some warmed mixture.
+Alice mixes the soaked raisins, producing some wet mixture.
+","Recipe 1
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 cup flour', '1 teaspoon baking soda', '1 teaspoon baking powder', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+Recipe 2
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 teaspoon baking soda', '1 teaspoon baking powder', '12 teaspoon salt', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+Recipe 3
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 cup flour', '1 teaspoon baking powder', '12 teaspoon salt', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+Recipe 4
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 cup flour', '1 teaspoon baking soda', '12 teaspoon salt', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 cup flour', '1 teaspoon baking soda', '1 teaspoon baking powder', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+Recipe 2
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 teaspoon baking soda', '1 teaspoon baking powder', '12 teaspoon salt', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+Recipe 3
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 cup flour', '1 teaspoon baking powder', '12 teaspoon salt', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+Recipe 4
+ ['12 cup raisins', '34 cup milk', '34 cup yogurt ', '1 12 cups wheat bran ', '1 cup flour', '1 teaspoon baking soda', '12 teaspoon salt', '13 cup vegetable oil', '1 egg', '23 cup Splenda granular', '1 teaspoon vanilla', '3 tablespoons molasses', '12 cup finely chopped walnuts', '12 cup shredded unsweetened coconut']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice soaks the 12 cup raisins, producing some soaked raisins.
+Alice mixes 34 cup milk, 34 cup yogurt  and 1 12 cups wheat bran , producing some warmed mixture.
+Alice mixes the soaked raisins, producing some wet mixture.
+Alice mixes in the 12 teaspoon salt. Alice appears shocked."
+Double-Decker Sliders with Fire-Roasted Red Pepper Sauce,"[(['3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika'], 'mix', 'Fire-Roasted Red Pepper Sauce'), (['Fire-Roasted Red Pepper Sauce'], 'spreads', 'buns with fire-roasted red pepper sauce'), (['buns with fire-roasted red pepper sauce'], 'top', 'assembled sliders')]","['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika']","['Sliders', '1 cup unsalted butter', 'red bell peppers', 'yellow onions', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']",yellow onions,"Alice mixes 3 cups roasted red peppers and 1 Tbsp. Hot smoked paprika, producing some Fire-Roasted Red Pepper Sauce.
+Alice spreads the Fire-Roasted Red Pepper Sauce, producing some buns with fire-roasted red pepper sauce.
+Alice tops the buns with fire-roasted red pepper sauce, producing some assembled sliders.
+","Recipe 1
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', 'Sliders', '1 cup unsalted butter', 'red bell peppers', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+Recipe 2
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', '1 cup unsalted butter', 'red bell peppers', 'yellow onions', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+Recipe 3
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', 'Sliders', 'red bell peppers', 'yellow onions', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+Recipe 4
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', 'Sliders', '1 cup unsalted butter', 'yellow onions', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', 'Sliders', '1 cup unsalted butter', 'red bell peppers', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+Recipe 2
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', '1 cup unsalted butter', 'red bell peppers', 'yellow onions', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+Recipe 3
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', 'Sliders', 'red bell peppers', 'yellow onions', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+Recipe 4
+ ['Fire-Roasted Red Pepper Sauce', '1-1/2 qt. OPEN PIT Original Restaurant Recipe Barbecue Sauce', '3 cups roasted red peppers', '1 Tbsp. Hot smoked paprika', 'Sliders', '1 cup unsalted butter', 'yellow onions', '144 each lean ground beef', '72 each unsplit slider buns', '72 slices smoked cheddar cheese']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice mixes 3 cups roasted red peppers and 1 Tbsp. Hot smoked paprika, producing some Fire-Roasted Red Pepper Sauce.
+Alice spreads the Fire-Roasted Red Pepper Sauce, producing some buns with fire-roasted red pepper sauce.
+Alice tops the buns with fire-roasted red pepper sauce, producing some assembled sliders.
+Alice mixes in the yellow onions. Alice appears shocked."
+Chicken Tetrazzini,"[(['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine'], 'saute', 'sauteed vegetables'), (['sauteed vegetables'], 'add', 'bouillon vegetable mixture'), (['bouillon vegetable mixture'], 'cooks', 'mixture')]","['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine']","['1/4 c. dry bread crumbs', '1/4 c. grated Parmesan cheese', '1/4 c. unsifted flour', '1 1/2 tsp. salt', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']",1/4 c. unsifted flour,"Alice sautes 1 c. chopped onion, 1/2 c. chopped green pepper, 1/4 c. chopped celery and 1/4 c. margarine, producing some sauteed vegetables.
+Alice adds the sauteed vegetables, producing some bouillon vegetable mixture.
+Alice cooks the bouillon vegetable mixture, producing some mixture.
+","Recipe 1
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. dry bread crumbs', '1/4 c. grated Parmesan cheese', '1 1/2 tsp. salt', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+Recipe 2
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. grated Parmesan cheese', '1/4 c. unsifted flour', '1 1/2 tsp. salt', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+Recipe 3
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. dry bread crumbs', '1/4 c. unsifted flour', '1 1/2 tsp. salt', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+Recipe 4
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. dry bread crumbs', '1/4 c. grated Parmesan cheese', '1/4 c. unsifted flour', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. dry bread crumbs', '1/4 c. grated Parmesan cheese', '1 1/2 tsp. salt', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+Recipe 2
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. grated Parmesan cheese', '1/4 c. unsifted flour', '1 1/2 tsp. salt', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+Recipe 3
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. dry bread crumbs', '1/4 c. unsifted flour', '1 1/2 tsp. salt', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+Recipe 4
+ ['1 c. chopped onion', '1/2 c. chopped green pepper', '1/4 c. chopped celery', '1/4 c. margarine', '1/4 c. dry bread crumbs', '1/4 c. grated Parmesan cheese', '1/4 c. unsifted flour', '3 c. low-fat milk', '1 chicken bouillon cube', '2 c. diced', '2 c. cooked spaghetti', '1 1/2 c. cooked green beans', '1 jar mushrooms', '2 Tbsp. diced pimento', 'dash of lemon pepper']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice sautes 1 c. chopped onion, 1/2 c. chopped green pepper, 1/4 c. chopped celery and 1/4 c. margarine, producing some sauteed vegetables.
+Alice adds the sauteed vegetables, producing some bouillon vegetable mixture.
+Alice cooks the bouillon vegetable mixture, producing some mixture.
+Alice mixes in the 1/4 c. unsifted flour. Alice appears shocked."
+Tomato-Onion Chutney,"[(['4 ripe tomatoes '], 'cuts', 'cross-marked tomatoes'), (['cross-marked tomatoes'], 'transfers', 'cooled tomatoes'), (['cooled tomatoes'], 'chops', 'chopped tomatoes'), (['1/4 cup extra-virgin olive oil'], 'coats', 'oiled skillet'), (['1 pound cipollini onions ', 'oiled skillet'], 'adds', 'onions in skillet'), (['onions in skillet'], 'cooks', 'softened onions'), (['chopped tomatoes', '2 whole cloves'], 'adds', 'seasoned tomato mixture'), (['seasoned tomato mixture'], 'cooks', 'cooked tomato mixture'), (['cooked tomato mixture'], 'cooks', 'thick chutney')]","['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves']","['1 teaspoon kosher salt', '1/2 teaspoon freshly ground black pepper', '1/4 cup champagne vinegar', '2 tablespoons agave nectar']",1/2 teaspoon freshly ground black pepper,"Alice cuts the 4 ripe tomatoes , producing some cross-marked tomatoes.
+Alice transfers the cross-marked tomatoes, producing some cooled tomatoes.
+Alice chops the cooled tomatoes, producing some chopped tomatoes.
+","Recipe 1
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1 teaspoon kosher salt', '1/4 cup champagne vinegar', '2 tablespoons agave nectar']
+
+Recipe 2
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1/2 teaspoon freshly ground black pepper', '1/4 cup champagne vinegar', '2 tablespoons agave nectar']
+
+Recipe 3
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1 teaspoon kosher salt', '1/2 teaspoon freshly ground black pepper', '2 tablespoons agave nectar']
+
+Recipe 4
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1 teaspoon kosher salt', '1/2 teaspoon freshly ground black pepper', '1/4 cup champagne vinegar']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1 teaspoon kosher salt', '1/4 cup champagne vinegar', '2 tablespoons agave nectar']
+
+Recipe 2
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1/2 teaspoon freshly ground black pepper', '1/4 cup champagne vinegar', '2 tablespoons agave nectar']
+
+Recipe 3
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1 teaspoon kosher salt', '1/2 teaspoon freshly ground black pepper', '2 tablespoons agave nectar']
+
+Recipe 4
+ ['4 ripe tomatoes ', '1/4 cup extra-virgin olive oil', '1 pound cipollini onions ', '2 whole cloves', '1 teaspoon kosher salt', '1/2 teaspoon freshly ground black pepper', '1/4 cup champagne vinegar']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice cuts the 4 ripe tomatoes , producing some cross-marked tomatoes.
+Alice transfers the cross-marked tomatoes, producing some cooled tomatoes.
+Alice chops the cooled tomatoes, producing some chopped tomatoes.
+Alice mixes in the 1/2 teaspoon freshly ground black pepper. Alice appears shocked."
+Plain Ol' Bread Stuffing,"[(['1 tablespoon oil', '1 tablespoon butter'], 'melts', 'mixture'), (['6 cups cubed whole wheat bread'], 'place', 'mixture'), (['2 eggs'], 'mix', 'mixture')]","['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter']","['2 stalks celery', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']",salt,"Alice melts 1 tablespoon oil and 1 tablespoon butter, producing some mixture.
+Alice places the 6 cups cubed whole wheat bread, producing some mixture.
+Alice mixes the 2 eggs, producing some mixture.
+","Recipe 1
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', '14 cup half-and-half']
+
+Recipe 2
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 3
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 4
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', '14 cup half-and-half']
+
+Recipe 2
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '1 onion', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 3
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '5 large mushrooms', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Recipe 4
+ ['6 cups cubed whole wheat bread', '2 eggs', '1 tablespoon oil', '1 tablespoon butter', '2 stalks celery', '1 onion', '1 large garlic clove', '2 tablespoons chopped fresh sage', 'salt', '14 cup half-and-half']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice melts 1 tablespoon oil and 1 tablespoon butter, producing some mixture.
+Alice places the 6 cups cubed whole wheat bread, producing some mixture.
+Alice mixes the 2 eggs, producing some mixture.
+Alice mixes in the salt. Alice appears shocked."
+Irish Cream Macadamia Nut Pie,"[(['5 eggs', '1/2 tablespoon salt', '1 1/4 cups white sugar', '3/4 cup butter'], 'pours', 'pie'), (['pie'], 'bakes', 'baked pie')]","['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter']","['1 cup light corn syrup', '3/4 cup Irish cream liqueur', '1 1/3 cups semisweet chocolate chips', '2 cups macadamia nuts', '1 recipe pastry for a 9 inch single crust pie']",2 cups macadamia nuts,"Alice pours 5 eggs, 1/2 tablespoon salt, 1 1/4 cups white sugar and 3/4 cup butter, producing some pie.
+Alice bakes the pie, producing some baked pie.
+","Recipe 1
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '1 cup light corn syrup', '3/4 cup Irish cream liqueur', '1 1/3 cups semisweet chocolate chips', '1 recipe pastry for a 9 inch single crust pie']
+
+Recipe 2
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '3/4 cup Irish cream liqueur', '1 1/3 cups semisweet chocolate chips', '2 cups macadamia nuts', '1 recipe pastry for a 9 inch single crust pie']
+
+Recipe 3
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '1 cup light corn syrup', '1 1/3 cups semisweet chocolate chips', '2 cups macadamia nuts', '1 recipe pastry for a 9 inch single crust pie']
+
+Recipe 4
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '1 cup light corn syrup', '3/4 cup Irish cream liqueur', '2 cups macadamia nuts', '1 recipe pastry for a 9 inch single crust pie']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '1 cup light corn syrup', '3/4 cup Irish cream liqueur', '1 1/3 cups semisweet chocolate chips', '1 recipe pastry for a 9 inch single crust pie']
+
+Recipe 2
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '3/4 cup Irish cream liqueur', '1 1/3 cups semisweet chocolate chips', '2 cups macadamia nuts', '1 recipe pastry for a 9 inch single crust pie']
+
+Recipe 3
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '1 cup light corn syrup', '1 1/3 cups semisweet chocolate chips', '2 cups macadamia nuts', '1 recipe pastry for a 9 inch single crust pie']
+
+Recipe 4
+ ['5 eggs', '1 1/4 cups white sugar', '1/2 tablespoon salt', '3/4 cup butter', '1 cup light corn syrup', '3/4 cup Irish cream liqueur', '2 cups macadamia nuts', '1 recipe pastry for a 9 inch single crust pie']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice pours 5 eggs, 1/2 tablespoon salt, 1 1/4 cups white sugar and 3/4 cup butter, producing some pie.
+Alice bakes the pie, producing some baked pie.
+Alice mixes in the 2 cups macadamia nuts. Alice appears shocked."
+Pork Chop Rhubarb Casserole,"[(['4 each pork chops', '1 tablespoon vegetable oil'], 'brown', 'browned pork chops'), (['3 cups rhubarb cut up', '1/2 cup brown sugar'], 'combines', 'rhubarb mixture'), (['rhubarb mixture'], 'spoons', 'half over the bread crumbs'), (['browned pork chops'], 'arranges', 'pork chops arranged on platter'), (['pork chops arranged on platter'], 'spoon', 'pork chops with rhubarb mixture'), (['half over the bread crumbs'], 'sprinkles', 'remaining crumbs')]","['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar']","['1 teaspoon cinnamon', '3 cups bread crumbs', '1/4 cup flour', '1 x salt']",1 teaspoon cinnamon,"Alice browns 4 each pork chops and 1 tablespoon vegetable oil, producing some browned pork chops.
+Alice combines 3 cups rhubarb cut up and 1/2 cup brown sugar, producing some rhubarb mixture.
+Alice spoons the rhubarb mixture, producing some half over the bread crumbs.
+","Recipe 1
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '3 cups bread crumbs', '1/4 cup flour', '1 x salt']
+
+Recipe 2
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '1 teaspoon cinnamon', '1/4 cup flour', '1 x salt']
+
+Recipe 3
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '1 teaspoon cinnamon', '3 cups bread crumbs', '1 x salt']
+
+Recipe 4
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '1 teaspoon cinnamon', '3 cups bread crumbs', '1/4 cup flour']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '3 cups bread crumbs', '1/4 cup flour', '1 x salt']
+
+Recipe 2
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '1 teaspoon cinnamon', '1/4 cup flour', '1 x salt']
+
+Recipe 3
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '1 teaspoon cinnamon', '3 cups bread crumbs', '1 x salt']
+
+Recipe 4
+ ['4 each pork chops', '3 cups rhubarb cut up', '1 tablespoon vegetable oil', '1/2 cup brown sugar', '1 teaspoon cinnamon', '3 cups bread crumbs', '1/4 cup flour']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice browns 4 each pork chops and 1 tablespoon vegetable oil, producing some browned pork chops.
+Alice combines 3 cups rhubarb cut up and 1/2 cup brown sugar, producing some rhubarb mixture.
+Alice spoons the rhubarb mixture, producing some half over the bread crumbs.
+Alice mixes in the 1 teaspoon cinnamon. Alice appears shocked."
+Hijiki With Shiitakes And Beans,"[(['1 1/2 ounces hijiki ', '5 large'], 'soak', 'soaked hijiki and shiitakes'), (['soaked hijiki'], 'slice', 'sliced shiitakes'), (['2 tablespoons extra virgin olive oil'], 'heat', 'olive oil in skillet'), (['1 cup diced chicken', 'olive oil in skillet'], 'brown', 'browned chicken or shrimp'), (['browned chicken'], 'remove', 'removed chicken or shrimp'), (['sliced shiitakes'], 'adds', 'mixture'), (['removed chicken'], 'adds', 'mixture'), (['mixture', 'mixture'], 'cooks', 'cooked mixture')]","['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken']","['2 medium carrots', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']",1 cup fresh soybeans,"Alice soaks 1 1/2 ounces hijiki  and 5 large, producing some soaked hijiki and shiitakes.
+Alice slices the soaked hijiki, producing some sliced shiitakes.
+Alice heats the 2 tablespoons extra virgin olive oil, producing some olive oil in skillet.
+","Recipe 1
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 2
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 3
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 4
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '1 cup dashi', '1/4 cup soy sauce', 'Salt if necessary']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 2
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '1 cup fresh soybeans', '1 cup dashi', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 3
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '2 tablespoons mirin ', '1/4 cup soy sauce', 'Salt if necessary']
+
+Recipe 4
+ ['1 1/2 ounces hijiki ', '5 large', '2 tablespoons extra virgin olive oil', '1 cup diced chicken', '2 medium carrots', '1 cup fresh soybeans', '1 cup dashi', '1/4 cup soy sauce', 'Salt if necessary']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice soaks 1 1/2 ounces hijiki  and 5 large, producing some soaked hijiki and shiitakes.
+Alice slices the soaked hijiki, producing some sliced shiitakes.
+Alice heats the 2 tablespoons extra virgin olive oil, producing some olive oil in skillet.
+Alice mixes in the 1 cup fresh soybeans. Alice appears shocked."
+Veal Stew With Sauteed Artichokes,"[(['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter'], 'softens', 'softened shallots'), (['4 pounds veal stew'], 'dredges', 'floured veal pieces'), (['floured veal pieces'], 'browns', 'browned veal pieces'), (['browned veal pieces'], 'sets aside', 'browned veal pieces set aside'), (['browned veal pieces set aside'], 'adds', 'pan sauce'), (['softened shallots'], 'add', 'meat with sage, shallots, salt and pepper'), (['meat with sage'], 'simmers', 'simmered meat')]","['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew']","['3/4 cup flour', '1 cup dry white wine', '2 teaspoons sage leaves', 'Coarse salt', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']",3/4 cup flour,"Alice softens 4 shallots, 2 tablespoons peanut and 1 tablespoon unsalted butter, producing some softened shallots.
+Alice dredges the 4 pounds veal stew, producing some floured veal pieces.
+Alice browns the floured veal pieces, producing some browned veal pieces.
+","Recipe 1
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '1 cup dry white wine', '2 teaspoons sage leaves', 'Coarse salt', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+Recipe 2
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '3/4 cup flour', '2 teaspoons sage leaves', 'Coarse salt', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+Recipe 3
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '3/4 cup flour', '1 cup dry white wine', 'Coarse salt', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+Recipe 4
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '3/4 cup flour', '1 cup dry white wine', '2 teaspoons sage leaves', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '1 cup dry white wine', '2 teaspoons sage leaves', 'Coarse salt', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+Recipe 2
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '3/4 cup flour', '2 teaspoons sage leaves', 'Coarse salt', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+Recipe 3
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '3/4 cup flour', '1 cup dry white wine', 'Coarse salt', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+Recipe 4
+ ['4 shallots', '2 tablespoons peanut', '1 tablespoon unsalted butter', '4 pounds veal stew', '3/4 cup flour', '1 cup dry white wine', '2 teaspoons sage leaves', '3 pounds baby artichokes', 'Juice 1/2 lemon', '2 tablespoons olive oil', '1 tablespoon safflower oil', '1 clove garlic']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice softens 4 shallots, 2 tablespoons peanut and 1 tablespoon unsalted butter, producing some softened shallots.
+Alice dredges the 4 pounds veal stew, producing some floured veal pieces.
+Alice browns the floured veal pieces, producing some browned veal pieces.
+Alice mixes in the 3/4 cup flour. Alice appears shocked."
+Anita's Blueberry Cobbler,"[(['Cooking spray'], 'coats', 'prepared baking pan'), (['1 ', '1 1/2 cups sugar'], 'combine', 'blueberries with sugar'), (['blueberries with sugar'], 'toss', 'blueberries with sugar mixture'), (['1 cup all-purpose flour'], 'combine', 'dry mixture'), (['dry mixture'], 'beats', 'smooth batter'), (['prepared baking pan', 'smooth batter', 'blueberries with sugar mixture'], 'pours', 'batter in prepared pan with blueberries'), (['batter in prepared pan with blueberries'], 'bakes', 'baked blueberry batter')]","['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour']","['1 teaspoon baking powder', '1/2 cup  unsalted butter', '3/4 cup milk ', 'Ice cream', 'Blueberries']",1 teaspoon baking powder,"Alice coats the Cooking spray, producing some prepared baking pan.
+Alice combines 1  and 1 1/2 cups sugar, producing some blueberries with sugar.
+Alice toss the blueberries with sugar, producing some blueberries with sugar mixture.
+","Recipe 1
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1/2 cup  unsalted butter', '3/4 cup milk ', 'Ice cream', 'Blueberries']
+
+Recipe 2
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1 teaspoon baking powder', '3/4 cup milk ', 'Ice cream', 'Blueberries']
+
+Recipe 3
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1 teaspoon baking powder', '1/2 cup  unsalted butter', 'Ice cream', 'Blueberries']
+
+Recipe 4
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1 teaspoon baking powder', '1/2 cup  unsalted butter', '3/4 cup milk ', 'Blueberries']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1/2 cup  unsalted butter', '3/4 cup milk ', 'Ice cream', 'Blueberries']
+
+Recipe 2
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1 teaspoon baking powder', '3/4 cup milk ', 'Ice cream', 'Blueberries']
+
+Recipe 3
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1 teaspoon baking powder', '1/2 cup  unsalted butter', 'Ice cream', 'Blueberries']
+
+Recipe 4
+ ['Cooking spray', '1 ', '1 1/2 cups sugar', '1 cup all-purpose flour', '1 teaspoon baking powder', '1/2 cup  unsalted butter', '3/4 cup milk ', 'Blueberries']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice coats the Cooking spray, producing some prepared baking pan.
+Alice combines 1  and 1 1/2 cups sugar, producing some blueberries with sugar.
+Alice toss the blueberries with sugar, producing some blueberries with sugar mixture.
+Alice mixes in the 1 teaspoon baking powder. Alice appears shocked."
+Chocolate Chip Cookies,"[(['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt'], 'sifts', 'sifted dry ingredients'), (['1/4 c. light brown sugar'], 'mixes', 'mixture'), (['mixture'], 'beat', 'beaten mixture')]","['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar']","['1 medium egg', '1 tsp. vanilla extract', '1/2 c. soft sweet butter', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ', '1/2 c. granulated sugar']",1/2 c. granulated sugar,"Alice sifts 1 c. plus 2 Tbsp. sifted all-purpose flour, 1/2 tsp. baking soda and 1/2 tsp. salt, producing some sifted dry ingredients.
+Alice mixes the 1/4 c. light brown sugar, producing some mixture.
+Alice beats the mixture, producing some beaten mixture.
+","Recipe 1
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 medium egg', '1 tsp. vanilla extract', '1/2 c. soft sweet butter', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ']
+
+Recipe 2
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 tsp. vanilla extract', '1/2 c. soft sweet butter', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ', '1/2 c. granulated sugar']
+
+Recipe 3
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 medium egg', '1/2 c. soft sweet butter', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ', '1/2 c. granulated sugar']
+
+Recipe 4
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 medium egg', '1 tsp. vanilla extract', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ', '1/2 c. granulated sugar']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 medium egg', '1 tsp. vanilla extract', '1/2 c. soft sweet butter', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ']
+
+Recipe 2
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 tsp. vanilla extract', '1/2 c. soft sweet butter', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ', '1/2 c. granulated sugar']
+
+Recipe 3
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 medium egg', '1/2 c. soft sweet butter', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ', '1/2 c. granulated sugar']
+
+Recipe 4
+ ['1 c. plus 2 Tbsp. sifted all-purpose flour', '1/2 tsp. baking soda', '1/2 tsp. salt', '1/4 c. light brown sugar', '1 medium egg', '1 tsp. vanilla extract', '1/2 c. coarsely chopped pecans', '1 pkg. semi-sweet chocolate chips ', '1/2 c. granulated sugar']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice sifts 1 c. plus 2 Tbsp. sifted all-purpose flour, 1/2 tsp. baking soda and 1/2 tsp. salt, producing some sifted dry ingredients.
+Alice mixes the 1/4 c. light brown sugar, producing some mixture.
+Alice beats the mixture, producing some beaten mixture.
+Alice mixes in the 1/2 c. granulated sugar. Alice appears shocked."
+24 Hour Brisket,"[(['1  boneless beef brisket'], 'place', 'brisket in dish'), (['1 c. strong coffee', 'brisket in dish'], 'bake', 'brisket after baking'), (['brisket after baking'], 'trim', 'trimmed brisket'), (['trimmed brisket'], 'slice', 'strips'), (['strips'], 'put', 'pan contents'), (['pan contents'], 'bakes', 'baked pan contents')]","['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar']","['2 Tbsp. prepared mustard', '1/4 tsp. Tabasco sauce', '2 c. catsup', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke', '2 tsp. Gravy Master seasoning sauce']",2 tsp. Gravy Master seasoning sauce,"Alice places the 1  boneless beef brisket, producing some brisket in dish.
+Alice bakes 1 c. strong coffee and brisket in dish, producing some brisket after baking.
+Alice trims the brisket after baking, producing some trimmed brisket.
+","Recipe 1
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '2 Tbsp. prepared mustard', '1/4 tsp. Tabasco sauce', '2 c. catsup', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke']
+
+Recipe 2
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '1/4 tsp. Tabasco sauce', '2 c. catsup', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke', '2 tsp. Gravy Master seasoning sauce']
+
+Recipe 3
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '2 Tbsp. prepared mustard', '2 c. catsup', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke', '2 tsp. Gravy Master seasoning sauce']
+
+Recipe 4
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '2 Tbsp. prepared mustard', '1/4 tsp. Tabasco sauce', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke', '2 tsp. Gravy Master seasoning sauce']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '2 Tbsp. prepared mustard', '1/4 tsp. Tabasco sauce', '2 c. catsup', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke']
+
+Recipe 2
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '1/4 tsp. Tabasco sauce', '2 c. catsup', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke', '2 tsp. Gravy Master seasoning sauce']
+
+Recipe 3
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '2 Tbsp. prepared mustard', '2 c. catsup', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke', '2 tsp. Gravy Master seasoning sauce']
+
+Recipe 4
+ ['1  boneless beef brisket', '1 c. strong coffee', '1  bottle Coca-Cola', '3 Tbsp. brown sugar', '2 Tbsp. prepared mustard', '1/4 tsp. Tabasco sauce', '1/4 c. Worcestershire sauce', '2 Tbsp. Liquid Smoke', '2 tsp. Gravy Master seasoning sauce']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice places the 1  boneless beef brisket, producing some brisket in dish.
+Alice bakes 1 c. strong coffee and brisket in dish, producing some brisket after baking.
+Alice trims the brisket after baking, producing some trimmed brisket.
+Alice mixes in the 2 tsp. Gravy Master seasoning sauce. Alice appears shocked."
+"Roasted Cauliflower, Brussels Sprouts And Potato Curry ","[(['1 head cauliflower', '1 pound brussels sprouts'], 'wash', 'washed cauliflower and brussels sprouts'), (['1 pound baby new potatoes '], 'scrubs', 'scrubbed potatoes'), (['washed cauliflower', 'scrubbed potatoes'], 'mixes', 'vegetable mixture'), (['vegetable mixture'], 'spread', 'spread vegetables'), (['spread vegetables'], 'roasts', 'roasted vegetables'), (['2 cloves garlic clove'], 'sautes', 'sauteed mixture'), (['sauteed mixture'], 'add', 'mixture'), (['roasted vegetables'], 'heats', 'curry roasted vegetables')]","['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove']","['1/2 cup shallot onions', '3 cups coconut milk', '1 1/2 tablespoons curry powder', '1 dash paprika', '1 tablespoon lime juice', '1 1/2 teaspoons honey', '1 handful dried cranberries']",1 1/2 teaspoons honey,"Alice washs 1 head cauliflower and 1 pound brussels sprouts, producing some washed cauliflower and brussels sprouts.
+Alice scrubs the 1 pound baby new potatoes , producing some scrubbed potatoes.
+Alice mixes washed cauliflower and scrubbed potatoes, producing some vegetable mixture.
+","Recipe 1
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '1/2 cup shallot onions', '3 cups coconut milk', '1 1/2 tablespoons curry powder', '1 dash paprika', '1 tablespoon lime juice', '1 handful dried cranberries']
+
+Recipe 2
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '3 cups coconut milk', '1 1/2 tablespoons curry powder', '1 dash paprika', '1 tablespoon lime juice', '1 1/2 teaspoons honey', '1 handful dried cranberries']
+
+Recipe 3
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '1/2 cup shallot onions', '1 1/2 tablespoons curry powder', '1 dash paprika', '1 tablespoon lime juice', '1 1/2 teaspoons honey', '1 handful dried cranberries']
+
+Recipe 4
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '1/2 cup shallot onions', '3 cups coconut milk', '1 dash paprika', '1 tablespoon lime juice', '1 1/2 teaspoons honey', '1 handful dried cranberries']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '1/2 cup shallot onions', '3 cups coconut milk', '1 1/2 tablespoons curry powder', '1 dash paprika', '1 tablespoon lime juice', '1 handful dried cranberries']
+
+Recipe 2
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '3 cups coconut milk', '1 1/2 tablespoons curry powder', '1 dash paprika', '1 tablespoon lime juice', '1 1/2 teaspoons honey', '1 handful dried cranberries']
+
+Recipe 3
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '1/2 cup shallot onions', '1 1/2 tablespoons curry powder', '1 dash paprika', '1 tablespoon lime juice', '1 1/2 teaspoons honey', '1 handful dried cranberries']
+
+Recipe 4
+ ['1 head cauliflower', '1 pound brussels sprouts', '1 pound baby new potatoes ', '2 cloves garlic clove', '1/2 cup shallot onions', '3 cups coconut milk', '1 dash paprika', '1 tablespoon lime juice', '1 1/2 teaspoons honey', '1 handful dried cranberries']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice washs 1 head cauliflower and 1 pound brussels sprouts, producing some washed cauliflower and brussels sprouts.
+Alice scrubs the 1 pound baby new potatoes , producing some scrubbed potatoes.
+Alice mixes washed cauliflower and scrubbed potatoes, producing some vegetable mixture.
+Alice mixes in the 1 1/2 teaspoons honey. Alice appears shocked."
+Feta Cheese & Pesto Torta,"[(['1 Tbsp. butter'], 'spreads', 'buttered pan'), (['1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese'], 'coats', 'crumb-coated'), (['3 pkg.  PHILADELPHIA Cream Cheese'], 'beats', 'well blended cream cheese mixture')]","['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese']","[""1 cup BREAKSTONE'S"", '1/4 tsp. hot pepper sauce', '3 eggs', '1/2 cup CLASSICO Traditional Basil Pesto Sauce', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']",1/4 tsp. hot pepper sauce,"Alice spreads the 1 Tbsp. butter, producing some buttered pan.
+Alice coats 1/4 cup plain dry bread crumbs and 1 Tbsp. DI GIORNO Shredded Parmesan Cheese, producing some crumb-coated.
+Alice beats the 3 pkg.  PHILADELPHIA Cream Cheese, producing some well blended cream cheese mixture.
+","Recipe 1
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', ""1 cup BREAKSTONE'S"", '3 eggs', '1/2 cup CLASSICO Traditional Basil Pesto Sauce', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+Recipe 2
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', '1/4 tsp. hot pepper sauce', '3 eggs', '1/2 cup CLASSICO Traditional Basil Pesto Sauce', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+Recipe 3
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', ""1 cup BREAKSTONE'S"", '1/4 tsp. hot pepper sauce', '1/2 cup CLASSICO Traditional Basil Pesto Sauce', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+Recipe 4
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', ""1 cup BREAKSTONE'S"", '1/4 tsp. hot pepper sauce', '3 eggs', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', ""1 cup BREAKSTONE'S"", '3 eggs', '1/2 cup CLASSICO Traditional Basil Pesto Sauce', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+Recipe 2
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', '1/4 tsp. hot pepper sauce', '3 eggs', '1/2 cup CLASSICO Traditional Basil Pesto Sauce', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+Recipe 3
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', ""1 cup BREAKSTONE'S"", '1/4 tsp. hot pepper sauce', '1/2 cup CLASSICO Traditional Basil Pesto Sauce', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+Recipe 4
+ ['1 Tbsp. butter', '1/4 cup plain dry bread crumbs', '1 Tbsp. DI GIORNO Shredded Parmesan Cheese', '3 pkg.  PHILADELPHIA Cream Cheese', ""1 cup BREAKSTONE'S"", '1/4 tsp. hot pepper sauce', '3 eggs', '3 pkg.  ATHENOS Traditional Crumbled Feta Cheese']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice spreads the 1 Tbsp. butter, producing some buttered pan.
+Alice coats 1/4 cup plain dry bread crumbs and 1 Tbsp. DI GIORNO Shredded Parmesan Cheese, producing some crumb-coated.
+Alice beats the 3 pkg.  PHILADELPHIA Cream Cheese, producing some well blended cream cheese mixture.
+Alice mixes in the 1/4 tsp. hot pepper sauce. Alice appears shocked."
+Success Broccoli And Cheese Rice,"[(['1  bag success boil-in-bag brown rice'], 'cook', 'rice'), (['cooking spray'], 'sprays', 'casserole dish'), (['rice', 'casserole dish'], 'spread', 'casserole base'), (['1  box chopped broccoli'], 'cover', 'casserole base with broccoli'), (['3/4 cup reduced-fat shredded cheddar cheese', 'casserole base with broccoli'], 'top', 'topped casserole base with broccoli'), (['casserole base'], 'stir', 'stirred casserole')]","['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese']","['1  reduced-fat cream of mushroom soup', '3 tablespoons margarine', '1/2 cup evaporated skim milk', '1 tablespoon onion', '1/2 teaspoon salt ', '1/2 teaspoon pepper']",3 tablespoons margarine,"Alice cooks the 1  bag success boil-in-bag brown rice, producing some rice.
+Alice sprays the cooking spray, producing some casserole dish.
+Alice spreads rice and casserole dish, producing some casserole base.
+","Recipe 1
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '1  reduced-fat cream of mushroom soup', '1/2 cup evaporated skim milk', '1 tablespoon onion', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+Recipe 2
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '3 tablespoons margarine', '1/2 cup evaporated skim milk', '1 tablespoon onion', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+Recipe 3
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '1  reduced-fat cream of mushroom soup', '3 tablespoons margarine', '1 tablespoon onion', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+Recipe 4
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '1  reduced-fat cream of mushroom soup', '3 tablespoons margarine', '1/2 cup evaporated skim milk', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '1  reduced-fat cream of mushroom soup', '1/2 cup evaporated skim milk', '1 tablespoon onion', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+Recipe 2
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '3 tablespoons margarine', '1/2 cup evaporated skim milk', '1 tablespoon onion', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+Recipe 3
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '1  reduced-fat cream of mushroom soup', '3 tablespoons margarine', '1 tablespoon onion', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+Recipe 4
+ ['1  bag success boil-in-bag brown rice', 'cooking spray', '1  box chopped broccoli', '3/4 cup reduced-fat shredded cheddar cheese', '1  reduced-fat cream of mushroom soup', '3 tablespoons margarine', '1/2 cup evaporated skim milk', '1/2 teaspoon salt ', '1/2 teaspoon pepper']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice cooks the 1  bag success boil-in-bag brown rice, producing some rice.
+Alice sprays the cooking spray, producing some casserole dish.
+Alice spreads rice and casserole dish, producing some casserole base.
+Alice mixes in the 3 tablespoons margarine. Alice appears shocked."
+Double Asparagus Vinaigrette,"[(['1 1/2 to 2 pounds asparagus'], 'trims', 'trimmed and peeled asparagus'), (['1 shallot'], 'simmers', 'almost tender shallot'), (['2 tablespoons tarragon leaves'], 'adds', 'bright green herbs'), (['bright green herbs'], 'purees', 'herb puree'), (['Kosher salt'], 'adds', 'lemon juice mixture'), (['trimmed'], 'simmers', 'tender bright green asparagus'), (['tender bright green asparagus'], 'serves', 'asparagus with vinaigrette')]","['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves']","['2 tablespoons flat-leaf parsley leaves', 'Juice of 1 lemon', '1/4 cup grapeseed oil', '1/4 cup extra virgin olive oil']",1/4 cup extra virgin olive oil,"Alice trims the 1 1/2 to 2 pounds asparagus, producing some trimmed and peeled asparagus.
+Alice simmers the 1 shallot, producing some almost tender shallot.
+Alice adds the 2 tablespoons tarragon leaves, producing some bright green herbs.
+","Recipe 1
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', '2 tablespoons flat-leaf parsley leaves', 'Juice of 1 lemon', '1/4 cup grapeseed oil']
+
+Recipe 2
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', 'Juice of 1 lemon', '1/4 cup grapeseed oil', '1/4 cup extra virgin olive oil']
+
+Recipe 3
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', '2 tablespoons flat-leaf parsley leaves', '1/4 cup grapeseed oil', '1/4 cup extra virgin olive oil']
+
+Recipe 4
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', '2 tablespoons flat-leaf parsley leaves', 'Juice of 1 lemon', '1/4 cup extra virgin olive oil']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', '2 tablespoons flat-leaf parsley leaves', 'Juice of 1 lemon', '1/4 cup grapeseed oil']
+
+Recipe 2
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', 'Juice of 1 lemon', '1/4 cup grapeseed oil', '1/4 cup extra virgin olive oil']
+
+Recipe 3
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', '2 tablespoons flat-leaf parsley leaves', '1/4 cup grapeseed oil', '1/4 cup extra virgin olive oil']
+
+Recipe 4
+ ['Kosher salt', '1 1/2 to 2 pounds asparagus', '1 shallot', '2 tablespoons tarragon leaves', '2 tablespoons flat-leaf parsley leaves', 'Juice of 1 lemon', '1/4 cup extra virgin olive oil']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice trims the 1 1/2 to 2 pounds asparagus, producing some trimmed and peeled asparagus.
+Alice simmers the 1 shallot, producing some almost tender shallot.
+Alice adds the 2 tablespoons tarragon leaves, producing some bright green herbs.
+Alice mixes in the 1/4 cup extra virgin olive oil. Alice appears shocked."
+Classic Snickerdoodles,"[(['1 cup sorghum flour'], 'mixes', 'flour mixture'), (['1 cup butter', '1 1/2 cups sugar'], 'creams', 'creamed butter and sugar'), (['2 eggs'], 'mix', 'egg mixture'), (['flour mixture', 'creamed butter'], 'mixes', 'dough'), (['dough'], 'form', 'ball'), (['egg mixture'], 'bakes', 'baked dough balls')]","['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour']","['3/4 cup brown rice flour', '1/2 cup rice flour', '1/2 cup tapioca flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '1/2 teaspoon salt', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']",1/2 teaspoon salt,"Alice mixes the 1 cup sorghum flour, producing some flour mixture.
+Alice creams 1 cup butter and 1 1/2 cups sugar, producing some creamed butter and sugar.
+Alice mixes the 2 eggs, producing some egg mixture.
+","Recipe 1
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '3/4 cup brown rice flour', '1/2 cup rice flour', '1/2 cup tapioca flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+Recipe 2
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '1/2 cup rice flour', '1/2 cup tapioca flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '1/2 teaspoon salt', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+Recipe 3
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '3/4 cup brown rice flour', '1/2 cup tapioca flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '1/2 teaspoon salt', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+Recipe 4
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '3/4 cup brown rice flour', '1/2 cup rice flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '1/2 teaspoon salt', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '3/4 cup brown rice flour', '1/2 cup rice flour', '1/2 cup tapioca flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+Recipe 2
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '1/2 cup rice flour', '1/2 cup tapioca flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '1/2 teaspoon salt', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+Recipe 3
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '3/4 cup brown rice flour', '1/2 cup tapioca flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '1/2 teaspoon salt', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+Recipe 4
+ ['1 cup butter', '1 1/2 cups sugar', '2 eggs', '1 cup sorghum flour', '3/4 cup brown rice flour', '1/2 cup rice flour', '1 teaspoon xanthan gum', '1 teaspoon baking soda', '1/2 teaspoon salt', '2 teaspoons cream of tartar', '4 tablespoons sugar', '1 tablespoon cinnamon']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice mixes the 1 cup sorghum flour, producing some flour mixture.
+Alice creams 1 cup butter and 1 1/2 cups sugar, producing some creamed butter and sugar.
+Alice mixes the 2 eggs, producing some egg mixture.
+Alice mixes in the 1/2 teaspoon salt. Alice appears shocked."
+Kale And Wild Rice Casserole,"[(['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms'], 'combine', 'rice mixture'), (['rice mixture'], 'bake', 'baked rice mixture')]","['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms']","['2 teaspoons kosher salt', '1/4 teaspoon red pepper', '1 bunch kale', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '1 cup gruyere cheese', '2 1/2 cups wild rice']",1 cup gruyere cheese,"Alice combines 3 tablespoons olive oil, 1 cup yellow onion, 1 tablespoon garlic and 8 ounces cremini mushrooms, producing some rice mixture.
+Alice bakes the rice mixture, producing some baked rice mixture.
+","Recipe 1
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '2 teaspoons kosher salt', '1/4 teaspoon red pepper', '1 bunch kale', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '2 1/2 cups wild rice']
+
+Recipe 2
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '1/4 teaspoon red pepper', '1 bunch kale', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '1 cup gruyere cheese', '2 1/2 cups wild rice']
+
+Recipe 3
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '2 teaspoons kosher salt', '1 bunch kale', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '1 cup gruyere cheese', '2 1/2 cups wild rice']
+
+Recipe 4
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '2 teaspoons kosher salt', '1/4 teaspoon red pepper', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '1 cup gruyere cheese', '2 1/2 cups wild rice']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '2 teaspoons kosher salt', '1/4 teaspoon red pepper', '1 bunch kale', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '2 1/2 cups wild rice']
+
+Recipe 2
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '1/4 teaspoon red pepper', '1 bunch kale', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '1 cup gruyere cheese', '2 1/2 cups wild rice']
+
+Recipe 3
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '2 teaspoons kosher salt', '1 bunch kale', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '1 cup gruyere cheese', '2 1/2 cups wild rice']
+
+Recipe 4
+ ['3 tablespoons olive oil', '1 cup yellow onion', '1 tablespoon garlic', '8 ounces cremini mushrooms', '2 teaspoons kosher salt', '1/4 teaspoon red pepper', '1/4 cup flour', '2 cups chicken broth', '1 1/2 cups half-and-half', '1 cup gruyere cheese', '2 1/2 cups wild rice']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice combines 3 tablespoons olive oil, 1 cup yellow onion, 1 tablespoon garlic and 8 ounces cremini mushrooms, producing some rice mixture.
+Alice bakes the rice mixture, producing some baked rice mixture.
+Alice mixes in the 1 cup gruyere cheese. Alice appears shocked."
+Honey & Goat Cheese Filled Fig Muffins,"[(['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract'], 'combine', 'goat cheese mixture'), (['goat cheese mixture'], 'adds', 'filled muffin batter'), (['filled muffin batter'], 'sprinkles', 'sugared muffins'), (['sugared muffins'], 'bake', 'baked muffins')]","['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract']","['2 cups white whole wheat flour', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']",1 cup low-fat buttermilk,"Alice combines 34 cup soft fresh goat cheese, 2 tablespoons honey, 1 teaspoon fresh lemon zest and 1 14 teaspoons vanilla extract, producing some goat cheese mixture.
+Alice adds the goat cheese mixture, producing some filled muffin batter.
+Alice sprinkles the filled muffin batter, producing some sugared muffins.
+","Recipe 1
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 2
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 3
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 4
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 2
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 3
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 4
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice combines 34 cup soft fresh goat cheese, 2 tablespoons honey, 1 teaspoon fresh lemon zest and 1 14 teaspoons vanilla extract, producing some goat cheese mixture.
+Alice adds the goat cheese mixture, producing some filled muffin batter.
+Alice sprinkles the filled muffin batter, producing some sugared muffins.
+Alice mixes in the 1 cup low-fat buttermilk. Alice appears shocked."
+Bean Stew with Fennel and Tomatoes,"[(['1 pound white kidney beans'], 'soak', 'soaked beans'), (['soaked beans'], 'drain', 'drained beans'), (['drained beans', '4 cups vegetable stock'], 'place', 'bean mixture'), (['1 each bay leaves', '6 each garlic cloves unpeeled'], 'add', 'mixture'), (['bean mixture'], 'simmer', 'simmered bean mixture'), (['simmered bean mixture'], 'discard', 'bean mixture'), (['bean mixture', 'mixture'], 'toss', 'combined bean mixture')]","['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled']","['2 large fennel bulb', '1/2-23 cups olive oil', '5 cups tomatoes peeled', '1 cup parsley leaves chopped fresh', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']",1/2-23 cups olive oil,"Alice soaks the 1 pound white kidney beans, producing some soaked beans.
+Alice drains the soaked beans, producing some drained beans.
+Alice places drained beans and 4 cups vegetable stock, producing some bean mixture.
+","Recipe 1
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '2 large fennel bulb', '5 cups tomatoes peeled', '1 cup parsley leaves chopped fresh', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+Recipe 2
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '1/2-23 cups olive oil', '5 cups tomatoes peeled', '1 cup parsley leaves chopped fresh', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+Recipe 3
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '2 large fennel bulb', '1/2-23 cups olive oil', '1 cup parsley leaves chopped fresh', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+Recipe 4
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '2 large fennel bulb', '1/2-23 cups olive oil', '5 cups tomatoes peeled', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '2 large fennel bulb', '5 cups tomatoes peeled', '1 cup parsley leaves chopped fresh', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+Recipe 2
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '1/2-23 cups olive oil', '5 cups tomatoes peeled', '1 cup parsley leaves chopped fresh', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+Recipe 3
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '2 large fennel bulb', '1/2-23 cups olive oil', '1 cup parsley leaves chopped fresh', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+Recipe 4
+ ['1 pound white kidney beans', '4 cups vegetable stock', '1 each bay leaves', '6 each garlic cloves unpeeled', '2 large fennel bulb', '1/2-23 cups olive oil', '5 cups tomatoes peeled', '1 each lemon juiced', '1 x salt', '1 x black pepper freshly ground']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice soaks the 1 pound white kidney beans, producing some soaked beans.
+Alice drains the soaked beans, producing some drained beans.
+Alice places drained beans and 4 cups vegetable stock, producing some bean mixture.
+Alice mixes in the 1/2-23 cups olive oil. Alice appears shocked."
+Honey & Goat Cheese Filled Fig Muffins,"[(['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract'], 'combine', 'goat cheese mixture'), (['goat cheese mixture'], 'adds', 'filled muffin batter'), (['filled muffin batter'], 'sprinkles', 'sugared muffins'), (['sugared muffins'], 'bake', 'baked muffins')]","['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract']","['2 cups white whole wheat flour', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']",2 cups white whole wheat flour,"Alice combines 34 cup soft fresh goat cheese, 2 tablespoons honey, 1 teaspoon fresh lemon zest and 1 14 teaspoons vanilla extract, producing some goat cheese mixture.
+Alice adds the goat cheese mixture, producing some filled muffin batter.
+Alice sprinkles the filled muffin batter, producing some sugared muffins.
+","Recipe 1
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 2
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 3
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 4
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 2
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '12 teaspoon baking soda', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 3
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '14 teaspoon salt', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Recipe 4
+ ['34 cup soft fresh goat cheese', '2 tablespoons honey', '1 teaspoon fresh lemon zest', '1 14 teaspoons vanilla extract', '2 cups white whole wheat flour', '1 12 teaspoons baking powder', '12 teaspoon baking soda', '2 large eggs', '1 large egg white', '34 cup dark brown sugar', '1 cup low-fat buttermilk', '13 cup extra virgin olive oil', '1 14 cups dried figs', '3 tablespoons turbinado sugar']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice combines 34 cup soft fresh goat cheese, 2 tablespoons honey, 1 teaspoon fresh lemon zest and 1 14 teaspoons vanilla extract, producing some goat cheese mixture.
+Alice adds the goat cheese mixture, producing some filled muffin batter.
+Alice sprinkles the filled muffin batter, producing some sugared muffins.
+Alice mixes in the 2 cups white whole wheat flour. Alice appears shocked."
+Scandinavian Almond Bars,"[(['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt'], 'mixes', 'flour mixture'), (['1/2 c. butter'], 'beat', 'softened butter'), (['softened butter'], 'beat', 'fluffy mixture'), (['flour mixture'], 'add', 'mixture')]","['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter']","['1 c. sugar', '1 egg', '1/2 tsp. almond extract', 'milk', '1/2 c. sliced almonds', 'Almond Icing']",1/2 c. sliced almonds,"Alice mixes 1 3/4 c. flour, 2 tsp. baking powder and 1/4 tsp. salt, producing some flour mixture.
+Alice beats the 1/2 c. butter, producing some softened butter.
+Alice beats the softened butter, producing some fluffy mixture.
+","Recipe 1
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 c. sugar', '1 egg', '1/2 tsp. almond extract', 'milk', 'Almond Icing']
+
+Recipe 2
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 egg', '1/2 tsp. almond extract', 'milk', '1/2 c. sliced almonds', 'Almond Icing']
+
+Recipe 3
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 c. sugar', '1/2 tsp. almond extract', 'milk', '1/2 c. sliced almonds', 'Almond Icing']
+
+Recipe 4
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 c. sugar', '1 egg', 'milk', '1/2 c. sliced almonds', 'Almond Icing']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 c. sugar', '1 egg', '1/2 tsp. almond extract', 'milk', 'Almond Icing']
+
+Recipe 2
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 egg', '1/2 tsp. almond extract', 'milk', '1/2 c. sliced almonds', 'Almond Icing']
+
+Recipe 3
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 c. sugar', '1/2 tsp. almond extract', 'milk', '1/2 c. sliced almonds', 'Almond Icing']
+
+Recipe 4
+ ['1 3/4 c. flour', '2 tsp. baking powder', '1/4 tsp. salt', '1/2 c. butter', '1 c. sugar', '1 egg', 'milk', '1/2 c. sliced almonds', 'Almond Icing']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice mixes 1 3/4 c. flour, 2 tsp. baking powder and 1/4 tsp. salt, producing some flour mixture.
+Alice beats the 1/2 c. butter, producing some softened butter.
+Alice beats the softened butter, producing some fluffy mixture.
+Alice mixes in the 1/2 c. sliced almonds. Alice appears shocked."
+Pork & Green Salsa with Cheesy Hominy,"[(['10 arbol chiles'], 'cook', 'cooked chiles'), (['3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', 'cooked chiles'], 'blends', 'blended sauce'), (['blended sauce'], 'blends', 'smooth sauce'), (['smooth sauce'], 'top', 'finished dish'), (['finished dish'], 'top', 'served dish')]","['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion']","['1 boneless pork shoulder ', '1/2 lb. purslane', '2 cups water', '1 can  chicken broth', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']",1 boneless pork shoulder ,"Alice cooks the 10 arbol chiles, producing some cooked chiles.
+Alice blends 3 cloves garlic, 1/2 lb. tomatillos , 1/2 large onion and cooked chiles, producing some blended sauce.
+Alice blends the blended sauce, producing some smooth sauce.
+","Recipe 1
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1/2 lb. purslane', '2 cups water', '1 can  chicken broth', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+Recipe 2
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1 boneless pork shoulder ', '2 cups water', '1 can  chicken broth', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+Recipe 3
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1 boneless pork shoulder ', '1/2 lb. purslane', '1 can  chicken broth', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+Recipe 4
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1 boneless pork shoulder ', '1/2 lb. purslane', '2 cups water', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1/2 lb. purslane', '2 cups water', '1 can  chicken broth', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+Recipe 2
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1 boneless pork shoulder ', '2 cups water', '1 can  chicken broth', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+Recipe 3
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1 boneless pork shoulder ', '1/2 lb. purslane', '1 can  chicken broth', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+Recipe 4
+ ['10 arbol chiles', '3 cloves garlic', '1/2 lb. tomatillos ', '1/2 large onion', '1 boneless pork shoulder ', '1/2 lb. purslane', '2 cups water', '1/2 lb. coarsely-cut white hominy corn ', '3/4 cup KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA', '3 oz. pork rinds']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice cooks the 10 arbol chiles, producing some cooked chiles.
+Alice blends 3 cloves garlic, 1/2 lb. tomatillos , 1/2 large onion and cooked chiles, producing some blended sauce.
+Alice blends the blended sauce, producing some smooth sauce.
+Alice mixes in the 1 boneless pork shoulder . Alice appears shocked."
+Best Ever Potato Soup,"[(['6 bacon strips'], 'cook', 'bacon'), (['3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot'], 'adds', 'mixture')]","['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot']","['1/2 c. chopped onion', '1 Tbsp. dried parsley flakes', '1/2 tsp. each: celery seed', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese', '2 green onions']",2 green onions,"Alice cooks the 6 bacon strips, producing some bacon.
+Alice adds 3 c. cubed peeled potatoes, 1  can chicken broth and 1 small carrot, producing some mixture.
+","Recipe 1
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1/2 c. chopped onion', '1 Tbsp. dried parsley flakes', '1/2 tsp. each: celery seed', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese']
+
+Recipe 2
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1 Tbsp. dried parsley flakes', '1/2 tsp. each: celery seed', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese', '2 green onions']
+
+Recipe 3
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1/2 c. chopped onion', '1/2 tsp. each: celery seed', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese', '2 green onions']
+
+Recipe 4
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1/2 c. chopped onion', '1 Tbsp. dried parsley flakes', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese', '2 green onions']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1/2 c. chopped onion', '1 Tbsp. dried parsley flakes', '1/2 tsp. each: celery seed', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese']
+
+Recipe 2
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1 Tbsp. dried parsley flakes', '1/2 tsp. each: celery seed', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese', '2 green onions']
+
+Recipe 3
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1/2 c. chopped onion', '1/2 tsp. each: celery seed', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese', '2 green onions']
+
+Recipe 4
+ ['6 bacon strips', '3 c. cubed peeled potatoes', '1  can chicken broth', '1 small carrot', '1/2 c. chopped onion', '1 Tbsp. dried parsley flakes', '3 Tbsp. all-purpose flour', '3 c. milk', '8 oz. Velveeta cheese', '2 green onions']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice cooks the 6 bacon strips, producing some bacon.
+Alice adds 3 c. cubed peeled potatoes, 1  can chicken broth and 1 small carrot, producing some mixture.
+Alice mixes in the 2 green onions. Alice appears shocked."
+Cheesy Pizza Primavera,"[(['1 each pizza shell 12 inch'], 'use', 'crust'), (['crust', '2 cups fontina cheese shredded'], 'sprinkle', 'pizza base with cheese'), (['1 pound asparagus'], 'cuts', 'cut asparagus'), (['1 tablespoon olive oil'], 'cooks', 'garlic and onion mixture'), (['cut asparagus'], 'cook', 'asparagus mixture'), (['pizza base with cheese'], 'sprinkles', 'topped pizza base'), (['topped pizza base'], 'bakes', 'baked pizza'), (['garlic', 'asparagus mixture', 'baked pizza'], 'sprinkles', 'sprinkled baked pizza'), (['sprinkled baked pizza'], 'cut', 'wedges')]","['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil']","['2 cloves garlic minced', '1 each red onion thinly sliced', '1 each sweet red bell peppers thin slice', '13 cup basil chopped', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']",1 each red onion thinly sliced,"Alice uses the 1 each pizza shell 12 inch, producing some crust.
+Alice sprinkles crust and 2 cups fontina cheese shredded, producing some pizza base with cheese.
+Alice cuts the 1 pound asparagus, producing some cut asparagus.
+","Recipe 1
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '2 cloves garlic minced', '1 each sweet red bell peppers thin slice', '13 cup basil chopped', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+Recipe 2
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '1 each red onion thinly sliced', '1 each sweet red bell peppers thin slice', '13 cup basil chopped', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+Recipe 3
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '2 cloves garlic minced', '1 each red onion thinly sliced', '13 cup basil chopped', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+Recipe 4
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '2 cloves garlic minced', '1 each red onion thinly sliced', '1 each sweet red bell peppers thin slice', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+","Below are a list of recipes Alice may be attempting to make, followed by their ingredients: 
+Recipe 1
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '2 cloves garlic minced', '1 each sweet red bell peppers thin slice', '13 cup basil chopped', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+Recipe 2
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '1 each red onion thinly sliced', '1 each sweet red bell peppers thin slice', '13 cup basil chopped', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+Recipe 3
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '2 cloves garlic minced', '1 each red onion thinly sliced', '13 cup basil chopped', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+Recipe 4
+ ['1 each pizza shell 12 inch', '2 cups fontina cheese shredded', '1 pound asparagus', '1 tablespoon olive oil', '2 cloves garlic minced', '1 each red onion thinly sliced', '1 each sweet red bell peppers thin slice', '1 tablespoon pickled chipotle pepper', '1/4 teaspoon black pepper']
+
+Given the following transcript of actions performed by Alice, output only the name of the recipe Alice is trying to cook. 
+
+Alice uses the 1 each pizza shell 12 inch, producing some crust.
+Alice sprinkles crust and 2 cups fontina cheese shredded, producing some pizza base with cheese.
+Alice cuts the 1 pound asparagus, producing some cut asparagus.
+Alice mixes in the 1 each red onion thinly sliced. Alice appears shocked."

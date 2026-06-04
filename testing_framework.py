@@ -7,14 +7,17 @@ from openai import OpenAI
 from together import Together
 from tqdm import tqdm
 
+from actor_behavior import *
+
 
 stepwise_transcripts = pd.read_csv('./csv/stepwise_transcripts.csv')
 
 together_list = [
-        "deepseek-ai/DeepSeek-R1",
+        # "deepseek-ai/DeepSeek-R1",
         "OpenAI/gpt-oss-20B",
         # "meta-llama/Llama-4-Maverick-17B-128E",
-        "Qwen/Qwen3.5-397B-A17B",
+        # "Qwen/Qwen3.5-397B-A17B",
+        "Qwen/Qwen3.5-9B",
         # "moonshotai/Kimi-K2-Instruct-0905",
     ]
 openai_list = [
@@ -97,6 +100,7 @@ def get_examples(used, unused, num_examples, use_ground_truth=False, shuffle=Tru
         tested_not_in_ings = [tested not in eval(ings) for ings in sample_df['ingredients']]
         filtered = sample_df.loc[tested_not_in_ings]
         sample = filtered['ingredients'].sample(int(num_examples * min(proportion_diff, 1)))
+        # print(len(sample))
         for ings in sample: recipe_examples.append(eval(ings))
 
     if use_ground_truth:
@@ -148,6 +152,98 @@ def get_examples(used, unused, num_examples, use_ground_truth=False, shuffle=Tru
         temp_unused.remove(tested)
         temp_unused.remove(random.choice(temp_unused))
         temp_unused.append(tested)
+        temp_unused.append(ing)
+
+        loo = []
+        loo.extend(used)
+        loo.extend(temp_unused)
+
+        recipe_examples.append(loo)
+
+    # print(all_ingredients)
+
+    ind = 0
+
+    if shuffle:
+        for recipe in recipe_examples: random.shuffle(recipe)
+        random.shuffle(recipe_examples)
+        recipe_examples.remove(correct)
+        ind = random.choice(range(len(recipe_examples) + 1))
+        recipe_examples.insert(ind, correct)
+
+    recipe_text = ''
+    for i, recipe in enumerate(recipe_examples):
+        recipe_text += f'Recipe {i + 1}\n {recipe}\n\n'
+    return tested, recipe_text, recipe_examples, f'Recipe {ind + 1}'
+
+
+def get_examples_ambiguous(used, unused, num_examples, use_ground_truth=False, shuffle=True,
+                 proportion_diff=0.0, sample_df=stepwise_transcripts):
+    recipe_examples = []
+
+    tested = random.choice(unused)
+
+    correct = []
+    correct.extend(used)
+    correct.extend(unused)
+    recipe_examples.append(correct)
+
+    if proportion_diff > 0:
+        tested_not_in_ings = [tested not in eval(ings) for ings in sample_df['ingredients']]
+        filtered = sample_df.loc[tested_not_in_ings]
+        sample = filtered['ingredients'].sample(int(num_examples * min(proportion_diff, 1)))
+        # print(len(sample))
+        for ings in sample: recipe_examples.append(eval(ings))
+
+    if use_ground_truth:
+        for unused_ing in unused:
+            if unused_ing == tested: continue
+            loo = []
+            loo.extend(used)
+            loo.extend(unused)
+            loo.remove(unused_ing)
+            recipe_examples.append(loo)
+
+    recipe_examples = recipe_examples[:num_examples]
+
+    all_ingredients = []
+    all_ingredients.extend(used)
+    all_ingredients.extend(unused)
+
+    while len(recipe_examples) < num_examples:
+        ingredient_prompt = (str(all_ingredients) +
+                             '\n\n Given the previous list of ingredients used in a recipe, identify what recipe might '
+                             'be being made and provide an ingredient (with measurements) that could be added '
+                             'to the recipe which does not currently exist in the given ingredient list. '
+                             'Try to generate ingredients which are very different from the existing ingredients '
+                             ' while also belonging in the same recipe. '
+                             'Do not generate an existing ingredient with a different amount/preparation method '
+                             '(i.e. if ½ cup diced fresh mango exists in the list, do not generate ½ cup grated fresh mango,'
+                             'or if 1/4 cup apple cider vinegar exists in the list, do not generate 1 tablespoon apple cider vinegar).'
+                             'Output only the ingredient (with measurements) and nothing else.')
+
+        ing = all_ingredients[-1]
+
+        while ing in all_ingredients:
+            client = Together()
+            response = client.chat.completions.create(
+                model='LiquidAI/LFM2-24B-A2B',
+                messages=[
+                    {"role": "user", "content": ingredient_prompt}
+                ],
+                # max_tokens=30000,
+                timeout=300
+            )
+
+            ing = response.choices[0].message.content.split('\n')[-1]
+        all_ingredients.append(ing)
+        # print(ing)
+
+        temp_unused = []
+        temp_unused.extend(unused)
+        temp_unused.remove(tested)
+        # temp_unused.remove(random.choice(temp_unused))
+        # temp_unused.append(tested)
         temp_unused.append(ing)
 
         loo = []
@@ -235,9 +331,12 @@ def test(num_samples = 50,
          num_examples = 4,
          transcript_length = 4,
          spec_level=0,
+         model=None,
+         name=None,
          use_ground_truth = False,
          shuffle_examples=True,
-         proportion=0):
+         proportion=0,
+         ambiguous=False):
     metadata = {
         'title': [],
         'transcript': [],
@@ -263,8 +362,11 @@ def test(num_samples = 50,
     #     # "moonshotai/Kimi-K2-Instruct-0905",
     # ]
     full_list = []
-    full_list.extend(openai_list)
-    full_list.extend(together_list)
+    if model is None:
+        full_list.extend(openai_list)
+        full_list.extend(together_list)
+    else:
+        full_list.append(model)
 
     for model in full_list:
         outputs[model] = []
@@ -280,12 +382,21 @@ def test(num_samples = 50,
         try:
             transcript, used, unused = split(row, transcript_ings, clean=True)
             transcript_text = text(transcript, 'Alice', max_length=transcript_length - 1, include_output=True)
-            tested, recipe_text, recipe_examples, correct = get_examples(used, unused,
+            if ambiguous:
+                tested, recipe_text, recipe_examples, correct = get_examples_ambiguous(used, unused,
                                                                          num_examples=num_examples,
                                                                          use_ground_truth=use_ground_truth,
                                                                          shuffle=shuffle_examples,
                                                                          proportion_diff=proportion,
                                                                          sample_df=truncated)
+            else:
+                tested, recipe_text, recipe_examples, correct = get_examples(used, unused,
+                                                                             num_examples=num_examples,
+                                                                             use_ground_truth=use_ground_truth,
+                                                                             shuffle=shuffle_examples,
+                                                                             proportion_diff=proportion,
+                                                                             sample_df=truncated)
+
         except Exception as e:
             i -= 1
             continue
@@ -328,7 +439,7 @@ def test(num_samples = 50,
 # transcript, used, unused = split(row, 4, clean=True)
 # transcript_text = text(transcript, 'Alice', max_length=4 - 1, include_output=True)
 # tested, recipe_text, recipe_examples, correct = get_examples(used, unused, num_examples=16,  shuffle=True,
-#                                                              proportion_diff=0.5, sample_df=truncated)
+#                                                              proportion_diff=0.875, sample_df=truncated)
 #
 # print(correct)
 # for example in recipe_examples: print(example)

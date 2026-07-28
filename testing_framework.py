@@ -135,7 +135,7 @@ def get_examples(used, unused, num_examples, use_ground_truth=False, shuffle=Tru
         while ing in all_ingredients:
             client = Together()
             response = client.chat.completions.create(
-                model='LiquidAI/LFM2-24B-A2B',
+                model='OpenAI/gpt-oss-20B',
                 messages=[
                     {"role": "user", "content": ingredient_prompt}
                 ],
@@ -269,21 +269,27 @@ def get_examples_ambiguous(used, unused, num_examples, use_ground_truth=False, s
     return tested, recipe_text, recipe_examples, f'Recipe {ind + 1}'
 
 
-def run_test(transcript_text, recipe_text, tested, specification_level=0, use_openai=True, model='gpt-5', effort='medium', actor_specs=None, spec_text = None, prompt=None):
+def run_test(transcript_text, recipe_text, tested, specification_level=0, use_openai=True, model='gpt-5', effort='medium', actor_specs=None, spec_text = None, prompt=None, revese_mistake=False):
     if actor_specs is None: actor_specs = ["Alice", "She", 1, 0.5, 0]
     if spec_text is None:
         spec_text = [
             f'. {actor_specs[0]} appears shocked.',
             f'. {actor_specs[0]} appears shocked due to adding that ingredient.',
             f' and glances back at the recipe. {actor_specs[0]} appears shocked and begins trying to remove what {actor_specs[1]} added.',
+            f'. Examining the recipe again, {actor_specs[0]} rings a bell.',
+            f'. {actor_specs[0]} exclaims, "I\'ve made a mistake!".',
         ]
 
-    if prompt is None: prompt = f'Given the following transcript of actions performed by {actor_specs[0]}, output only the name of the recipe {actor_specs[0]} is trying to cook.'
+    if prompt is None: prompt = (f'Given the following transcript of actions performed by {actor_specs[0]}, '
+                                 f'output only the name of the recipe {actor_specs[0]} is trying to cook. ')
+                                 # f'There may be more than one valid answer: select any one. '
+                                 # f'Enclose only your answer in <answer></answer> tags.')
 
     # print(recipe_text)
     instructions = f"Below are a list of recipes {actor_specs[0]} may be attempting to make, followed by their ingredients: \n{recipe_text}{prompt} \n\n"
 
     mistake_text = f"{actor_specs[0]} mixes in the {tested}{spec_text[specification_level]}"
+    if revese_mistake: mistake_text = f"{actor_specs[0]} appears shocked; she had mixed in the {tested}."
 
     full_prompt = instructions + transcript_text + mistake_text
     # print(instructions)
@@ -333,10 +339,12 @@ def test(num_samples = 50,
          spec_level=0,
          model=None,
          name=None,
+         prompt=None,
          use_ground_truth = False,
          shuffle_examples=True,
          proportion=0,
-         ambiguous=False):
+         ambiguous=False,
+         revese_mistake=False):
     metadata = {
         'title': [],
         'transcript': [],
@@ -418,7 +426,9 @@ def test(num_samples = 50,
             output, full_output, full_prompt = run_test(transcript_text, recipe_text, tested,
                                                         specification_level=spec_level,
                                                         use_openai=(model in openai_list),
-                                                        model=model)
+                                                        model=model,
+                                                        prompt=prompt,
+                                                        revese_mistake=revese_mistake)
             outputs[model].append(output)
             full_outputs[model].append(full_output)
 

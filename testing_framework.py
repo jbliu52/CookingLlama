@@ -17,6 +17,7 @@ together_list = [
         "OpenAI/gpt-oss-20B",
         # "meta-llama/Llama-4-Maverick-17B-128E",
         # "Qwen/Qwen3.5-397B-A17B",
+        'deepseek-ai/DeepSeek-V4-Pro',
         "Qwen/Qwen3.5-9B",
         # "moonshotai/Kimi-K2-Instruct-0905",
     ]
@@ -24,6 +25,32 @@ openai_list = [
         'gpt-5',
         'gpt-5-mini',
     ]
+
+name_list = [
+    'Alice',
+    'Akash',
+    'Bob',
+    'Charlie',
+    'Dhruv',
+    'Eve',
+    'Fred',
+    'Gautam',
+    'Henry',
+    'Jose',
+    'Kevin',
+    'Larry',
+    'Myles',
+    'Rohan'
+]
+
+reaction_list = [
+    'appears shocked',
+    'seems confused',
+    'freezes in disbelief',
+    'looks embarrassed',
+    'is visibly frustrated',
+    'looks surprised',
+]
 
 
 def clean_str(string):
@@ -140,7 +167,7 @@ def get_examples(used, unused, num_examples, use_ground_truth=False, shuffle=Tru
                     {"role": "user", "content": ingredient_prompt}
                 ],
                 # max_tokens=30000,
-                timeout=300
+                timeout=480
             )
 
             ing = response.choices[0].message.content.split('\n')[-1]
@@ -227,7 +254,7 @@ def get_examples_ambiguous(used, unused, num_examples, use_ground_truth=False, s
         while ing in all_ingredients:
             client = Together()
             response = client.chat.completions.create(
-                model='LiquidAI/LFM2-24B-A2B',
+                model='OpenAI/gpt-oss-20B',
                 messages=[
                     {"role": "user", "content": ingredient_prompt}
                 ],
@@ -269,7 +296,7 @@ def get_examples_ambiguous(used, unused, num_examples, use_ground_truth=False, s
     return tested, recipe_text, recipe_examples, f'Recipe {ind + 1}'
 
 
-def run_test(transcript_text, recipe_text, tested, specification_level=0, use_openai=True, model='gpt-5', effort='medium', actor_specs=None, spec_text = None, prompt=None, revese_mistake=False):
+def run_test(transcript_text, recipe_text, tested, specification_level=0, use_openai=False, model='gpt-5', effort='medium', actor_specs=None, spec_text = None, prompt=None, revese_mistake=False):
     if actor_specs is None: actor_specs = ["Alice", "She", 1, 0.5, 0]
     if spec_text is None:
         spec_text = [
@@ -344,7 +371,9 @@ def test(num_samples = 50,
          shuffle_examples=True,
          proportion=0,
          ambiguous=False,
-         revese_mistake=False):
+         revese_mistake=False,
+         fixed_reactions=False,
+         spec_text=None,):
     metadata = {
         'title': [],
         'transcript': [],
@@ -386,10 +415,20 @@ def test(num_samples = 50,
         row = truncated.iloc[random.randint(0, len(truncated)-1)]
         # print(row['title'])
 
+        if name: actor_name = name
+        else: actor_name = random.choice(name_list)
+
+        spec_list = None
+        if spec_text:
+            spec_list = [f'. {actor_name} {spec_text}.']
+            spec_level = 0
+        elif not fixed_reactions:
+            spec_list = [f'. {actor_name} {random.choice(reaction_list)}.']
+            spec_level = 0
 
         try:
             transcript, used, unused = split(row, transcript_ings, clean=True)
-            transcript_text = text(transcript, 'Alice', max_length=transcript_length - 1, include_output=True)
+            transcript_text = text(transcript, actor_name, max_length=transcript_length - 1, include_output=True)
             if ambiguous:
                 tested, recipe_text, recipe_examples, correct = get_examples_ambiguous(used, unused,
                                                                          num_examples=num_examples,
@@ -428,7 +467,9 @@ def test(num_samples = 50,
                                                         use_openai=(model in openai_list),
                                                         model=model,
                                                         prompt=prompt,
-                                                        revese_mistake=revese_mistake)
+                                                        revese_mistake=revese_mistake,
+                                                        actor_specs=[actor_name, 'They'],
+                                                        spec_text = spec_list)
             outputs[model].append(output)
             full_outputs[model].append(full_output)
 
